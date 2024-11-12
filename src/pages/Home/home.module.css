@@ -1,3 +1,23 @@
+
+body{
+    background-color: #F6E5D3;
+}
+
+
+.video {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 35px;
+}
+
+.videoApresentacao {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    cursor: pointer;
+}
+
+
 .title {
     text-align: center;
     padding-bottom: 30px;
@@ -29,23 +49,30 @@ h2 {
     height: 311px;
     background-color: #F4AD58;
     border-radius: 10px;
+    padding: 23px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 16px;
 
 }
 
 .imgService {
-    padding-left: 23px;
-    padding-top: 23px;
+    /* padding-left: 23px;
+    padding-top: 23px; */
+    width: 48px;
+    
 }
 
 .titleService {
     font-family: "Poppins", sans-serif;
     color: white;
-    padding-left: 23px;
+    /* padding-left: 23px; */
 }
 
 .descService  {
-    padding-left: 23px;
-    padding-right: 23px;
+    /* padding-left: 23px;
+    padding-right: 23px; */
     font-family: "Poppins", sans-serif;
     font-style: normal;
     font-size: 15.75px;
@@ -60,5 +87,7 @@ h2 {
     border: none;
     padding: 8px;
     border-radius: 10px;
-    
+    display: block; 
+    margin-inline: auto;
+    cursor: pointer;
 }
