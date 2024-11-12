@@ -1,0 +1,64 @@
+.title {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+h2 {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    color: #E75109;
+    font-size: 40px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.fileira {
+    display: flex;
+    gap: 53px;
+}
+
+
+.quadrado {
+    width: 296px;
+    height: 311px;
+    background-color: #F4AD58;
+    border-radius: 10px;
+
+}
+
+.imgService {
+    padding-left: 23px;
+    padding-top: 23px;
+}
+
+.titleService {
+    font-family: "Poppins", sans-serif;
+    color: white;
+    padding-left: 23px;
+}
+
+.descService  {
+    padding-left: 23px;
+    padding-right: 23px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-size: 15.75px;
+    color: white;
+}
+
+.buttonService{
+    background-color: #E75109;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+    
+}
