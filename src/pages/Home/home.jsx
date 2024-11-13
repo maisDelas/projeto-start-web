@@ -13,23 +13,28 @@ import styles from './home.module.css'
 function Home() {
     return (
         <div>
-            
-                <div className={styles.title}>
-                    <h2>Conheça um pouco a +Delas:</h2>
-                </div>
+            {/* Sessão de Titulo e Video */}
+
+            <div className={styles.title}>
+                <h2>Conheça um pouco a +Delas:</h2>
+            </div>
+            <div className={styles.bgcards}>
                 <div className={styles.video}>
                     <img className={styles.videoApresentacao} src={video_apresentacao} alt="foto-video" />
-
                 </div>
 
-                <div className={styles.title}>
+                {/* Sessão Buscando Serviços */}
+
+                <div className={styles.titlee}>
                     <h2>Buscando algum serviço?</h2>
                 </div>
 
                 <div className={styles.container}>
 
+
                     <div className={styles.fileira}>
 
+                        {/* Card 1 */}
                         <div className={styles.quadrado}>
                             <div className={styles.top}>
                                 <img className={styles.imgService} src={cosmetics} alt="cosmetics" />
@@ -37,13 +42,14 @@ function Home() {
                                 <p className={styles.descService}>Consultoria de Estilo,
                                     Maquiagem Profissional,
                                     Cabeleireira, Estilização
-                                    Serviços de Estética e muito mais</p>
+                                    Serviços de Estética e muito mais!</p>
                             </div>
                             <div className={styles.bottom}>
                                 <button className={styles.buttonService}>Ache uma Profissional</button>
                             </div>
                         </div>
 
+                        {/* Card 2 */}
                         <div className={styles.quadrado}>
                             <div className={styles.top}>
                                 <img className={styles.imgService} src={front_end_programming} alt="tecnologia" />
@@ -57,6 +63,7 @@ function Home() {
                             </div>
                         </div>
 
+                        {/* Card 3 */}
                         <div className={styles.quadrado}>
                             <div className={styles.top}>
                                 <img className={styles.imgService} src={image} alt="calendario" />
@@ -64,7 +71,7 @@ function Home() {
                                 <p className={styles.descService}>Planejamento de Eventos,
                                     decoração e ambientação,
                                     coordenação de festas,
-                                    fotografia geral. Tudo para deixar o momento mais incrível!</p>
+                                    fotografia geral. Deixe o momento ainda mais incrível!</p>
                             </div>
                             <div className={styles.bottom}>
                                 <button className={styles.buttonService}>Ache uma Profissional</button>
@@ -75,6 +82,7 @@ function Home() {
 
                     <div className={styles.fileira}>
 
+                        {/* Card 4 */}
                         <div className={styles.quadrado}>
                             <div className={styles.top}>
                                 <img className={styles.imgService} src={gears} alt="assistencia" />
@@ -82,12 +90,12 @@ function Home() {
                                 <p className={styles.descService}>Serviços de assistência técnica que você pode confiar.
                                     Reparos precisos para garantir a longevidade dos seus equipamentos!</p>
                             </div>
-
                             <div className={styles.bottom}>
                                 <button className={styles.buttonService}>Ache uma Profissional</button>
                             </div>
                         </div>
 
+                        {/* Card 5 */}
                         <div className={styles.quadrado}>
                             <div className={styles.top}>
                                 <img className={styles.imgService} src={heartbeat} alt="coracao" />
@@ -102,13 +110,14 @@ function Home() {
                             </div>
                         </div>
 
+                        {/* Card 6 */}
                         <div className={styles.quadrado}>
                             <div className={styles.top}>
                                 <img className={styles.imgService} src={chef_hat} alt="chapeu" />
                                 <h3 className={styles.titleService} >Gastronomia</h3>
                                 <p className={styles.descService}>Encontre o melhor da gastronomia na sua região: Serviços de Buffet,
                                     cozinheiras e chefs,
-                                    aulas de culinária e muito mais</p>
+                                    aulas de culinária e muito mais.</p>
                             </div>
                             <div className={styles.bottom}>
                                 <button className={styles.buttonService}>Ache uma Profissional</button>
@@ -118,7 +127,12 @@ function Home() {
                     </div>
 
                 </div>
-            
+                {/* Ultimo Botão */}
+                <div className={styles.bottomEnd}>
+                    <button className={styles.buttonService}>Ir para mapeamento</button>
+                </div>
+            </div>
+
 
         </div>
     )

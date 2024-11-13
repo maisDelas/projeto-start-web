@@ -1,26 +1,39 @@
 
-body{
+.bgcards{
     background-color: #F6E5D3;
+    margin-top: 20px;
+    min-height: 100vh;
+    flex-direction: column; 
+    justify-content: space-between; 
+    padding-bottom: 40px;
 }
-
 
 .video {
     display: flex;
     justify-content: center;
     margin-bottom: 35px;
+    height: 30vh;
+    overflow: hidden;
 }
+
 
 .videoApresentacao {
     width: 100%;
     max-width: 800px;
-    height: auto;
-    cursor: pointer;
+    cursor: pointer; 
+    position: absolute;  
+    margin-top: -150px;
 }
 
+.titlee {
+    text-align: center;
+    padding-bottom: 20px;
+}
 
 .title {
     text-align: center;
     padding-bottom: 30px;
+    height: 20vh;
 }
 
 h2 {
@@ -57,22 +70,18 @@ h2 {
 
 }
 
-.imgService {
-    /* padding-left: 23px;
-    padding-top: 23px; */
-    width: 48px;
-    
+.imgService { 
+    width: 48px;  
 }
 
 .titleService {
     font-family: "Poppins", sans-serif;
     color: white;
-    /* padding-left: 23px; */
+    
 }
 
 .descService  {
-    /* padding-left: 23px;
-    padding-right: 23px; */
+   
     font-family: "Poppins", sans-serif;
     font-style: normal;
     font-size: 15.75px;
@@ -91,3 +100,9 @@ h2 {
     margin-inline: auto;
     cursor: pointer;
 }
+
+.styles.bottomEnd{
+    display: block; 
+    margin-inline: auto;
+}
+
