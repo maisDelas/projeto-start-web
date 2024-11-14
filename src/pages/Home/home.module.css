@@ -1,0 +1,108 @@
+
+.bgcards{
+    background-color: #F6E5D3;
+    margin-top: 20px;
+    min-height: 100vh;
+    flex-direction: column; 
+    justify-content: space-between; 
+    padding-bottom: 40px;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 35px;
+    height: 30vh;
+    overflow: hidden;
+}
+
+
+.videoApresentacao {
+    width: 100%;
+    max-width: 800px;
+    cursor: pointer; 
+    position: absolute;  
+    margin-top: -150px;
+}
+
+.titlee {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.title {
+    text-align: center;
+    padding-bottom: 30px;
+    height: 20vh;
+}
+
+h2 {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    color: #E75109;
+    font-size: 40px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.fileira {
+    display: flex;
+    gap: 53px;
+}
+
+
+.quadrado {
+    width: 296px;
+    height: 311px;
+    background-color: #F4AD58;
+    border-radius: 10px;
+    padding: 23px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 16px;
+
+}
+
+.imgService { 
+    width: 48px;  
+}
+
+.titleService {
+    font-family: "Poppins", sans-serif;
+    color: white;
+    
+}
+
+.descService  {
+   
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-size: 15.75px;
+    color: white;
+}
+
+.buttonService{
+    background-color: #E75109;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+    display: block; 
+    margin-inline: auto;
+    cursor: pointer;
+}
+
+.styles.bottomEnd{
+    display: block; 
+    margin-inline: auto;
+}
+
