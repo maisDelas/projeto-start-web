@@ -4,10 +4,10 @@ import image from '../../assets/image.svg'
 import gears from '../../assets/gears.svg'
 import heartbeat from '../../assets/heartbeat.svg'
 import chef_hat from '../../assets/chef-hat.svg'
-import video_apresentacao from '../../assets/video-apresentacao.svg'
+
 
 import styles from './home.module.css'
-import Card from './cardService'
+// import Card from './cardService'
 
 
 function Home() {
@@ -16,11 +16,12 @@ function Home() {
             {/* Sessão de Titulo e Video */}
 
             <div className={styles.title}>
-                <h2>Conheça um pouco a +Delas:</h2>
+                <h2>Conheça um pouco a +Delas:</h2> 
             </div>
-            <div className={styles.bgcards}>
-                <div className={styles.video}>
-                    <img className={styles.videoApresentacao} src={video_apresentacao} alt="foto-video" />
+            <div className={styles.bgcards}> 
+
+                <div className={styles.videoContainer}>
+                    <iframe className={styles.video} width="600" height="360" src="https://www.youtube.com/embed/UXwPz61lxBY?si=kMwtBZjDrElhp0lP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
 
                 {/* Sessão Buscando Serviços */}
