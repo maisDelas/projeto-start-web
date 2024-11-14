@@ -7,7 +7,7 @@ import chef_hat from '../../assets/chef-hat.svg'
 import video_apresentacao from '../../assets/video-apresentacao.svg'
 
 import styles from './home.module.css'
-
+import Card from './cardService'
 
 
 function Home() {
@@ -34,8 +34,11 @@ function Home() {
 
                     <div className={styles.fileira}>
 
+
+                    {staticService.map(x => <Card {...x} />)}
+
                         {/* Card 1 */}
-                        <div className={styles.quadrado}>
+                        {/* <div className={styles.quadrado}>
                             <div className={styles.top}>
                                 <img className={styles.imgService} src={cosmetics} alt="cosmetics" />
                                 <h3 className={styles.titleService} >Moda e Beleza</h3>
@@ -47,10 +50,10 @@ function Home() {
                             <div className={styles.bottom}>
                                 <button className={styles.buttonService}>Ache uma Profissional</button>
                             </div>
-                        </div>
+                        </div> */}
 
                         {/* Card 2 */}
-                        <div className={styles.quadrado}>
+                        {/* <div className={styles.quadrado}>
                             <div className={styles.top}>
                                 <img className={styles.imgService} src={front_end_programming} alt="tecnologia" />
                                 <h3 className={styles.titleService} >Design e Tecnologia</h3>
@@ -61,10 +64,10 @@ function Home() {
                             <div className={styles.bottom}>
                                 <button className={styles.buttonService}>Ache uma Profissional</button>
                             </div>
-                        </div>
+                        </div> */}
 
                         {/* Card 3 */}
-                        <div className={styles.quadrado}>
+                        {/* <div className={styles.quadrado}>
                             <div className={styles.top}>
                                 <img className={styles.imgService} src={image} alt="calendario" />
                                 <h3 className={styles.titleService} >Eventos</h3>
@@ -76,14 +79,14 @@ function Home() {
                             <div className={styles.bottom}>
                                 <button className={styles.buttonService}>Ache uma Profissional</button>
                             </div>
-                        </div>
+                        </div>  */}
 
                     </div>
 
                     <div className={styles.fileira}>
 
                         {/* Card 4 */}
-                        <div className={styles.quadrado}>
+                        {/* <div className={styles.quadrado}>
                             <div className={styles.top}>
                                 <img className={styles.imgService} src={gears} alt="assistencia" />
                                 <h3 className={styles.titleService} >Assistência Técnica</h3>
@@ -93,10 +96,10 @@ function Home() {
                             <div className={styles.bottom}>
                                 <button className={styles.buttonService}>Ache uma Profissional</button>
                             </div>
-                        </div>
+                        </div> */}
 
                         {/* Card 5 */}
-                        <div className={styles.quadrado}>
+                        {/* <div className={styles.quadrado}>
                             <div className={styles.top}>
                                 <img className={styles.imgService} src={heartbeat} alt="coracao" />
                                 <h3 className={styles.titleService} >Saúde e Bem-estar</h3>
@@ -108,10 +111,10 @@ function Home() {
                             <div className={styles.bottom}>
                                 <button className={styles.buttonService}>Ache uma Profissional</button>
                             </div>
-                        </div>
+                        </div> */}
 
                         {/* Card 6 */}
-                        <div className={styles.quadrado}>
+                        {/* <div className={styles.quadrado}>
                             <div className={styles.top}>
                                 <img className={styles.imgService} src={chef_hat} alt="chapeu" />
                                 <h3 className={styles.titleService} >Gastronomia</h3>
@@ -122,7 +125,7 @@ function Home() {
                             <div className={styles.bottom}>
                                 <button className={styles.buttonService}>Ache uma Profissional</button>
                             </div>
-                        </div>
+                        </div> */}
 
                     </div>
 
