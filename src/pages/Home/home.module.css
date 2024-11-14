@@ -8,32 +8,31 @@
     padding-bottom: 40px;
 }
 
-.video {
+.videoContainer {
     display: flex;
     justify-content: center;
-    margin-bottom: 35px;
     height: 30vh;
     overflow: hidden;
 }
 
-
-.videoApresentacao {
-    width: 100%;
-    max-width: 800px;
+ 
+.video {
     cursor: pointer; 
     position: absolute;  
     margin-top: -150px;
-}
+} 
 
 .titlee {
     text-align: center;
-    padding-bottom: 20px;
+    padding-bottom: 25px;
+    font-weight:600; 
 }
 
 .title {
     text-align: center;
     padding-bottom: 30px;
     height: 20vh;
+    font-weight: 600;
 }
 
 h2 {
@@ -77,6 +76,9 @@ h2 {
 .titleService {
     font-family: "Poppins", sans-serif;
     color: white;
+    font-weight: bold;
+    padding:5px 0px;
+    font-size: 18px;
     
 }
 
@@ -101,8 +103,6 @@ h2 {
     cursor: pointer;
 }
 
-.styles.bottomEnd{
-    display: block; 
-    margin-inline: auto;
+.bottomEnd{
+margin-top: 50px; 
 }
-
