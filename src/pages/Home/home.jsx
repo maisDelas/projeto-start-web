@@ -7,6 +7,7 @@ import chef_hat from '../../assets/chef-hat.svg'
 import video_apresentacao from '../../assets/video-apresentacao.svg'
 
 import styles from './home.module.css'
+import Footer from '../../Components/Footer/footer'
 
 
 
@@ -119,7 +120,7 @@ function Home() {
 
             </div>
 
-
+            <Footer/>
         </div>
     )
 }
