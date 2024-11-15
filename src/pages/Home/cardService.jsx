@@ -1,7 +1,4 @@
-import styles from './cardService.module.css'
-import styles from './home.module.css'
-// import staticService from './staticService';
-import staticService from './staticService';
+import styles from './service.module.css'
 
 function Card({title, description, iconUrl, altName}) {
     return (
