@@ -16,7 +16,6 @@ export const footer = styled.footer`
 export const FooterContatos = styled.div `
        
 
-
        position: relative;
        margin: 0;
        display: flex;
@@ -258,7 +257,7 @@ img {
 export const Copyright = styled.div`
 
        border-top: 1px solid #D3A484;
-       margin-top: 10px;
+       margin-top: 15px;
        padding-top: 10px;
        width: 100%;
 
@@ -267,7 +266,7 @@ export const Copyright = styled.div`
 p {    text-align: right; 
        color: #C76938; 
        font-size: 15px; 
-
+       
 }
 
 
