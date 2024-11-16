@@ -15,9 +15,9 @@ export const footer = styled.footer`
 
 export const FooterContatos = styled.div `
 
-    flex: 1;
-    min-width: 150px;
-    margin: -90px 20px;
+       flex: 1;
+       min-width: 150px;
+       margin: -90px 20px;
 
     
 
