@@ -15,7 +15,7 @@ export default [
     {
         title:'Design e Tecnologia',
         iconUrl:front_end_programming,
-        description:'Soluções em design gráfico, desenvolvimento de sites e inovação tecnológica,oferecendo serviços que atende às suas necessidades.',
+        description:'Soluções em design gráfico, desenvolvimento de sites e inovação tecnológica.',
         altName:'Tecnologia'
     },
     {
