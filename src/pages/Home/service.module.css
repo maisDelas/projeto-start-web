@@ -1,0 +1,50 @@
+.quadrado {
+    width: 296px;
+    height: 311px;
+    background-color: #F4AD58;
+    border-radius: 10px;
+    padding: 23px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 16px;
+
+}
+
+.imgService { 
+    width: 48px;  
+}
+
+.titleService {
+    font-family: "Poppins", sans-serif;
+    color: white;
+    font-weight: bold;
+    padding:5px 0px;
+    font-size: 18px;
+    
+}
+
+.descService  {
+   
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-size: 15.75px;
+    color: white;
+}
+
+.buttonService{
+    background-color: #E75109;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+    display: block; 
+    margin-inline: auto;
+    cursor: pointer;
+}
+
+.bottomEnd{
+margin-top: 50px; 
+}
