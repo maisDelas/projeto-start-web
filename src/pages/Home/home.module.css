@@ -15,11 +15,12 @@
     overflow: hidden;
 }
 
- 
+
 .video {
     cursor: pointer; 
     position: absolute;  
     margin-top: -150px;
+
 } 
 
 .titlee {
@@ -70,3 +71,4 @@ h2 {
 .bottomEnd{
 margin-top: 50px; 
 }
+

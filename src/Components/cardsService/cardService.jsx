@@ -20,19 +20,6 @@ function Card({title, description, iconUrl, altName}) {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
         // <div className={styles.quadrado}>
         //     <div className={styles.top}>
         //         <img className={styles.imgService} src={iconUrl} alt={altName} />

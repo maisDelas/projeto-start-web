@@ -1,7 +1,4 @@
-import logo from '../../assets/Logomaroon.svg'
-
-
-
+import logo from '../../assets/Logo-nav.svg'
 
 
 function EU() {
@@ -9,7 +6,7 @@ function EU() {
       <header className="header">
         <div className="nav">
         <img src={logo} alt="" />
-          <nav>
+          <nav> 
             <ul>
               <li><a href="#about">Sobre nós</a></li>
               <li><a href="#services">Serviços</a></li>

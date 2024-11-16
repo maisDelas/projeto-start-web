@@ -39,7 +39,7 @@ export const Stylebutton = styled.button`
     border: none;
     padding: 8px;
     border-radius: 10px;
-    display: block; 
+    display: block;  
     margin-inline: auto;
     cursor: pointer;
 
@@ -47,4 +47,7 @@ export const Stylebutton = styled.button`
         background-color: #FF7431;
     }
 `
+
+
+
 

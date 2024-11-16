@@ -260,7 +260,7 @@ export const Copyright = styled.div`
 
 p {    text-align: right; 
        color: #C76938; 
-       font-size: 18px;
+       font-size: 1px;
        
 }
 
