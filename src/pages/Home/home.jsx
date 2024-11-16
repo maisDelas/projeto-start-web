@@ -1,7 +1,5 @@
 import styles from './home.module.css'
 import Footer from '../../Components/Footer/footer'
-import Card from './cardService';
-import staticService from './staticService';
 import Card from '../../Components/cardsService/cardService';
 import staticService from '../../Components/cardsService/staticService';
 import { Stylebutton } from '../../Components/cardsService/cardService.styles';

@@ -1,5 +1,5 @@
 import { Descservice, Iconservice, Stylebutton, Stylequadrado, Titleservice } from './cardService.styles';
-import styles from './service.module.css'
+
 
 function Card({title, description, iconUrl, altName}) {
     return (
