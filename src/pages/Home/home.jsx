@@ -3,6 +3,8 @@ import Card from './cardService';
 import staticService from './staticService';
 
 
+
+
 function Home() {
     return (
         <div>
