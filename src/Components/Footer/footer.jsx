@@ -52,13 +52,9 @@ const Footer = () => {
             </S.FooterInscreva>
             <S.FooterCopyRight>Copyright 2024 @ delas. Todos os direitos reservados</S.FooterCopyRight>
             <S.FooterMidias>
-            <a href="#">
-            <img src={instagramIcon} alt="Instagram" /> 
-            </a>                            
-            <a href="#">
-                <img  src= {facebookIcon} alt="Facebook"></img></a>
-                <a href="#">
-                <img  src= {linkedinIcon} alt="Facebook"></img></a>                          
+            <a href="#"><img src={instagramIcon} alt="Instagram" /> </a>                            
+            <a href="#"><img  src= {facebookIcon} alt="Facebook"></img></a>
+            <a href="#"><img  src= {linkedinIcon} alt="Facebook"></img></a>                          
             </S.FooterMidias>
         </S.footer>
 
