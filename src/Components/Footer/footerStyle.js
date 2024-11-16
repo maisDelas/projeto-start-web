@@ -1,23 +1,30 @@
+import { MdPadding } from "react-icons/md";
 import styled from "styled-components";
+
 
 export const footer = styled.footer`
 
+   
     background-color: #F6E5D3;
     display: flex;
     flex-wrap: wrap;
-    padding: 150px 100px;
-    padding-bottom: 40px;
-    justify-content: space-between;
     color: #C76938;
     font-family: Arial, sans-serif;
+    padding-top: 70px;
+    border: solid black;
+
 
 `;
 
 export const FooterContatos = styled.div `
-
-       flex: 1;
-       min-width: 150px;
-       margin: -90px 20px;
+       
+       position: relative;
+       margin: 0;
+       display: flex;
+       flex-direction: column;
+       top: -50px;
+     
+       
 
     
 
@@ -34,8 +41,20 @@ export const FooterContatos = styled.div `
         margin: 5px 0;
         font-size: 15px;
         margin-top: 10px;
+        display: flex;
+             
         
     }
+
+     img {
+       margin-right: 10px;
+       
+       
+     }
+
+
+
+
 `;
 
 export const FooterSobre= styled.div `
@@ -43,27 +62,34 @@ export const FooterSobre= styled.div `
         flex: 1;
         min-width: 150px;
         margin: 10px 20px;
-        margin-left: 45px;
-    
+        margin-left: 60px;
+        padding: 10px;
+        border: solid red ;
+        
+
 
     h3 {
         font-size: 18px;
-        color: #C76938;
+        color: #E35D1C;
         margin-bottom: 15px;
+      
     }
 
     p {
         color: #C76938;
         font-size: 15px;
+       
         
     }
      
 `;
 export const FooterLink = styled.div ` 
+       
 
-    flex: 1;
-    min-width: 150px;
-    margin: 10px 15px;
+       flex: 0 1 200px;
+       margin: 5px 10px;
+       border: solid red;
+
    
 
     
@@ -71,7 +97,8 @@ export const FooterLink = styled.div `
     h3 {
         font-size: 18px;
         margin-bottom: 15px;
-    
+        color: #E35D1C;
+        
     
     }
 
@@ -79,7 +106,7 @@ export const FooterLink = styled.div `
         
         padding: 0;
         margin: 0;  
-        
+        color: #D9974D
        
     }
 
@@ -106,25 +133,25 @@ export const FooterLink = styled.div `
 
 export const FooterInfor= styled.div` 
 
-
-        flex: 1;
+        flex: 0 1 200px;
         min-width: 150px;
         margin: 10px 20px;
-        margin-left: 100px;
+        margin-left: 40px;
+        border: solid red;
 
 
     h3 {
         font-size: 18px;
         color: #C76938;
         margin-bottom: 15px;
-    
+        color: #E35D1C
     }
 
     ul {
         
         padding: 0;
         margin: 0;  
-      
+       
        
     }
 
@@ -149,23 +176,29 @@ export const FooterInfor= styled.div`
 `;
 
 export const FooterInscreva= styled.div`
-   
+       
+
        flex: 1;
-       margin: 20px 40px;
+       position: relative;
+       margin: 0;
        display: flex;
        flex-direction: column;
-       margin-bottom: 90px;
-       margin-top: -60px;
-      
+       top: -35px;
+       margin-left: 40px;
+
+
+     
+
   
     input[type="email"] {
 
-
+        
+        width: 35vh;
         padding: 10px 5px;
         border-radius: 15px;
         border: 1px solid #D3A484;
         margin-top: 10px;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
         
         
 
@@ -175,8 +208,8 @@ export const FooterInscreva= styled.div`
 
     button {
     
-        width: 150px;
-        background-color: #C76938;
+        width: 100px;
+        background-color: #E35D1C;
         color: white;
         padding: 7px;
         border: none;
@@ -187,6 +220,8 @@ export const FooterInscreva= styled.div`
 
     }
 
+
+
     button:hover {
         background-color: #A7552D;
 
@@ -195,35 +230,37 @@ export const FooterInscreva= styled.div`
 `;
 
 export const FooterMidias= styled.div`
-      
-        margin-left: 450px;
-        flex-basis: 60%;
-        margin-top: -45px;
-        height: auto;
-
-        
        
+        position: relative;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        margin: 20px;
+        gap: 15px;
+        top: -53px;
+    
+        
+    
         img { 
         
         font-size: 40px;
-        padding: 10px 0;
-        margin: 10px 30px;
-        margin-right: 50px;
-        
-       
-
-        
+        padding: 0;    
        }        
 `;
 
-export const FooterCopyRight = styled.p`
+export const FooterCopyRight = styled.div`
     
-    width: 100%;
-    text-align: right;
-    margin-top: 30px;
-    color: #C76938;
-    font-size: 20px;
-    border-top: 1px solid #D3A484;
-    padding-top: 10px;
+       width: 100%;
+       text-align: right;
+       color: #C76938;
+       font-size: 15px;
+       border-top: 1px solid #D3A484;
+       padding: 5px;
+       border: solid red;
+
+
+
+      
+
 
 `;

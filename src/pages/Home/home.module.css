@@ -8,32 +8,31 @@
     padding-bottom: 40px;
 }
 
-.video {
+.videoContainer {
     display: flex;
     justify-content: center;
-    margin-bottom: 35px;
     height: 30vh;
     overflow: hidden;
 }
 
-
-.videoApresentacao {
-    width: 100%;
-    max-width: 800px;
+ 
+.video {
     cursor: pointer; 
     position: absolute;  
     margin-top: -150px;
-}
+} 
 
 .titlee {
     text-align: center;
-    padding-bottom: 20px;
+    padding-bottom: 25px;
+    font-weight:600; 
 }
 
 .title {
     text-align: center;
     padding-bottom: 30px;
     height: 20vh;
+    font-weight: 600;
 }
 
 h2 {
@@ -45,48 +44,15 @@ h2 {
 
 .container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-
+    justify-content: center;
 }
 
 .fileira {
-    display: flex;
-    gap: 53px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px 60px;
 }
 
-
-.quadrado {
-    width: 296px;
-    height: 311px;
-    background-color: #F4AD58;
-    border-radius: 10px;
-    padding: 23px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 16px;
-
-}
-
-.imgService { 
-    width: 48px;  
-}
-
-.titleService {
-    font-family: "Poppins", sans-serif;
-    color: white;
-    
-}
-
-.descService  {
-   
-    font-family: "Poppins", sans-serif;
-    font-style: normal;
-    font-size: 15.75px;
-    color: white;
-}
 
 .buttonService{
     background-color: #E75109;
@@ -101,8 +67,6 @@ h2 {
     cursor: pointer;
 }
 
-.styles.bottomEnd{
-    display: block; 
-    margin-inline: auto;
+.bottomEnd{
+margin-top: 50px; 
 }
-
