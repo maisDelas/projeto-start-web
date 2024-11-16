@@ -15,11 +15,12 @@
     overflow: hidden;
 }
 
- 
+
 .video {
     cursor: pointer; 
     position: absolute;  
     margin-top: -150px;
+
 } 
 
 .titlee {
