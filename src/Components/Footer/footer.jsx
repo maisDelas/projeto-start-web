@@ -50,7 +50,10 @@ const Footer = () => {
                 <input type="Email" placeholder="Digite seu email" />
                 <button>Se inscreva</button>
             </S.FooterInscreva>
+<<<<<<< HEAD
             
+=======
+>>>>>>> 53f6ebbc0df2c3d68c7ead934b8cbfd04b580915
             <S.FooterCopyRight>Copyright 2024 @ delas. Todos os direitos reservados</S.FooterCopyRight>
             <S.FooterMidias>
             

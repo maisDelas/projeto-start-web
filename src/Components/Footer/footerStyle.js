@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 
-export const footer = styled.footer`
+export const footer = styled.footer `
 
     background-color: #F6E5D3;
     display: flex;
@@ -21,24 +21,32 @@ export const FooterContatos = styled.div `
        display: flex;
        flex-direction: column;
        top: -50px;
-
+     
     h3 {
         font-size: 18px;
         color: #C76938;
+<<<<<<< HEAD
         margin-bottom: 15px;   
+=======
+>>>>>>> 53f6ebbc0df2c3d68c7ead934b8cbfd04b580915
         margin-bottom: -8px;
         
     }
 
     p {
+
         margin: 5px 0;
         font-size: 15px;
         margin-top: 10px;
-        display: flex;     
+        display: flex;
+             
+        
     }
 
      img {
-       margin-right: 10px; 
+       margin-right: 10px;
+       
+       
      }
 
 
@@ -50,7 +58,7 @@ export const FooterSobre= styled.div `
 
         flex: 1;
         min-width: 150px;
-        margin: 5px 10px;
+        margin: 10px 20px;
         margin-left: 60px;
         padding: 10px;
         
@@ -58,53 +66,72 @@ export const FooterSobre= styled.div `
     h3 {
         font-size: 18px;
         color: #E35D1C;
-        margin-bottom: 15px;     
+        margin-bottom: 15px;
+      
     }
 
     p {
         color: #C76938;
-        font-size: 15px;    
+        font-size: 15px;
+       
+        
     }
      
 `;
 export const FooterLink = styled.div ` 
+       
+
        flex: 0 1 200px;
        margin: 5px 10px;
+<<<<<<< HEAD
        border: solid red;
+=======
+>>>>>>> 53f6ebbc0df2c3d68c7ead934b8cbfd04b580915
 
     h3 {
         font-size: 18px;
         margin-bottom: 15px;
-        color: #E35D1C;  
+        color: #E35D1C;
+        
+    
     }
 
-    ul {        
+    ul {
+        
         padding: 0;
         margin: 0;  
-        color: #D9974D       
+        color: #D9974D
+       
     }
 
     li {
         margin: 5px 0;
-        list-style-type: none;          
+        list-style-type: none;  
+        
+        
     }
 
     a {
+
         font-size: 15px;
         color: #C76938;
-        text-decoration: none;        
+        text-decoration: none;
+        
     }
 
     a:hover {
-        text-decoration: underline;     
+        text-decoration: underline;
+     
     }
 `;
 
 export const FooterInfor= styled.div` 
+
         flex: 0 1 200px;
         min-width: 150px;
-        margin: 5px 10px;
+        margin: 10px 20px;
         margin-left: 40px;
+
 
     h3 {
         font-size: 18px;
@@ -113,28 +140,37 @@ export const FooterInfor= styled.div`
         color: #E35D1C
     }
 
-    ul {      
+    ul {
+        
         padding: 0;
-        margin: 0;     
+        margin: 0;  
+       
+       
     }
 
     li {
         margin: 5px 0;
-        list-style-type: none;      
+        list-style-type: none;  
+        
+        
     }
 
     a {
         font-size: 15px;
         color: #C76938;
-        text-decoration: none;         
+        text-decoration: none;  
+        
     }
 
     a:hover {
-        text-decoration: underline;    
+        text-decoration: underline;
+     
     }
 `;
 
 export const FooterInscreva= styled.div`
+       
+
        flex: 1;
        position: relative;
        margin: 0;
@@ -143,6 +179,10 @@ export const FooterInscreva= styled.div`
        top: -35px;
        margin-left: 40px;
 
+
+     
+
+  
     input[type="email"] {
 
         
@@ -151,7 +191,12 @@ export const FooterInscreva= styled.div`
         border-radius: 15px;
         border: 1px solid #D3A484;
         margin-top: 10px;
-        margin-bottom: 5px; 
+        margin-bottom: 5px;
+        
+        
+
+
+    
     }
 
     button {
@@ -164,14 +209,20 @@ export const FooterInscreva= styled.div`
         border-radius: 15px;
         cursor: pointer;
         font-size: 15px;
+       
+
     }
+
+
 
     button:hover {
         background-color: #A7552D;
+
     }
 
 `;
 
+<<<<<<< HEAD
 export const FooterMidias= styled.div`       
        
         position: relative;
@@ -191,6 +242,15 @@ export const FooterCopyRight = styled.div`
        text-align: right;
        color: #C76938;
        font-size: 15px;
+=======
+export const FooterMidias= styled.div`
+       
+
+       
+        position: relative;
+        display: flex;
+        margin: 20px;
+>>>>>>> 53f6ebbc0df2c3d68c7ead934b8cbfd04b580915
         flex-direction: column;
         width: 100%;
         margin-top: 50px;
@@ -214,7 +274,7 @@ export const SocialIcons = styled.div`
 img { 
       margin-left: 30px; 
       border: none;
-      height: 20px;
+      height: 30px;
 
 }
 
@@ -230,8 +290,14 @@ export const Copyright = styled.div`
 
 p {    text-align: right; 
        color: #C76938; 
-       font-size: 15px; 
+       font-size: 1px;
        
 }
 
+<<<<<<< HEAD
 `
+=======
+
+
+`;
+>>>>>>> 53f6ebbc0df2c3d68c7ead934b8cbfd04b580915
