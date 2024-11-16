@@ -1,6 +1,7 @@
 import styles from './home.module.css'
-import Card from './cardService';
-import staticService from './staticService';
+import Card from '../../Components/cardsService/cardService';
+import staticService from '../../Components/cardsService/staticService';
+import { Stylebutton } from '../../Components/cardsService/cardService.styles';
 
 
 
@@ -36,7 +37,8 @@ function Home() {
                 </div>
                 {/* Ultimo Botão */}
                 <div className={styles.bottomEnd}>
-                    <button className={styles.buttonService}>Ir para mapeamento</button>
+                    <Stylebutton>Ir para o mapeamento</Stylebutton>
+                
                 </div>
             </div>
 

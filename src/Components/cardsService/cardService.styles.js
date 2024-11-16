@@ -1,4 +1,6 @@
-.quadrado {
+import styled from "styled-components";
+
+export const Stylequadrado = styled.div`
     width: 296px;
     height: 311px;
     background-color: #F4AD58;
@@ -9,30 +11,27 @@
     justify-content: space-between;
     gap: 16px;
 
-}
+`
+export const Iconservice = styled.img`
+    width: 48px;
+`
 
-.imgService { 
-    width: 48px;  
-}
-
-.titleService {
+export const Titleservice = styled.h3`
     font-family: "Poppins", sans-serif;
     color: white;
     font-weight: bold;
     padding:5px 0px;
     font-size: 18px;
-    
-}
+`
 
-.descService  {
-   
+export const Descservice = styled.p`
     font-family: "Poppins", sans-serif;
     font-style: normal;
     font-size: 15.75px;
     color: white;
-}
+`
 
-.buttonService{
+export const Stylebutton = styled.button`
     background-color: #E75109;
     font-family: "Poppins", sans-serif;
     font-style: normal;
@@ -40,15 +39,15 @@
     border: none;
     padding: 8px;
     border-radius: 10px;
-    display: block; 
+    display: block;  
     margin-inline: auto;
     cursor: pointer;
-}
 
-.buttonService:hover{
-    background-color: #ff3c00;
-}
+    &:hover {
+        background-color: #FF7431;
+    }
+`
 
-.bottomEnd{
-margin-top: 50px; 
-}
+
+
+
