@@ -1,6 +1,6 @@
 import styles from './home.module.css'
-import Card from './cardService';
-import staticService from './staticService';
+import Card from '../../Components/cardsService/cardService';
+import staticService from '../../Components/cardsService/staticService';
 
 
 function Home() {
