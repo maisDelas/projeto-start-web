@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 
-export const footer = styled.footer`
+export const footer = styled.footer `
 
     background-color: #F6E5D3;
     display: flex;
@@ -22,11 +22,6 @@ export const FooterContatos = styled.div `
        flex-direction: column;
        top: -50px;
      
-       
-
-    
-
-
     h3 {
         font-size: 18px;
         color: #C76938;
@@ -249,7 +244,7 @@ export const SocialIcons = styled.div`
 img { 
       margin-left: 30px; 
       border: none;
-      height: 20px;
+      height: 30px;
 
 }
 
@@ -265,7 +260,7 @@ export const Copyright = styled.div`
 
 p {    text-align: right; 
        color: #C76938; 
-       font-size: 15px; 
+       font-size: 18px;
        
 }
 
