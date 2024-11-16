@@ -9,6 +9,16 @@ export default defineConfig({
   server: {
     host: true
   },
+  esbuild: {
+    loader: 'jsx',
+  },
+  optimizeDeps: {
+    esbuildOptions: {
+      loader: {
+        '.js': 'jsx',
+      },
+    },
+  },
   css: {
     postcss: {
       plugins: [

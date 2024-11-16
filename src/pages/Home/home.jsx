@@ -1,20 +1,27 @@
 import styles from './home.module.css'
 import Footer from '../../Components/Footer/footer'
-import Card from '../../Components/cardsService/cardService';
 import staticService from '../../Components/cardsService/staticService';
 import { Stylebutton } from '../../Components/cardsService/cardService.styles';
+import Card from '../../Components/cardsService/cardService';
+import Navbar from '../../Components/navbar/navbar';
+
 
 
 
 
 function Home() {
     return (
-        <div>
-            {/* Sessão de Titulo e Video */}
 
+         <div>
+
+            <Navbar/>
+
+            {/* Sessão de Titulo e Video */}
             <div className={styles.title}>
                 <h2>Conheça um pouco a +Delas:</h2>
             </div>
+
+
             <div className={styles.bgcards}>
 
                 <div className={styles.videoContainer}>
@@ -22,7 +29,6 @@ function Home() {
                 </div>
 
                 {/* Sessão Buscando Serviços */}
-
                 <div className={styles.titlee}>
                     <h2>Buscando algum serviço?</h2>
                 </div>
@@ -31,7 +37,7 @@ function Home() {
 
                     <div className={styles.fileira}>
 
-                        {staticService.map(x=> <Card {...x} />)}
+                        {staticService.map(x => <Card {...x} />)}
 
                     </div>
 
@@ -39,16 +45,12 @@ function Home() {
                 {/* Ultimo Botão */}
                 <div className={styles.bottomEnd}>
                     <Stylebutton>Ir para o mapeamento</Stylebutton>
-                
                 </div>
             </div>
-            <Footer/>
+            <Footer />
         </div>
+      
     )
 }
 
 export default Home;
-
-
-
-

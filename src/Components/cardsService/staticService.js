@@ -9,7 +9,7 @@ export default [
     {
         title: 'Moda e Beleza',
         iconUrl: cosmetics,
-        description:'Consultoria de Estilo,Maquiagem Profissional,Cabeleireira, EstilizaçãoServiços de Estética e muito mais!',
+        description:'Consultoria de Estilo, Maquiagem Profissional, Cabeleireira, EstilizaçãoServiços de Estética e muito mais!',
         altName:'Cosmetics'
     },
     {
@@ -21,7 +21,7 @@ export default [
     {
         title: 'Eventos',
         iconUrl: image,
-        description: 'Planejamento de Eventos decoração e ambientação, coordenação de festas, fotografia geral.Deixe o momento ainda mais incrível!',
+        description: 'Planejamento de eventos decoração e ambientação, coordenação de festas, fotografia geral.Deixe o momento ainda mais incrível!',
         altName: 'Calendário'
     },
     {

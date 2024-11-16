@@ -50,6 +50,8 @@ const Footer = () => {
                 <input type="Email" placeholder="Digite seu email" />
                 <button>Se inscreva</button>
             </S.FooterInscreva>
+            
+            <S.FooterCopyRight>Copyright 2024 @ delas. Todos os direitos reservados</S.FooterCopyRight>
             <S.FooterMidias>
             
                 <S.Copyright>
@@ -65,6 +67,8 @@ const Footer = () => {
                 <img  src= {linkedinIcon} alt="Facebook"></img></a>
                 </S.SocialIcons>
             </S.FooterMidias>
+
+            
         </S.footer>
 
     );
