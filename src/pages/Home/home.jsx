@@ -1,7 +1,13 @@
 import styles from './home.module.css'
+<<<<<<< HEAD
 import Footer from '../../Components/Footer/footer'
 import Card from './cardService';
 import staticService from './staticService';
+=======
+import Card from '../../Components/cardsService/cardService';
+import staticService from '../../Components/cardsService/staticService';
+import { Stylebutton } from '../../Components/cardsService/cardService.styles';
+>>>>>>> 7ab4026e970675a747671c49dbe38b9705987749
 
 
 
@@ -36,7 +42,8 @@ function Home() {
                 </div>
                 {/* Ultimo Botão */}
                 <div className={styles.bottomEnd}>
-                    <button className={styles.buttonService}>Ir para mapeamento</button>
+                    <Stylebutton>Ir para o mapeamento</Stylebutton>
+                
                 </div>
             </div>
             <Footer/>
