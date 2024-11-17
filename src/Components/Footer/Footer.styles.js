@@ -123,7 +123,7 @@ export const FooterInfor= styled.div`
 
     h3 {
         font-size: 18px;
-        color: #C76938;
+        //color: #C76938;
         margin-bottom: 15px;
         color: #E35D1C
     }
