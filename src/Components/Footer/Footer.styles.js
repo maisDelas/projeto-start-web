@@ -1,99 +1,153 @@
 import styled from "styled-components";
 
-
 export const footer = styled.footer `
 
+    padding-bottom: 5px;
+    width: 100%;
     background-color: #F6E5D3;
     display: flex;
-    flex-wrap: wrap;
     color: #C76938;
     font-family: Arial, sans-serif;
-    padding: 45px 35px;
+    padding: 35px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 370px;
 
 `;
 
 export const FooterContatos = styled.div `
        
-
-       position: relative;
-       margin: 0;
+   
        display: flex;
        flex-direction: column;
-       top: -50px;
-     
+       position: relative;
+       top: -40px;
+       
+       
+      
+
+
+       
     h3 {
-        font-size: 18px;
+
+        font-size: 25px;
+        font-weight: 500;
         color: #C76938;
-        margin-bottom: -8px;
+        margin-top: 5px;
         
     }
 
-    p {
+    
+`;
 
-        margin: 5px 0;
-        font-size: 15px;
-        margin-top: 10px;
-        display: flex;
-             
-        
+export const FooterImg= styled.div`
+     
+     display: flex;
+     flex-direction: column;
+     
+
+
+    div { 
+
+       display: flex; 
+       margin: 5px 0;
+       img {
+         
+         margin-right: 10px;
+
+       }
     }
-
-     img {
-       margin-right: 10px;
-       
-       
-     }
-
+     
 `;
 
 export const FooterSobre= styled.div `
+       
+    margin:0 5%;
 
-        flex: 1;
-        min-width: 150px;
-        margin: 10px 20px;
-        margin-left: 60px;
-        padding: 10px;
-        
-
+  
     h3 {
-        font-size: 18px;
+
+        font-size: 25px;
         color: #E35D1C;
-        margin-bottom: 15px;
+        font-weight: 500;
+        
       
     }
 
     p {
         color: #C76938;
         font-size: 15px;
-       
-        
+        word-wrap: break-word;
+        width: 200px;
     }
      
 `;
-export const FooterLink = styled.div ` 
-       
 
-       flex: 0 1 200px;
-       margin: 5px 10px;
+export const FooterInfor= styled.div` 
+     
+       margin: 0 5%;
+       display: flex;
+       flex-direction: column;
+       margin-left: 10px;
+       
+    
 
     h3 {
-        font-size: 18px;
-        margin-bottom: 15px;
+        font-size: 25px;
+        color: #C76938;
+        font-weight: 500;
+        color: #E35D1C
+    }
+
+       
+
+    li {
+       
+
+        list-style-type: none;  
+        
+        
+    }
+
+    a {
+        font-size: 15px;
+        color: #C76938;
+        text-decoration: none;  
+        
+    }
+
+    a:hover {
+        text-decoration: underline;
+     
+    }
+`;
+
+
+export const FooterLink = styled.div ` 
+       
+      
+
+      
+
+    h3 {
+        font-size: 25px;
+        font-weight: 500;
         color: #E35D1C;
         
     
     }
 
     ul {
-        
-        padding: 0;
-        margin: 0;  
+       
+
         color: #D9974D
+    
        
     }
 
     li {
-        margin: 5px 0;
+
         list-style-type: none;  
         
         
@@ -113,65 +167,16 @@ export const FooterLink = styled.div `
     }
 `;
 
-export const FooterInfor= styled.div` 
-
-        flex: 0 1 200px;
-        min-width: 150px;
-        margin: 10px 20px;
-        margin-left: 40px;
-
-
-    h3 {
-        font-size: 18px;
-        //color: #C76938;
-        margin-bottom: 15px;
-        color: #E35D1C
-    }
-
-    ul {
-        
-        padding: 0;
-        margin: 0;  
-       
-       
-    }
-
-    li {
-        margin: 5px 0;
-        list-style-type: none;  
-        
-        
-    }
-
-    a {
-        font-size: 15px;
-        color: #C76938;
-        text-decoration: none;  
-        
-    }
-
-    a:hover {
-        text-decoration: underline;
-     
-    }
-`;
 
 export const FooterInscreva= styled.div`
        
 
-       flex: 1;
-       position: relative;
-       margin: 0;
        display: flex;
        flex-direction: column;
-       top: -35px;
        margin-left: 40px;
+       margin-top: -100px;
 
-
-     
-
-  
-    input[type="email"] {
+       input {
 
         
         width: 35vh;
@@ -180,9 +185,6 @@ export const FooterInscreva= styled.div`
         border: 1px solid #D3A484;
         margin-top: 10px;
         margin-bottom: 5px;
-        
-        
-
 
     
     }
@@ -211,56 +213,77 @@ export const FooterInscreva= styled.div`
 `;
 
 export const FooterMidias= styled.div`
-       
-
-       
-        position: relative;
+      
+        
         display: flex;
         margin: 20px;
-        flex-direction: column;
+        flex-direction: row;
         width: 100%;
-        margin-top: 50px;
+        justify-content: center;
+        align-items: center;
         margin-left: -30px;
         
-        
-
+     
 `;
 
 export const SocialIcons = styled.div`
      
 
-     position: relative;
      display: flex;
-     margin-right: 500px;
-     margin-top: 20px;
-     margin-left: 650px;
-     top: -50px;
-
-
+     justify-content: center;
+     margin-left: 45%;
+     gap: 15px;
+     margin-top: 5px;
+    
+    
+     
 img { 
-      margin-left: 30px; 
+      
       border: none;
       height: 30px;
-
+     
 }
 
 `;
 
 export const FooterCopyright = styled.div`
+       
 
-       border-top: 1px solid #D3A484;
-       margin-top: 15px;
-       padding-top: 10px;
-       width: 100%;
+       
+       
+       margin-left: 40px;
 
        
 
 p {    text-align: right; 
        color: #C76938; 
-       font-size: 1px;
+       font-size: 20px;
+       margin-top: 5px;
        
 }
 
+`;
+
+export const FooterPai = styled.div `
+        
+
+        border-top: 1px solid #D3A484;
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      
+
+        
+`;
+
+export const FooterContainer = styled.div `
+
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      
 
 
 `;
