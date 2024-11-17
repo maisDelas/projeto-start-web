@@ -1,8 +1,8 @@
-import styles from './home.module.css'
 import Footer from '../../Components/footer/Footer'
 import staticService from '../../Components/cardsService/StaticService';
-import { Stylebutton } from '../../Components/botaoglobal/Button.style';
+import {StyleButton} from '../../Components/botaoglobal/Button.style'
 import Card from '../../Components/cardsService/CardService';
+import * as S from './Home.styles.js';
 
 
 
@@ -13,36 +13,30 @@ function Home() {
 
          <div>
             {/* Sessão de Titulo e Video */}
-            <div className={styles.title}>
-                <h2>Conheça um pouco a +Delas:</h2>
-            </div>
-
-
-            <div className={styles.bgcards}>
-
-                <div className={styles.videoContainer}>
-                    <iframe className={styles.video} width="600" height="360" src="https://www.youtube.com/embed/UXwPz61lxBY?si=kMwtBZjDrElhp0lP" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
-                </div>
+            <S.Title> <h2>Conheça um pouco a +Delas:</h2></S.Title>            
+            <S.Bgcard>
+                <S.Containervideo>
+                    <S.Styledifreme 
+                    width="600" height="360"
+                    src={`https://www.youtube.com/embed/UXwPz61lxBY?si=kMwtBZjDrElhp0lP`}
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen />
+                </S.Containervideo>
 
                 {/* Sessão Buscando Serviços */}
-                <div className={styles.titlee}>
-                    <h2>Buscando algum serviço?</h2>
-                </div>
 
-                <div className={styles.container}>
-
-                    <div className={styles.fileira}>
-
+                <S.Styletitle> <h2>Buscando algum serviço?</h2></S.Styletitle>
+                <S.Cardcontainer>
                         {staticService.map( (x,i) => <Card key={`Card_${i}`} {...x} />)}
+                      
+                </S.Cardcontainer>
+               
+                {/* Botão para o mapeamento */}
 
-                    </div>
+                <StyleButton>Ir para o mapeamento</StyleButton>
+            </S.Bgcard>
 
-                </div>
-                {/* Ultimo Botão */}
-                <div className={styles.bottomEnd}>
-                    <Stylebutton>Ir para o mapeamento</Stylebutton>
-                </div>
-            </div>
             <Footer />
         </div>
       
@@ -50,17 +44,3 @@ function Home() {
 }
 
 export default Home;
-
-
-
-
- // <div>
-        //     <Title>
-        //         <h2>Conheça um pouco a +Delas:</h2>
-        //     </Title>
-        //     <Containervideo><iframe className={styles.video} width="600" height="360" src="https://www.youtube.com/embed/UXwPz61lxBY?si=kMwtBZjDrElhp0lP" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe></Containervideo>
-        //     <Bgcard></Bgcard> 
-            
-        //     <Card></Card>
-
-        // </div>
