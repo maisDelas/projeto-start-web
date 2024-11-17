@@ -1,7 +1,7 @@
 import styles from './home.module.css'
-import Footer from '../../Components/footer/Footer.jsx'
-import staticService from '../../Components/cardsService/staticService';
-import { Stylebutton } from '../../Components/botaoGlobal/Button.style';
+import Footer from '../../Components/footer/Footer'
+import staticService from '../../Components/cardsService/StaticService';
+import { Stylebutton } from '../../Components/botaoglobal/Button.style';
 import Card from '../../Components/cardsService/CardService';
 
 
