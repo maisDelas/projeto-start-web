@@ -13,6 +13,7 @@ export const footer = styled.footer `
     justify-content: center;
     align-items: center;
     height: 370px;
+    
 
 `;
 
