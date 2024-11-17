@@ -1,5 +1,5 @@
 import React from 'react';
-import * as S from './footerStyle'
+import * as S from './Footer.styles'
 import facebookIcon from "../../assets/facebook.svg";
 import linkedinIcon from "../../assets/linkedin.svg";
 import instagramIcon from "../../assets/instagram.svg";
@@ -42,7 +42,7 @@ const Footer = () => {
                     <li><a href="#">Termos e condições</a></li>
                     <li><a href="#">Política de privaidade</a></li>
                     <li><a href="#">Mapeamento de serviços</a></li>
-                    <li><a href="#">Suporte</a></li>
+                    <li><a href="#">Suporte</a></li>       
                 </ul>
             </S.FooterLink>
             <S.FooterInscreva>
@@ -50,11 +50,11 @@ const Footer = () => {
                 <input type="Email" placeholder="Digite seu email" />
                 <button>Se inscreva</button>
             </S.FooterInscreva>
-            <S.FooterCopyRight>Copyright 2024 @ delas. Todos os direitos reservados</S.FooterCopyRight>
+             <S.FooterCopyright>Copyright 2024 @ delas. Todos os direitos reservados</S.FooterCopyright> 
             <S.FooterMidias>
-                <S.Copyright>
+                <S.FooterCopyright>
                 <p>Copyright 2024 @ delas. Todos os direitos reservados</p>  
-                </S.Copyright>                     
+                </S.FooterCopyright>                     
                 <S.SocialIcons>
             <a href="#">
             <img src={instagramIcon} alt="Instagram" /> 
@@ -65,8 +65,6 @@ const Footer = () => {
                 <img  src= {linkedinIcon} alt="Facebook"></img></a>
                 </S.SocialIcons>
             </S.FooterMidias>
-
-            
         </S.footer>
 
     );

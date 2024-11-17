@@ -1,4 +1,4 @@
-import { Descservice, Iconservice, Stylebutton, Stylequadrado, Titleservice } from './cardService.styles';
+import { Descservice, Iconservice, Stylebutton, Stylequadrado, Titleservice } from './CardService.styles';
 
 
 function Card({title, description, iconUrl, altName}) {

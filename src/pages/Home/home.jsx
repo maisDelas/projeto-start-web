@@ -1,7 +1,7 @@
 import styles from './home.module.css'
-import Footer from '../../Components/Footer/footer'
+import Footer from '../../Components/footer/Footer.jsx'
 import staticService from '../../Components/cardsService/staticService';
-import { Stylebutton } from '../../Components/cardsService/cardService.styles';
+import { Stylebutton } from '../../Components/botaoglobal/Button.style';
 import Card from '../../Components/cardsService/cardService';
 
 
@@ -21,7 +21,7 @@ function Home() {
             <div className={styles.bgcards}>
 
                 <div className={styles.videoContainer}>
-                    <iframe className={styles.video} width="600" height="360" src="https://www.youtube.com/embed/UXwPz61lxBY?si=kMwtBZjDrElhp0lP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe className={styles.video} width="600" height="360" src="https://www.youtube.com/embed/UXwPz61lxBY?si=kMwtBZjDrElhp0lP" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
                 </div>
 
                 {/* Sessão Buscando Serviços */}
@@ -33,7 +33,7 @@ function Home() {
 
                     <div className={styles.fileira}>
 
-                        {staticService.map(x => <Card {...x} />)}
+                        {staticService.map( (x,i) => <Card key={`Card_${i}`} {...x} />)}
 
                     </div>
 
@@ -58,7 +58,7 @@ export default Home;
         //     <Title>
         //         <h2>Conheça um pouco a +Delas:</h2>
         //     </Title>
-        //     <Containervideo><iframe className={styles.video} width="600" height="360" src="https://www.youtube.com/embed/UXwPz61lxBY?si=kMwtBZjDrElhp0lP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></Containervideo>
+        //     <Containervideo><iframe className={styles.video} width="600" height="360" src="https://www.youtube.com/embed/UXwPz61lxBY?si=kMwtBZjDrElhp0lP" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe></Containervideo>
         //     <Bgcard></Bgcard> 
             
         //     <Card></Card>

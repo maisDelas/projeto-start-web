@@ -9,7 +9,6 @@ export const footer = styled.footer `
     color: #C76938;
     font-family: Arial, sans-serif;
     padding: 45px 35px;
-    
 
 `;
 
@@ -44,9 +43,6 @@ export const FooterContatos = styled.div `
        
        
      }
-
-
-
 
 `;
 
@@ -248,8 +244,9 @@ img {
 
 }
 
-`
-export const Copyright = styled.div`
+`;
+
+export const FooterCopyright = styled.div`
 
        border-top: 1px solid #D3A484;
        margin-top: 15px;
