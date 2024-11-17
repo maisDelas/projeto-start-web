@@ -1,7 +1,8 @@
+import { StyleButton } from "./Button.style";
 
-function Button() {
+function Button({children, ...rest}) {
     return (
-        <Button/>
+        <StyleButton {...rest}>{children}</StyleButton>
     );
 };
 
