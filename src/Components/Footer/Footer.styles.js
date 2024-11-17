@@ -13,7 +13,7 @@ export const footer = styled.footer `
     justify-content: center;
     align-items: center;
     height: 370px;
-    
+
 
 `;
 
@@ -24,11 +24,6 @@ export const FooterContatos = styled.div `
        flex-direction: column;
        position: relative;
        top: -40px;
-       
-       
-      
-
-
        
     h3 {
 
@@ -127,8 +122,7 @@ export const FooterInfor= styled.div`
 
 export const FooterLink = styled.div ` 
        
-      
-
+       
       
 
     h3 {
@@ -224,17 +218,19 @@ export const FooterMidias= styled.div`
         align-items: center;
         margin-left: -30px;
         
+        
      
 `;
 
 export const SocialIcons = styled.div`
      
-
+     
      display: flex;
      justify-content: center;
-     margin-left: 45%;
+     margin-left: 48%;
      gap: 15px;
      margin-top: 5px;
+
     
     
      
@@ -249,17 +245,15 @@ img {
 
 export const FooterCopyright = styled.div`
        
-
+      
        
-       
+ p {
        margin-left: 40px;
-
-       
-
-p {    text-align: right; 
+       text-align: right; 
        color: #C76938; 
        font-size: 20px;
        margin-top: 5px;
+       
        
 }
 
@@ -273,8 +267,7 @@ export const FooterPai = styled.div `
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-      
-
+        margin-top: 30px;
         
 `;
 
@@ -284,7 +277,5 @@ export const FooterContainer = styled.div `
       width: 100%;
       justify-content: center;
       align-items: center;
-      
-
-
+    
 `;
