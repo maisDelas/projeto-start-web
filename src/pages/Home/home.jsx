@@ -1,4 +1,5 @@
-import Footer from '../../Components/footer/Footer'
+import Carrossel from './Carrossel';
+import Footer from '../../Components/Footer/Footer'
 import staticService from '../../Components/cardsService/StaticService';
 import {StyleButton} from '../../Components/botaoglobal/Button.style'
 import Card from '../../Components/cardsService/CardService';
@@ -36,6 +37,8 @@ function Home() {
 
                 <StyleButton>Ir para o mapeamento</StyleButton>
             </S.Bgcard>
+
+            <Carrossel />
 
             <Footer />
         </div>
