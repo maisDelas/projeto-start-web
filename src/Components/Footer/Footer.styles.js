@@ -1,8 +1,6 @@
 import styled from "styled-components";
 
-export const footer = styled.footer `
-
-   
+export const footer = styled.footer`   
     width: 100%;
     background-color: #F6E5D3;
     display: flex;
@@ -11,69 +9,42 @@ export const footer = styled.footer `
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
-    
-
-    
-
-
 `;
 
-export const FooterContatos = styled.div `
-       
-       
+export const FooterContatos = styled.div`    
        display: flex;
        flex-direction: column;
        
     h3 {
-
         font-size: 25px;
         font-weight: 500;
         color:  #E35D1C;
-        margin-bottom: 5px;
-        
-        
-    }
-
-    
+        margin-bottom: 5px;        
+    }    
 `;
 
-export const FooterImg= styled.div`
-     
-     
+export const FooterImg = styled.div`
      display: flex;
      flex-direction: column;
-     
-
 
     div { 
-
        display: flex; 
         margin: 5px 0;
-       img {
-         
-        margin-right: 10px;
 
+       img {   
+        margin-right: 10px;
        }
-    }
-     
+    }    
 `;
 
-export const FooterSobre= styled.div `
-
-        
+export const FooterSobre = styled.div`    
         margin:0 5%;
-        
-
-  
+    
     h3 {
-
         font-size: 25px;
         color: #E35D1C;
         font-weight: 500;
-        margin-bottom: 5px;
-        
-      
+        margin-bottom: 5px;              
     }
 
     p {
@@ -81,19 +52,15 @@ export const FooterSobre= styled.div `
         font-size: 15px;
         word-wrap: break-word;
         width: 200px;
-    }
-     
+    }     
 `;
 
-export const FooterInfor= styled.div` 
-
-   
+export const FooterInfor = styled.div` 
        margin:0 5%;
        display: flex;
        flex-direction: column;
+        
        
-    
-
     h3 {
         font-size: 25px;
         color: #C76938;
@@ -102,186 +69,134 @@ export const FooterInfor= styled.div`
         margin-bottom: 5px;
     }
 
-       
-
     li {
-       
-
         list-style-type: none;  
-        margin: 5px 0;
-        
-        
+        margin: 5px 0; 
+        transition: transform 0.3s ease; 
+              
     }
 
     a {
         font-size: 15px;
         color: #C76938;
-        text-decoration: none;  
-        
+        text-decoration: none; 
+               
     }
 
     a:hover {
-        text-decoration: underline;
-     
+        transform: scale(1.2);    
     }
 `;
 
 
-export const FooterLink = styled.div `
- 
-         margin: 0 5%;
-      
+export const FooterLink = styled.div`
+         margin: 0 5%;    
 
     h3 {
-
         white-space: nowrap;
         font-size: 25px;
         font-weight: 500;
-        color: #E35D1C;
-        
-        
-    
+        color: #E35D1C;           
     }
 
     ul {
-       
-
-        color: #D9974D
-        
-    
-       
+        color: #D9974D      
     }
 
     li {
-
         list-style-type: none;  
-        margin: 5px 0;
-        
+        margin: 5px 0;       
     }
 
     a {
-
         font-size: 15px;
         color: #C76938;
-        text-decoration: none;
-        
+        text-decoration: none;       
     }
 
     a:hover {
-        text-decoration: underline;
-     
+        text-decoration: underline;     
     }
 `;
 
 
-export const FooterInscreva= styled.div`
-       
-       
+export const FooterInscreva = styled.div`
        display: flex;
        flex-direction: column;
        margin-top: -5%;
-       
-    
 
        input {
-
         padding-left:  10px;
         width: 200px;
         height: 40px;
         border-radius: 10px;
         border: 1px solid #D3A484;
         margin-top: 8px;
-        margin-bottom: 8px;
-
-    
+        margin-bottom: 8px;    
     }
 
-    button {
-    
+    button {    
         width: 100px;
         background-color: #E35D1C;
         color: white;
         padding: 7px;
         border: none;
-        border-radius: 15px;
+        border-radius: 10px;
         cursor: pointer;
         font-size: 15px;
-       
-
     }
 
     p { 
         color: #E35D1C;
     }
 
-
     button:hover {
-        background-color: #A7552D;
-
+        background-color: #FF7431;
     }
-
 `;
 
-export const FooterMidias= styled.div`
-      
-        
+export const FooterMidias = styled.div`     
         display: flex;
         flex-direction: row;
         width: 100%;
         justify-content: center;
-        align-items: center;
-        
-        
-     
+        align-items: center;     
 `;
 
 export const SocialIcons = styled.div`
-     
-     
      display: flex;
      justify-content: center;
      margin-left: 48%;
      gap: 15px;
      margin-top: 5px;
-
-    
-    
      
-img { 
-      
+    img {      
       border: none;
-      height: 30px;
-     
+      height: 30px;     
 }
 
 `;
 
-export const FooterCopyright = styled.div`
-            
- p {
+export const FooterCopyright = styled.div`         
+     p {
        margin-left: 40px;
        text-align: right; 
        color: #C76938; 
        font-size: 20px;
        margin-top: 5px;
-}
-
+    }
 `;
 
-export const FooterPai = styled.div `
-        
-
+export const FooterPai = styled.div`
         border-top: 1px solid #D3A484;
         width: 90%;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        margin-top: 40px;
-        
+        margin-top: 40px;        
 `;
 
-export const FooterContainer = styled.div `
-
+export const FooterContainer = styled.div`
       display: flex;
       flex-direction: column;
       width: 100%;
@@ -290,27 +205,20 @@ export const FooterContainer = styled.div `
       margin-top: 70px;
 
       .teste { 
-
         display: flex;
         width: 85%;
-        justify-content: center;
-        
-        
+        justify-content:space-between;        
       }
       
-      .logoContainer {
-        
+      .logoContainer {  
         width: 85%;
-
       }
 
       .goToTopContainer {
-
           width: 85%;
           display: flex;
           justify-content: end;
           margin-top: 10px;
-
 
           button  {
           display: flex;
@@ -325,16 +233,10 @@ export const FooterContainer = styled.div `
           }
           
 
-          button:hover { 
-            
+          button:hover {     
              background-color: #c4511a;
-
           }
-      }
-   
-    
-
-      
+      }      
 `;
-  
+
 

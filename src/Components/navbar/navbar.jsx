@@ -1,25 +1,22 @@
-import logo from '../../assets/Logo-nav.svg'
-import { ButtonNav, NavContainer, IconUser } from './Navbar.styles';
-
+import logo from "assets/Logo-nav.svg";
+import { Container, IconUser, Button, Content, Logo, Link, ListLinks } from "./Navbar.styles";
 
 function NavBar() {
-    return (
-      
-      <NavContainer>
-        <div>
-            <img src={logo} alt="Lgo mais delas" />
-                <ul>
-                  <li><a href="#">Serviços</a></li>
-                  <li><a href="#">Depoimentos</a></li>
-                  <li><a href="#">Junte-se a +Delas</a></li>
-                </ul>
-                <ButtonNav>
-                  <IconUser/>
-                </ButtonNav>
-        </div>
-      </NavContainer>
-    );
-  }
-  
-  export default NavBar;
-  
+  return (
+    <Container>
+      <Content>
+        <Logo src={logo} alt="Logo do site" />
+        <ListLinks>
+          <Link><a href="#">Serviços</a></Link>
+          <Link><a href="#">Depoimentos</a></Link>
+          <Link><a href="#">Junte-se a +Delas</a></Link>
+          <Button>
+            <IconUser/> Entrar
+          </Button>
+        </ListLinks>
+      </Content>
+    </Container>
+  );
+}
+
+export default NavBar;

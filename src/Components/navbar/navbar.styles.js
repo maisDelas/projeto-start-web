@@ -1,65 +1,52 @@
 import styled from "styled-components"
-import { FaRegUserCircle } from "react-icons/fa";
+import { FaRegUserCircle } from "react-icons/fa"
+import GlobalButton from "Components/botaoglobal/Button"
 
-export const NavContainer = styled.div`
-    background-color: #F6E5D3;
+export const Container = styled.div`
+  background-color: #f6e5d3;
+`
+export const Content = styled.div`
+  max-width: 1440px;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: var(--container-padding);
+`
+export const Logo = styled.img`
+  width: 140px;
+`
+export const ListLinks = styled.ul``
+export const Link = styled.li`
+  list-style-type: none;
+  padding: 1.5rem 0;
+  display: inline-block;
 
-    div {
-        max-width: 1380px;
-        display: flex;
-        /* justify-content: space-between; */
-        align-items: center;
-        margin:auto;
-    }
+  & + & {
+    margin-left: 1rem;
+  }
 
-    img {
-        width: 140px;
-    }
-
-    ul {
-        border: 1px solid black;
-    }
-
-    li {
-        list-style-type: none;
-        padding: 1.5rem 2rem;
-        display: inline-block;
-    }
-
-    a {
-        color: #544E48;
-        text-decoration:none;
-    }
+  a {
+    color: #544e48;
+    text-decoration: none;
+  }
 `
 
-
-
-export const ButtonNav = styled.button`
-    display: flex;
-    align-items: center;
-    background-color: #E35D1C;
-    color: #F6E5D3;
-    border: none;
-    border-radius: 10px;
-    padding: 5px ; 
-    cursor: pointer;
-    transition: background-color 0.3s;
-    width: 100px;
+export const Button = styled(GlobalButton)`
+  display: inline-flex;
+  align-items: center;
+  background-color: #e35d1c;
+  color: #f6e5d3;
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100px;
+  gap: 10px;
+  margin-left:88px;
 `
 
 export const IconUser = styled(FaRegUserCircle)`
-    color:white;
+  color: white;
 `
-
-
-
-
-
-
-
-
-
-
-
-
-
