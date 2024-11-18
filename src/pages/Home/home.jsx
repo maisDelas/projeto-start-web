@@ -3,7 +3,7 @@ import staticService from '../../Components/cardsService/StaticService';
 import {StyleButton} from '../../Components/botaoglobal/Button.style'
 import Card from '../../Components/cardsService/CardService';
 import * as S from './Home.styles.js';
-
+import NavBar from '../../Components/navbar/Navbar'
 
 
 
@@ -12,6 +12,10 @@ function Home() {
     return (
 
          <div>
+
+
+            {/* <NavBar/> */}
+
             {/* Sessão de Titulo e Video */}
             <S.Title> <h2>Conheça um pouco a +Delas:</h2></S.Title>            
             <S.Bgcard>
@@ -28,6 +32,7 @@ function Home() {
 
                 <S.Styletitle> <h2>Buscando algum serviço?</h2></S.Styletitle>
                 <S.Cardcontainer>
+                    
                         {staticService.map( (x,i) => <Card key={`Card_${i}`} {...x} />)}
                       
                 </S.Cardcontainer>

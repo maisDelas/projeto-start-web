@@ -1,27 +1,29 @@
 import logo from '../../assets/Logo-nav.svg'
+import { ButtonNav, NavContainer } from './Navbar.styles';
 
 
-function EU() {
+function NavBar() {
     return (
-      <header className="header">
-        <div className="nav">
-        <img src={logo} alt="" />
-          <nav> 
-            <ul>
-              <li><a href="#about">Sobre nós</a></li>
-              <li><a href="#services">Serviços</a></li>
-              <li><a href="#testimonials">Depoimentos</a></li>
-              <li><a href="#contact">Fale Conosco</a></li>
-              <li><a href="#join">Junte-se a +Delas</a></li>
-            </ul>
-          </nav>
-          <button className="Button">
-            <MdAccountCircle className="Icons" /> Entrar
-          </button>
+      
+      <NavContainer>
+        <div>
+          <LogoDelas src={logo} alt='Logo mais delas'/>
+            <ContainerLinks>
+              <Links>
+                <ul>
+                  <li><a href="#">Serviços</a></li>
+                  <li><a href="#">Depoimentos</a></li>
+                  <li><a href="#">Junte-se a +Delas</a></li>
+                </ul>
+              </Links>
+              <ButtonNav>
+                <IconUser/>
+              </ButtonNav>
+            </ContainerLinks>
         </div>
-      </header>
+      </NavContainer>
     );
   }
   
-  export default EU;
+  export default NavBar;
   
