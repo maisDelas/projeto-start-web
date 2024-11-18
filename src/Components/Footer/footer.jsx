@@ -1,4 +1,3 @@
-import React from "react";
 import * as S from "./Footer.styles";
 import facebookIcon from "../../assets/facebook.svg";
 import linkedinIcon from "../../assets/linkedin.svg";
@@ -6,13 +5,18 @@ import instagramIcon from "../../assets/instagram.svg";
 import emailIcon from "../../assets/email.svg";
 import telefoneIcon from "../../assets/telefone.svg";
 import logoIcon from "../../assets/logo.svg";
+import arrowTop from "../../assets/arrowTop.svg";
 
 const Footer = () => {
+  function scrollToTop() {window.scrollTo({top:0, behavior:"smooth"})}
   return (
     <S.footer>
       <S.FooterContainer>
-      <S.FooterContatos>
+        <div className="logoContainer">
           <img className="logo" src={logoIcon} alt="logoIcon" />
+          </div>
+          <div className="teste">
+      <S.FooterContatos>
           <h3>Contatos</h3>
           <S.FooterImg>
             <div>
@@ -56,7 +60,7 @@ const Footer = () => {
             <a href="#">Termos e condições</a>
           </li>
           <li>
-            <a href="#">Política de privaidade</a>
+            <a href="#">Política de privacidade</a>
           </li>
           <li>
             <a href="#">Mapeamento de serviços</a>
@@ -71,6 +75,12 @@ const Footer = () => {
         <input type="Email" placeholder="Digite seu email" />
         <button>Se inscreva</button>
       </S.FooterInscreva>
+      </div>
+      <div className="goToTopContainer">
+        <button onClick={scrollToTop}>
+            <img src={arrowTop} alt="va para o topo"/>
+        </button>
+      </div>
       </S.FooterContainer>
          <S.FooterMidias>
           <S.FooterPai>

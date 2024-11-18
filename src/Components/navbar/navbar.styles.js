@@ -7,48 +7,32 @@ export const NavContainer = styled.div`
     div {
         max-width: 1380px;
         display: flex;
-        justify-content: space-between;
+        /* justify-content: space-between; */
+        align-items: center;
         margin:auto;
     }
 
     img {
-        width: 130px;
+        width: 140px;
     }
-`
-// export const NavContent = styled.div`
-//     max-width: 1380px;
-//     display: flex;
-//     justify-content: space-between;
-//     margin: auto;
-// `
 
-// export const LogoDelas = styled.img`
-//     width: 130px;
-// `
-
-export const ContainerLinks = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-`
-
-
-export const Links = styled.ul`
-    border: 1px solid black;
-    list-style-type: none;
-    display:flex;
+    ul {
+        border: 1px solid black;
+    }
 
     li {
-        color: #544E48;
+        list-style-type: none;
         padding: 1.5rem 2rem;
+        display: inline-block;
     }
-    
+
     a {
-        text-decoration: none;
+        color: #544E48;
+        text-decoration:none;
     }
-
-
 `
+
+
 
 export const ButtonNav = styled.button`
     display: flex;
@@ -78,4 +62,4 @@ export const IconUser = styled(FaRegUserCircle)`
 
 
 
-  
+
