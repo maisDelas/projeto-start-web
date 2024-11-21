@@ -1,8 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './pages/home/Home'
-// import Trilha from './pages/trilha/trilha'
-
-// import NavBar from './Components/navbar/Navbar'
+import Trilha from 'pages/trilha/Trilha'
 
 
 export default function App() {
@@ -10,9 +8,8 @@ export default function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* <Route path="/" element={<Trilha />} />  */}
-
-        {/* <Route path="/Nav" element={<NavBar />} /> */}
+        <Route path="/Trilha" element={< Trilha/>} />
+        
       </Routes>
       </BrowserRouter>
   )

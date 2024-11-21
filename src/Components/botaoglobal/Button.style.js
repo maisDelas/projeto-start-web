@@ -9,6 +9,7 @@ export const StyleButton = styled.button`
     color: white;
     border: none;
     padding: 8px;
+    margin: auto;
     border-radius: 8px;
     display: block; 
     cursor: pointer;
