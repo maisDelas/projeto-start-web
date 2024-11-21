@@ -1,90 +1,52 @@
 import styled from "styled-components"
+import { FaRegUserCircle } from "react-icons/fa"
+import GlobalButton from "Components/botaoglobal/Button"
 
-export const buttonNav = styled.buttonNav`
-    display: flex;
-    align-items: center;
-    background-color: #E35D1C;
-    color: #F6E5D3;
-    border: none;
-    border-radius: 10px;
-    padding: 5px ; 
-    cursor: pointer;
-    transition: background-color 0.3s;
-    width: 100px;
+export const Container = styled.div`
+  background-color: #f6e5d3;
+`
+export const Content = styled.div`
+  max-width: 1440px;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: var(--container-padding);
+`
+export const Logo = styled.img`
+  width: 140px;
+`
+export const ListLinks = styled.ul``
+export const Link = styled.li`
+  list-style-type: none;
+  padding: 1.5rem 0;
+  display: inline-block;
+
+  & + & {
+    margin-left: 1rem;
+  }
+
+  a {
+    color: #544e48;
+    text-decoration: none;
+  }
 `
 
-
-export const Icons = styled.Icons`
-    font-size: 30px;
-    margin-right: 8px;
+export const Button = styled(GlobalButton)`
+  display: inline-flex;
+  align-items: center;
+  background-color: #e35d1c;
+  color: #f6e5d3;
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100px;
+  gap: 10px;
+  margin-left:88px;
 `
 
-
-
-
-
-
-
-
-
-  
-//   /* Estilos Responsivos */
-//   @media (max-width: 768px) {
-//     .navbar {
-//       display: none; /* Esconde o menu para mobile */
-//     }
-  
-//     .container {
-//       justify-content: space-between;
-//     }
-//   }
-  
-//   @media (max-width: 480px) {
-//     .logo {
-//       font-size: 28px;
-//     }
-  
-//     .login-button {
-//       padding: 8px 16px;
-//       font-size: 14px;
-//     }
-//   }
-  
-  
-//   * {
-//     margin: 0;
-//     padding: 0;
-//     list-style-type: none;
-//     box-sizing: border-box;
-//   }
-//   body {
-//     background-color: #0d0d0d;
-//     color: wheat;
-//     font-family: Arial, Helvetica, sans-serif;
-//   }
-  
-//   header {
-//     background-color: #F6E5D3;
-   
-  
-//   }
-  
-//   .nav {
-//     max-width: 1300px;
-//     margin: 0 auto;
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: center;
-//     padding: 0 40px;
-//   }
-  
-//   nav ul {
-//     display: flex;
-//     list-style: none;
-//     gap: 40px;
-//   }
-//   nav ul li a {
-//     text-decoration: none;
-//     color: #544E48;
-//     font-size: 18px;
-//   }
+export const IconUser = styled(FaRegUserCircle)`
+  color: white;
+`

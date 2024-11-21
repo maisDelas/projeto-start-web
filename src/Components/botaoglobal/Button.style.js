@@ -11,7 +11,6 @@ export const StyleButton = styled.button`
     padding: 8px;
     border-radius: 8px;
     display: block; 
-    margin-inline: auto;
     cursor: pointer;
 
     &:hover {
