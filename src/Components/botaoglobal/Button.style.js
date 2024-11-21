@@ -12,6 +12,7 @@ export const StyleButton = styled.button`
     border-radius: 8px;
     display: block; 
     cursor: pointer;
+    margin-inline: auto;
 
     &:hover {
         background-color: #FF7431;
