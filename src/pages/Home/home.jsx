@@ -1,16 +1,16 @@
 import Carrossel from "./Carrossel"
-import Footer from "./Components/footer/footer"
+import Footer from "../../Components/footer/footer"
 import staticService from "../../Components/cardsService/StaticService"
 import { StyleButton } from "../../Components/botaoglobal/Button.style"
-import Card from "../Components/cardsService/CardService"
+import Card from "../../Components/cardsService/CardService"
 import * as S from "./Home.styles.js"
-import NavBar from "../Components/navbar/Navbar" 
+import NavBar from "../../Components/navbar/Navbar" 
+
 
 function Home() {
   return (
     <div>
       <NavBar />
-
       {/* Sessão de Titulo e Video */}
       <S.Title>
         {" "}
