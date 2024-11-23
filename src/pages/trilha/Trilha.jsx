@@ -35,11 +35,9 @@ const Trilha = () => {
 
             <S.PageContent>
                 <S.Sidebar>
-
-
                     <ul>
                         <li><img src={IconPerfil}></img> <a href="#perfil">Perfil</a></li>
-                        <li><img src={IconTrilha}></img> <a href="#trilha">Trilha</a></li>
+                        <li><img src={IconTrilha}></img> <a href="#trilha">Trilha Financeira</a></li>
                         <li><img src={IconContract}></img> <a href="#contrato">Contratos</a></li>
                         <li><img src={IconCalendar}></img> <a href="#calendario">Calendário</a></li>
                         <li><img src={IconConfig}></img> <a href="#configuracao">Configuração</a></li>

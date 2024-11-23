@@ -15,6 +15,7 @@ export const Nav = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 88px;
   padding: 10px 20px;
   background-color: #f8e6d5;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -24,13 +25,17 @@ export const Nav = styled.div`
     margin-left:36px;
 
   }
+
 `;
+
+
+
 
 export const LinksNav = styled.div`
 
   display: flex;
   gap: 40px;
-  width: 20%;
+
   margin-left: 800px;
 
   a {
@@ -148,11 +153,11 @@ export const Header = styled.div`
   justify-content: space-between;
   align-items: center;
   margin-top:300px;
-  height: 340px;
+  height: 348px;
   max-width: 100%;
 
   img{
-    padding-bottom: 120px;
+    padding-bottom: 112px;
   }
 `;
 
