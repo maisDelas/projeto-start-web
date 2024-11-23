@@ -1,14 +1,15 @@
-import { Minicard } from "./Cards.style";
-
+import * as S from "./Cards.style";
+import Mulher1 from 'assets/imgPersona1.svg'
 
 function Cards (){
   return (
-   <Minicard>
-    <Mulher src={}/>
-      <p></p>
-      <img src="pin" alt=""/>
-      <p></p>
-   </Minicard>
+   <S.Minicard>
+    <S.Mulherimg src={Mulher1}/>
+      <S.CardDescription>
+        <h3>Vitoria Santos</h3>
+        <p>Designer</p>
+      </S.CardDescription>
+   </S.Minicard>
   )
 }
 

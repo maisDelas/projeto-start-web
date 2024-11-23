@@ -3,6 +3,7 @@ import * as S from "./Mapa.styles"
 import LogoBranca from "assets/Logo-branca.svg"
 import Map from "./Api.mapa"
 import NavBar from "Components/navbar/Navbar"
+import Cards from './Cards'
 
 function Mapeamento() {
   return (
@@ -16,16 +17,14 @@ function Mapeamento() {
         </S.Description>
         <div>
           <S.ContainerCarrossel>
-          <S.Buttonarrow>
-            <S.IconArrow />
-          </S.Buttonarrow>
+            
             <S.VerticalSlider>
-              
+              <Cards/>
             </S.VerticalSlider>
           </S.ContainerCarrossel>
         </div>
       </S.Container>
-      <S.ContainerMap></S.ContainerMap>
+      <S.ContainerMap><Map/></S.ContainerMap>
 
       {/* <Footer/> */}
     </div>

@@ -2,9 +2,9 @@ import Carrossel from "./Carrossel"
 import Footer from "Components/footer/footer"
 import staticService from "../../Components/cardsService/StaticService"
 import { StyleButton } from "../../Components/botaoglobal/Button.style"
-import Card from "../../Components/cardsService/CardService"
+import Card from "Components/cardsService/CardService"
 import * as S from "./Home.styles.js"
-import NavBar from "../../Components/navbar/Navbar"
+import NavBar from "Components/navbar/Navbar" 
 
 function Home() {
   return (
@@ -40,7 +40,7 @@ function Home() {
           ))}
         </S.Cardcontainer>
         {/* Botão para o mapeamento */}
-        <StyleButton>Ir para o mapeamento</StyleButton>
+        <StyleButton><a href="/Map">Ir para o mapeamento</a></StyleButton>
       </S.Bgcard>
 
       <Carrossel />
@@ -50,4 +50,4 @@ function Home() {
   )
 }
 
-export default Home
+export default Home;

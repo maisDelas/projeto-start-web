@@ -34,7 +34,6 @@ export const ContainerMap = styled.div`
   align-items: center;
 
   div {
-    border: 5px solid black;
     width: 1300px;
     height: 600px;
   }
@@ -58,7 +57,8 @@ export const VerticalSlider= styled.div`
   position: absolute;
   top: 50%; /* Centraliza verticalmente */
   right: 30px; /* Encosta na direita */
-  transform: translateY(-50%); /* Ajusta para ficar realmente centralizado */
+  transform: translateY(-50%);
+  padding-inline:20px; /* Ajusta para ficar realmente centralizado */
 `
 export const BarraPesquisa = styled.div`
 `

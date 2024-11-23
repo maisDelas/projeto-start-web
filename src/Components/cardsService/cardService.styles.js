@@ -1,3 +1,4 @@
+import Button from "Components/botaoglobal/Button";
 import styled from "styled-components";
 
 export const Stylequadrado = styled.div`
@@ -25,7 +26,10 @@ export const Descricao = styled.p`
     font-size: 15.75px;
     color: white;
 `
-
+export const CardButton = styled(Button)`
+    width:160px;
+    
+`
 
 
 
