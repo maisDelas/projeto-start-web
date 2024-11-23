@@ -16,15 +16,29 @@ export const Content = styled.div`
 export const Logo = styled.img`
   width: 140px;
 `
-export const ListLinks = styled.ul``
+export const ListLinks = styled.ul`
+
+  display:flex; 
+  align-items:center; `
+
 export const Link = styled.li`
   list-style-type: none;
   padding: 1.5rem 0;
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  
+ 
 
-  & + & {
+  & + & { 
     margin-left: 1rem;
   }
+    
+  img,p { 
+
+    margin-right: 10px;
+
+   }
+     
 
   a {
     color: #544e48;
