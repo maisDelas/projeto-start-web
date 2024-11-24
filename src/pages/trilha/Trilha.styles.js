@@ -29,8 +29,6 @@ export const Nav = styled.div`
 `;
 
 
-
-
 export const LinksNav = styled.div`
 
   display: flex;
@@ -168,11 +166,8 @@ export const Section = styled.div`
 
 export const SectionTitle = styled.div`
   color: #FFFFFF; 
-
-  h1{
-    font-family: "Poppins", sans-serif;
-    padding-bottom:20px;
- }
+  font-family: "Poppins", sans-serif;
+  padding-bottom:20px;
 
  p{
     font-family: "Poppins", sans-serif;

@@ -55,8 +55,10 @@ const Trilha = () => {
                         <S.Section>
 
                             <S.SectionTitle>
-                                <h1>O que nossa trilha oferece?</h1>
-                                <p>Nossa trilha de educação financeira é projetada para capacitar prestadoras com conhecimentos essenciais sobre gestão financeira, planejamento e investimento. Através de conteúdos práticos e acessíveis, buscamos ajudar mulheres a alcançar maior segurança financeira em suas vidas pessoais e profissionais.</p>
+                                <h1>Olá, Sueli!</h1>
+                                <h2>Bem vinda a trilha de desenvolvimento!</h2>
+                                <p>Este é o um espaço de aprendizado projetado para capacitar mulheres em conhecimentos essenciais sobre gestão financeira, planejamento, investimento e muito mais.
+                                Cada etapa terá o conteúdo e um quiz para testar suas habilidades, estabeleça sua meta e inicie essa jornada! </p>
                             </S.SectionTitle>
 
                         </S.Section>
