@@ -19,7 +19,7 @@ const Trilha = () => {
 
             <S.Nav>
                 <div>
-                    <img className="Logo" src={logo} alt="logoIcon" />
+                    <a href="http://localhost:5173/"><img className="Logo" src={logo} alt="logoIcon" /></a>
                 </div>
                 <S.LinksNav>
                     <a href="home">Página inicial</a>

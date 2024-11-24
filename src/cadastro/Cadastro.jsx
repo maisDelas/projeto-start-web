@@ -1,7 +1,7 @@
 import Onda from "./../assets/Onda.svg"
 import * as S from "./Cadastro.styled"
 import logo from "../assets/Logobranca.svg"
-import Navbar from "Components/navbar/Navbar";
+import Navbar from "Components/navbar/navbar";
 
 
 function Cadastro() {
