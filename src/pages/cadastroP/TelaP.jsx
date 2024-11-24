@@ -7,7 +7,7 @@ import RegistrationFrm from './RegistrationFrm.jsx';
 import EU from "./Header.jsx";
 import GlobalStyle from "./GlobalStyle.jsx";
 
-function Cadastro1() {
+function CadastroPrestadora() {
   return (
     <>
       <GlobalStyle />
@@ -19,4 +19,4 @@ function Cadastro1() {
   );
 }
 
-export default Cadastro1;
+export default CadastroPrestadora;

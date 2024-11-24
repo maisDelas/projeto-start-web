@@ -84,15 +84,15 @@ function Perfil() {
             </S.Editagem>
             <S.Editagem>
               <div className="coluna">
-                <p>NOME</p>
+                <p>Nome</p>
                 <input type="text" />
               </div>
               <div className="coluna">
-                <p>E-MAIL</p>
+                <p>E-mail</p>
                 <input type="email" />
               </div>
               <div className="coluna">
-                <p>TELEFONE</p>
+                <p>Telefone</p>
                 <input type="tel" />
               </div>
             </S.Editagem>
@@ -109,33 +109,33 @@ function Perfil() {
             <S.Editagem>
               <div className="coluna">
                 <div>
-                  <p>CEP</p>
+                  <p>Cep</p>
                   <input type="text" />
                 </div>
                 <div>
-                  <p>BAIRRO</p>
+                  <p>Bairro</p>
                   <input type="text" />
                 </div>
               </div>
 
               <div className="coluna">
                 <div>
-                  <p>CIDADE</p>
+                  <p>Cidade</p>
                   <input type="text" />
                 </div>
                 <div>
-                  <p>NÚMERO</p>
+                  <p>Número</p>
                   <input />
                 </div>
               </div>
 
               <div className="coluna">
                 <div>
-                  <p>RUA</p>
+                  <p>Rua</p>
                   <input type="text" />
                 </div>
                 <div>
-                  <p>COMPLETEMENTO</p>
+                  <p>Complemento</p>
                   <input type="text" />
                 </div>
               </div>

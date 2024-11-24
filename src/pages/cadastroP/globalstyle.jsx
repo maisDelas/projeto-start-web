@@ -27,7 +27,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     font-family: "Poppins", sans-serif;
     color: rgb(36, 12, 12);
-    background-image: url('src/Imagem/Fundo_completo.svg');
+    background-image: url('src/pages/cadastroP/Imagem/Fundo_completo.svg');
     background-size: cover; /* Faz com que a imagem cubra toda a área */
     background-repeat: no-repeat; /* Evita repetição */
     background-position: center; /* Centraliza a imagem */
