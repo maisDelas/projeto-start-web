@@ -14,6 +14,10 @@ export default function App() {
         <Route path="/Map" element={<Mapeamento />} />
         <Route path="/C" element={<Cards/>} />
         <Route path="/Trilha" element={< Trilha/>} />
+      
+
+
+
         
       </Routes>
       </BrowserRouter>
