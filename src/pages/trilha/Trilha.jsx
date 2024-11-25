@@ -10,16 +10,20 @@ import imgHeader from '../../imagesTrilha/imgHeader.svg'
 import laptop from '../../imagesTrilha/laptop.svg'
 import grafic from '../../imagesTrilha/grafic.svg'
 import grow from '../../imagesTrilha/grow.svg'
+import Button from 'Components/botaoglobal/Button';
+import { useNavigate } from 'react-router-dom';
 
 
 
 const Trilha = () => {
+    const navigation = useNavigate()
+    
     return (
         <S.PageWrapper>
 
             <S.Nav>
                 <div>
-                    <img className="Logo" src={logo} alt="logoIcon" />
+                    <a href="http://localhost:5173/"><img className="Logo" src={logo} alt="logoIcon" /></a>
                 </div>
                 <S.LinksNav>
                     <a href="home">Página inicial</a>
@@ -36,7 +40,7 @@ const Trilha = () => {
             <S.PageContent>
                 <S.Sidebar>
                     <ul>
-                        <li><img src={IconPerfil}></img> <a href="#perfil">Perfil</a></li>
+                        <li><img src={IconPerfil}></img> <a onClick={() => navigation('/Perfil')}>Perfil</a></li>
                         <li><img src={IconTrilha}></img> <a href="#trilha">Trilha Financeira</a></li>
                         <li><img src={IconContract}></img> <a href="#contrato">Contratos</a></li>
                         <li><img src={IconCalendar}></img> <a href="#calendario">Calendário</a></li>
@@ -148,7 +152,7 @@ const Trilha = () => {
                         </S.Card>
                     </S.CardGrid>
 
-                    <S.Button>Inicie sua Trilha</S.Button>
+                    <Button>Inicie sua Trilha</Button>
 
                 </S.ContentWrapper>
 

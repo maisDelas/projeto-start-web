@@ -6,6 +6,16 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Poppins", sans-serif;
+  color: #FFF;
+}
+
+a {
+  text-decoration: none;
+}
+
 :root{
   --container-padding:60px;
+  --dark-orange:#E35D1C;
 }

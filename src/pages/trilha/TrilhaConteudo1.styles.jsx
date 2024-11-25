@@ -1,10 +1,10 @@
 import styled from "styled-components";
-import BgOrange from '../../imagesTrilha/BgOrange.svg'
+
+
 
 export const PageWrapper = styled.div`
   display: flex;
-  height: 100vh;
-  flex-direction: column;
+  flex-direction: column; 
 `;
 
 export const Nav = styled.div`
@@ -98,7 +98,8 @@ export const Sidebar = styled.div`
     text-decoration:none;
     color:#FFFFFF;
     padding:16px;
-    font-size: 19.75px;  
+    font-size: 19.75px; 
+    cursor: pointer; 
   }
 
   ul{
@@ -137,8 +138,10 @@ export const MainContent = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-left: 300px;
-    padding-top: 130px;
+    gap: 50px; 
+    width: 100%;
+    padding-top: 130px; 
+
 `
 
 // export const Header = styled.div`
@@ -163,6 +166,11 @@ export const ProcessContainer = styled.div`
 `
 
 export const Process = styled.div`
+    display: flex;
+    flex-direction:column ;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
     border:transparent;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
     width: 239px;
@@ -170,16 +178,33 @@ export const Process = styled.div`
     border-radius:10px;
     font-family: "Poppins", sans-serif;
     color: #E75109;
+    font-size: 20px;
+   
 
+img{
+  width: 35px;
+}
+
+.title{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  
+}
+
+p{
+ font-weight:600;
+ padding-left: 14px;
+
+}
 `
 
 export const ProcessTitle = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: "Poppins", sans-serif;
-    
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  
 .title1{
     color: #E75109;
     padding-top: 50px;
@@ -197,6 +222,53 @@ export const ProcessTitle = styled.div`
     height:80px;
     color: #FFFFFF;
 }
-
-
 `
+
+export const TextContainer = styled.div`
+  border: 0.1px solid #E75109;
+  width: 1015px;
+  height: 1238px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(53, 52, 52, 0.5);
+  margin-top: 50px;
+
+ 
+`
+
+export const Text = styled.div`
+ color:  #E75109;
+ margin: 36px;
+ font-size: 20px;
+ line-height: 38px;
+
+h2{
+  font-size: 32px;
+  margin-bottom: 15px;
+
+}
+p{
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+
+
+  color:  #E75109;
+  margin: 36px;
+
+
+  ol {
+    
+    padding-left: 20px;
+  }
+
+
+  li {
+    margin-bottom: 15px; 
+  }
+`;
+
+
+
+
+
+
