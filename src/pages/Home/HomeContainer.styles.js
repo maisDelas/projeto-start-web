@@ -18,7 +18,7 @@ export const GlobalStyle = createGlobalStyle`
 
 `;
 
-export const HomeContainer = styled.div`
+export const HomeCont = styled.div`
     width: 100%;
   max-width: 500px;
   padding: 20px;
