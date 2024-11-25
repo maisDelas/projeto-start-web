@@ -5,7 +5,7 @@ import Cards from 'pages/mapeamento/Cards'
 
 import Trilha from 'pages/trilha/Trilha'
 import Perfil from 'pages/perfil/Perfil'
-import Cadastro from 'cadastro/Cadastro'
+import CadastroTipo from 'escolhercadastro/CadastroTipo'
 import ConteudoTrilha1 from './pages/trilha/TrilhaConteudo1'
 import ConteudoTrilha2 from 'pages/trilha/TrilhaConteudo2'
 
@@ -27,11 +27,11 @@ export default function App() {
 
         <Route path="/CadastroPrestadora" element={<CadastroPrestadora />} />
 
-
+        <Route path="/ResetPassword" element={<ResetPassword />} />
 
         
         <Route path="/Perfil" element={< Perfil />} />
-        <Route path="/Cadastro" element={<Cadastro />} /> 
+        <Route path="/CadastroTipo" element={<CadastroTipo />} /> 
       </Routes>
       </BrowserRouter>
   )
