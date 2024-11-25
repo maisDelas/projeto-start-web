@@ -4,6 +4,7 @@ import Mapeamento from 'pages/mapeamento/Mapa'
 import Cards from 'pages/mapeamento/Cards'
 
 import Trilha from 'pages/trilha/Trilha'
+import NavU from 'Components/navbar/Nav.usuario'
 
 
 export default function App() {
@@ -14,6 +15,7 @@ export default function App() {
         <Route path="/Map" element={<Mapeamento />} />
         <Route path="/C" element={<Cards/>} />
         <Route path="/Trilha" element={< Trilha/>} />
+        <Route path="/NavU" element={< NavU/>} />
         
       </Routes>
       </BrowserRouter>

@@ -11,9 +11,9 @@ function Map () {
   return (
     <MapContainer
       center={position}
-      zoom={13}
-      scrollWheelZoom={true}
-      className="map-container"
+      zoom={20}
+      scrollWheelZoom={false}
+      // className="map-container"
     >
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
