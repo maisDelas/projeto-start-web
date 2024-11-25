@@ -5,12 +5,14 @@ import { StyleButton } from "../../Components/botaoglobal/Button.style"
 import Card from "../Components/cardsService/cardService"
 import * as S from "./Home.styles"
 import NavBar from "../Components/navbar/Navbar" 
+import HomeContainer from "./HomeContainer"
 
 
 function Home() {
   return (
     <div>
       <NavBar />
+      <HomeContainer/>
       {/* Sessão de Titulo e Video */}
       <S.Title>
         {" "}
