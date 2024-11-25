@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
-import InputForm from '../Components/InputForm/InputForm.jsx';
-import logotipo_branca from '../assets/Logobranca.svg';
+import InputForm from 'Components/inputForm/InputForm';
+import logotipo_branca from 'assets/Logobranca.svg';
 import {GlobalStyle,
 BodyContainer, 
 WhiteLogo, 
@@ -11,7 +11,7 @@ Description,
 ErrorMsg,
 Button, 
 BackLoginLink, ContainerNav} from './ResetPassword.styles.js';
-import NavBar from "../Components/navbar/Navbar" 
+import NavBar from "Components/navbar/navbar.jsx" 
 
 const ResetPassword = () => {
 

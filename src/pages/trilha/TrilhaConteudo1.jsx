@@ -1,13 +1,13 @@
 import React from "react";
-import * as S from './TrilhaConteudo1.styles'
-import logo from '../../imagesTrilha/LogoDelas.svg'
-import IconPerfil from '../../imagesTrilha/iconPerfilT.svg'
-import IconTrilha from '../../imagesTrilha/iconTrilhaT.svg'
-import IconContract from '../../imagesTrilha/iconContract.svg'
-import IconCalendar from '../../imagesTrilha/iconCalendarT.svg'
-import IconConfig from '../../imagesTrilha/iconConfigT.svg'
-import OnGoing from '../../imagesTrilha/OnGoing.svg'
-import checked from '../../imagesTrilha/checked.svg'
+import * as S from './TrilhaConteudo.styles1';
+import logo from 'imagesTrilha/LogoDelas.svg';
+import IconPerfil from 'imagesTrilha/iconPerfilT.svg';
+import IconTrilha from 'imagesTrilha/iconTrilhaT.svg';
+import IconContract from 'imagesTrilha/iconContract.svg';
+import IconCalendar from 'imagesTrilha/iconCalendarT.svg';
+import IconConfig from 'imagesTrilha/iconConfigT.svg';
+import OnGoing from 'imagesTrilha/OnGoing.svg';
+import checked from 'imagesTrilha/checked.svg';
 import { useNavigate } from "react-router-dom";
 import Button from "Components/botaoglobal/Button";
 
@@ -120,21 +120,3 @@ const ConteudoTrilha1 = () => {
 }
 
 export default ConteudoTrilha1;
-
-
-
-
-
-
-
-
-
-
-{/* <S.Header>
-                        <S.HeaderText>
-                            <h1>Olá, Sueli!</h1>
-                            <h2>Bem vinda a trilha de desenvolvimento!</h2>
-                            <p>Este é o seu espaço de aprendizado.
-                                Cada etapa terá o conteúdo e um quiz para testar suas habilidades,<br /> estabeleça sua meta e inicie essa jornada! </p>
-                        </S.HeaderText>
-                    </S.Header> */}

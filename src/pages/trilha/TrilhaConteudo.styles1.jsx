@@ -144,20 +144,6 @@ export const MainContent = styled.div`
 
 `
 
-// export const Header = styled.div`
-//     background-image: url(${BgOrange});
-//     background-repeat: no-repeat;
-//     width: 100%;   
-// `
-// export const HeaderText = styled.div`
-//     display: flex;
-//     flex-direction: column;
-//     padding: 35px;
-//     row-gap: 8px;
-//     font-family: "Poppins", sans-serif;
-//     color: #FFFFFF;   
-// `
-
 export const ProcessContainer = styled.div`
     display: flex;
     flex-direction: row;

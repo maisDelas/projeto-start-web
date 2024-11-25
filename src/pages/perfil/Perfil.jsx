@@ -1,4 +1,4 @@
-import Navbar from "Components/navbar/Navbar";
+import Navbar from "Components/navbar/navbar";
 import * as S from "./Perfil.styles";
 import { Link } from "Components/navbar/Navbar.styles";
 import IconPerfil from "../../imagesTrilha/IconPerfilT.svg";
@@ -6,7 +6,6 @@ import IconTrilha from "../../imagesTrilha/iconTrilhaT.svg";
 import IconContrato from "../../imagesTrilha/iconContract.svg";
 import IconCalendar from "../../imagesTrilha/iconCalendarT.svg";
 import IconConfig from "../../imagesTrilha/iconconfigT.svg";
-import lixeira from "../../imagesTrilha/lixeira.svg";
 import facebook from "../../assets/facebook.svg";
 import instagram from "../../assets/instagram.svg";
 import mulherIcon from "../../assets/mulher.svg";
@@ -16,11 +15,14 @@ import city from "../../assets/city.svg";
 import planning from "../../assets/planning.svg";
 import  NavbarItem from "Components/navbaritem/NavbarItem";
 import bola from "../../assets/bola.svg";
+import { useNavigate } from "react-router-dom";
 
 
 
 
 function Perfil() {
+  const navigation = useNavigate()
+
   return (
         <S.Perfil>
       <Navbar>
@@ -41,7 +43,7 @@ function Perfil() {
 
           <NavbarItem src={IconPerfil} alt="Perfil" href="perfil" label="Perfil" />
 
-          <NavbarItem src={IconTrilha} alt="Trilha" href="trilha" label="Trilha" />
+          <NavbarItem src={IconTrilha} alt='Trilha' href='trilha' label="Trilha" />
 
           <NavbarItem src={IconContrato} alt="Contrato" href="contrato" label="Contratos" />
 
@@ -51,10 +53,7 @@ function Perfil() {
 
           <div className="separador"></div>
 
-          <div className="navbar-item">
-            <img src={lixeira} alt="" />
-            <button>Excluir conta</button>
-          </div>
+          
         </S.Sidebar>
         <S.PerfilPrincipal>
           <S.SegundoPerfil>

@@ -254,6 +254,7 @@ export const ButtonEdit = styled.div`
        justify-content: center;
        padding: 8px 16px;
        transition: background-color 0.3s ease;
+       color: #E35D1C;
 `;
 
 export const ButtonGrupo = styled.div`

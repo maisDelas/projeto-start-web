@@ -1,13 +1,13 @@
 import React from "react";
-import * as S from './TrilhaConteudo1.styles'
-import logo from '../../imagesTrilha/LogoDelas.svg'
-import IconPerfil from '../../imagesTrilha/iconPerfilT.svg'
-import IconTrilha from '../../imagesTrilha/iconTrilhaT.svg'
-import IconContract from '../../imagesTrilha/iconContract.svg'
-import IconCalendar from '../../imagesTrilha/iconCalendarT.svg'
-import IconConfig from '../../imagesTrilha/iconConfigT.svg'
-import OnGoing from '../../imagesTrilha/OnGoing.svg'
-import checked from '../../imagesTrilha/checked.svg'
+import * as S from 'pages/trilha/TrilhaConteudo.styles1'
+import logo from 'imagesTrilha/LogoDelas.svg'
+import IconPerfil from 'imagesTrilha/iconPerfilT.svg'
+import IconTrilha from 'imagesTrilha/iconTrilhaT.svg'
+import IconContract from 'imagesTrilha/iconContract.svg'
+import IconCalendar from 'imagesTrilha/iconCalendarT.svg'
+import IconConfig from 'imagesTrilha/iconConfigT.svg'
+import OnGoing from 'imagesTrilha/OnGoing.svg'
+import checked from 'imagesTrilha/checked.svg'
 import { useNavigate } from "react-router-dom";
 import Button from "Components/botaoglobal/Button";
 
