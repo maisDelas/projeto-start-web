@@ -5,7 +5,8 @@ import Cards from 'pages/mapeamento/Cards'
 
 import Trilha from 'pages/trilha/Trilha'
 import Perfil from 'pages/perfil/Perfil'
-import Cadastro from 'cadastro/Cadastro'
+import Cadastro from 'pages/cadastro/Cadastro'
+import Dados from  'pages/dados/Dados'
 
 
 
@@ -19,6 +20,7 @@ export default function App() {
         <Route path="/Trilha" element={< Trilha/>} />
         <Route path="/Perfil" element={< Perfil />} />
         <Route path="/Cadastro" element={<Cadastro />} />
+        <Route path="/Dados" element={<Dados />} />
       </Routes>
       </BrowserRouter>
   )
