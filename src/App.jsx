@@ -3,11 +3,13 @@ import Home from 'pages/home/home'
 import Mapeamento from 'pages/mapeamento/Mapa'
 import Cards from 'pages/mapeamento/Cards'
 import Trilha from 'pages/trilha/Trilha'
-import NavU from 'Components/navbar/Nav.usuario'
 import Perfil from 'pages/perfil/Perfil'
 import Cadastro from 'cadastro/Cadastro'
+import CadastroTipo from 'pages/escolhercadastro/CadastroTipo'
+import Dados from  'pages/dados/Dados'
 import ConteudoTrilha1 from './pages/trilha/TrilhaConteudo1'
 import ConteudoTrilha2 from 'pages/trilha/TrilhaConteudo2'
+import ResetPassword from 'pages/resetPassword/ResetPassword'
 
 import CadastroPrestadora from 'pages/cadastroP/TelaP'
 
@@ -25,8 +27,6 @@ export default function App() {
 
         <Route path="/Trilha" element={< Trilha/>} />
 
-        <Route path="/NavU" element={< NavU/>} />
-
         <Route path="/ConteudoTrilha1" element={< ConteudoTrilha1/>} />
 
         <Route path="/ConteudoTrilha2" element={< ConteudoTrilha2/>} />
@@ -36,6 +36,16 @@ export default function App() {
         <Route path="/Perfil" element={< Perfil />} />
 
         <Route path="/Cadastro" element={<Cadastro />} /> 
+        <Route path="/Dados" element={<Dados/>} />
+
+        <Route path="/CadastroPrestadora" element={<CadastroPrestadora />} />
+
+        <Route path="/ResetPassword" element={<ResetPassword />} />
+
+        
+        <Route path="/Perfil" element={< Perfil />} />
+        <Route path="/CadastroTipo" element={<CadastroTipo />} /> 
+        <Route path="/Dados" element={<Dados />} />
       </Routes>
       </BrowserRouter>
   )
