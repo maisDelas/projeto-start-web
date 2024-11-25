@@ -43,6 +43,7 @@ export const Link = styled.li`
   a {
     color: #544e48;
     text-decoration: none;
+    font-family: "Poppins", sans-serif;
   }
 `
 

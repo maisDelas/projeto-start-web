@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 
 export const StyleButton = styled.button`
-    width: 240px;
+    width: auto;
     background-color: #E35D1C;
     font-family: "Poppins", sans-serif;
     font-style: normal;
