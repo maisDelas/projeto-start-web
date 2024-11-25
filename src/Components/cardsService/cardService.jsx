@@ -1,5 +1,5 @@
 import Button from "../botaoglobal/Button";
-import {TitleService,Stylequadrado,IconService,Descricao, CardButton} from "./CardService.styles";
+import {TitleService,Stylequadrado,IconService,Descricao, CardButton} from "./cardService.styles";
 
 function Card({ title, description, iconUrl, altName }) {
   return (
