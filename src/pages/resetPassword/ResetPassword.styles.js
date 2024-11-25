@@ -100,7 +100,7 @@ export const ErrorMsg = styled.span`
     margin-top: 20px;
     position: absolute;
     right: 85px;
-  }
+  
 `;
 
 export const Button = styled.button`

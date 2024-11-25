@@ -114,10 +114,10 @@ const ConteudoTrilha2 = () => {
 
                     </S.TextContainer>
 
-                    <div className="ButtonStyle">
+                    
                         <Button>Próximo</Button>
                         <Button onClick={()=>navigation('/ConteudoTrilha1')}>Voltar</Button>
-                    </div>
+                   
 
 
                 </S.MainContent>
