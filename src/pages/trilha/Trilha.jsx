@@ -10,10 +10,14 @@ import imgHeader from '../../imagesTrilha/imgHeader.svg'
 import laptop from '../../imagesTrilha/laptop.svg'
 import grafic from '../../imagesTrilha/grafic.svg'
 import grow from '../../imagesTrilha/grow.svg'
+import Button from 'Components/botaoglobal/Button';
+import { useNavigate } from 'react-router-dom';
 
 
 
 const Trilha = () => {
+    const navigation = useNavigate()
+    
     return (
         <S.PageWrapper>
 
@@ -35,11 +39,9 @@ const Trilha = () => {
 
             <S.PageContent>
                 <S.Sidebar>
-
-
                     <ul>
-                        <li><img src={IconPerfil}></img> <a href="#perfil">Perfil</a></li>
-                        <li><img src={IconTrilha}></img> <a href="#trilha">Trilha</a></li>
+                        <li><img src={IconPerfil}></img> <a onClick={() => navigation('/Perfil')}>Perfil</a></li>
+                        <li><img src={IconTrilha}></img> <a href="#trilha">Trilha Financeira</a></li>
                         <li><img src={IconContract}></img> <a href="#contrato">Contratos</a></li>
                         <li><img src={IconCalendar}></img> <a href="#calendario">Calendário</a></li>
                         <li><img src={IconConfig}></img> <a href="#configuracao">Configuração</a></li>
@@ -57,8 +59,10 @@ const Trilha = () => {
                         <S.Section>
 
                             <S.SectionTitle>
-                                <h1>O que nossa trilha oferece?</h1>
-                                <p>Nossa trilha de educação financeira é projetada para capacitar prestadoras com conhecimentos essenciais sobre gestão financeira, planejamento e investimento. Através de conteúdos práticos e acessíveis, buscamos ajudar mulheres a alcançar maior segurança financeira em suas vidas pessoais e profissionais.</p>
+                                <h1>Olá, Sueli!</h1>
+                                <h2>Bem vinda a trilha de desenvolvimento!</h2>
+                                <p>Este é o um espaço de aprendizado projetado para capacitar mulheres em conhecimentos essenciais sobre gestão financeira, planejamento, investimento e muito mais.
+                                Cada etapa terá o conteúdo e um quiz para testar suas habilidades, estabeleça sua meta e inicie essa jornada! </p>
                             </S.SectionTitle>
 
                         </S.Section>
@@ -148,7 +152,7 @@ const Trilha = () => {
                         </S.Card>
                     </S.CardGrid>
 
-                    <S.Button>Inicie sua Trilha</S.Button>
+                    <Button>Inicie sua Trilha</Button>
 
                 </S.ContentWrapper>
 

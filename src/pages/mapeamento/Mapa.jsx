@@ -8,6 +8,7 @@ import Cards from "./Cards"
 import InfoCards from "./InfoCards"
 import NavU from "Components/navbar/Nav.usuario"
 
+
 function Mapeamento() {
   const [isVerticalOpen, setIsVerticalOpen] = useState(true)
 
