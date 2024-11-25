@@ -1,5 +1,5 @@
 import Button from "../botaoglobal/Button";
-import {TitleService,Stylequadrado,IconService,Descricao,} from "./CardService.styles";
+import {TitleService,Stylequadrado,IconService,Descricao, CardButton} from "./cardService.styles";
 
 function Card({ title, description, iconUrl, altName }) {
   return (
@@ -9,7 +9,7 @@ function Card({ title, description, iconUrl, altName }) {
         <TitleService>{title}</TitleService>
         <Descricao>{description}</Descricao>
       </div>
-      <Button data-button> Ache uma profissional </Button>
+      <CardButton data-button> Ache uma profissional </CardButton>
     </Stylequadrado>
   );
 }
