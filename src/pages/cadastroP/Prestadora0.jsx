@@ -6,8 +6,9 @@ import {
   Paragraph,
   List,
   StyledButton,LogoContainer
-} from "pages/cadastroP/Prestadora0styles.js";
-import Logo1 from "./Imagem/LogoNN1.svg";
+} from "pages/cadastroP/Prestadoraa.styles.js";
+import Logo1 from "./Imagem/LogoNN1.svg"
+import Logo2 from './Imagem/NN2.svg'
 
 
 import { TfiBag } from "react-icons/tfi";
@@ -50,7 +51,7 @@ function CadastroPrestadora0() {
       <List>
         <Subtitle>
           <img src={Logo1} alt="Logo"  />
-          <IoDocumentTextOutline />  Documentos pessoais:
+          <IoDocumentTextOutline className="Icons" />  Documentos pessoais:
         </Subtitle>
         
         <li>Dados Pessoais;</li>
@@ -61,8 +62,8 @@ function CadastroPrestadora0() {
 
       <List>
         <Subtitle>
-          <img src={Logo1}  />
-          <TfiBag /> Dados de serviço:
+          <img src={Logo2}  />
+          <TfiBag className="Icons"/> Dados de serviço:
         </Subtitle>
           
         <li>Descrição de Serviço;</li>

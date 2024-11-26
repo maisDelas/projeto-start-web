@@ -11,7 +11,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    // font-family: "Poppins", Regular;
+    
     color: rgb(36, 12, 12);
     background-image: url('src/pages/cadastroP/Imagem/Fundo_completo.svg');
     background-size: cover; 
@@ -24,14 +24,19 @@ const GlobalStyle = createGlobalStyle`
 
   .logo {
     display: block;
-    margin: 0 auto; /* Centraliza horizontalmente */
-    max-width: 200px; /* Define o tamanho máximo */
+    margin: 0 auto; 
+    max-width: 200px; 
   }
 
  .nn2 {
     display: block;
-    margin: 10px auto; /* Centraliza horizontalmente e adiciona espaço acima/abaixo */
-    max-width: 200px; /* Define o tamanho máximo */
+    margin: 10px auto; 
+    max-width: 200px; 
+  }
+
+  .Icons {
+   color: #E35D1C;
+ 
   }
  
 `;

@@ -15,6 +15,7 @@ import ResetPassword from 'pages/resetPassword/ResetPassword'
 
 import CadastroPrestadora1 from 'pages/cadastroP/Prestadora1'
 import CadastroPrestadora2 from 'pages/cadastroP/Prestadoratre2'
+import CadastroPrestadora3 from 'pages/cadastroP/Prestadora3'
 import CadastroPrestadora0 from 'pages/cadastroP/Prestadora0'
 
 
@@ -38,6 +39,7 @@ export default function App() {
         <Route path="/ConteudoTrilha2" element={< ConteudoTrilha2/>} />
 
         
+        
 
         <Route path="/Perfil" element={< Perfil />} />
 
@@ -51,6 +53,8 @@ export default function App() {
 
         <Route path="CadastroPrestadora1" element={<CadastroPrestadora1 />} />
         <Route path="/CadastroPrestadora2" element={<CadastroPrestadora2 />} />
+        <Route path="/CadastroPrestadora3" element={<CadastroPrestadora3 />} />
+
 
 
 
