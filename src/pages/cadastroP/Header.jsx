@@ -30,16 +30,14 @@ const NavItem = styled.li`
     color: #544e48;
     font-size: 18px;
 
-    &:hover {
-      color: #e35d1c;
-    }
+   
   }
 `;
 
 const Picklist = styled.select`
   border: 0;
   background: #f6e5d3;
-  font-family: "Poppins", sans-serif;
+  // font-family: "Poppins", sans-serif;
 `;
 
 const LogoImage = styled.img`
