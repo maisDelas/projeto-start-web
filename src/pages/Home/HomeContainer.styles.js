@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import BackGroundIMG from '../assets/backgroundOnda.svg';
+import BackGroundIMG from 'assets/backgroundOnda.svg';
 import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
