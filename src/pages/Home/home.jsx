@@ -15,7 +15,7 @@ function Home() {
       <HomeContainer/>
       {/* Sessão de Titulo e Video */}
       <S.Title>
-        {" "}
+      
         <h2>Conheça um pouco a +Delas:</h2>
       </S.Title>
       <S.Bgcard>
@@ -37,9 +37,7 @@ function Home() {
           <h2>Buscando algum serviço?</h2>
         </S.Styletitle>
         <S.Cardcontainer>
-          {staticService.map((x, i) => (
-            <Card key={`Card_${i}`} {...x} />
-          ))}
+          {staticService.map((x, i) => (<Card key={`Card_${i}`} {...x} />))}
         </S.Cardcontainer>
         {/* Botão para o mapeamento */}
         <StyleButton><a href="/Map">Ir para o mapeamento</a></StyleButton>

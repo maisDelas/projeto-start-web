@@ -7,6 +7,7 @@ CardCenter,
 CardReset, 
 Button} from './CadastroTipo.styles.js';
 import NavBar from "Components/navbar/Navbar" 
+ 
 
 const CadastroTipo = () => {
 
