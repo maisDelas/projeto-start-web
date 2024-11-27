@@ -12,7 +12,7 @@ function SideBar() {
             <ul>
                 <li><img src={IconPerfil}></img> <a href="/Perfil">Perfil</a></li>
                 <li><img src={IconTrilha}></img> <a href="/Trilha">Trilha de desenvolvimento</a></li>
-                <li><img src={IconConfig}></img> <a href="#configuracao">Configuração</a></li>
+                <li><img src={IconConfig}></img> <a href="/Configuracao">Configuração</a></li>
             </ul>
 
             <hr class="linha"></hr>

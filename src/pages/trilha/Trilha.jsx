@@ -15,6 +15,7 @@ const Trilha = () => {
         <S.PageWrapper>
             <NavU />
             <S.PageContent>
+                
                 <SideBarStyle />
                 <S.ContentWrapper>
 
