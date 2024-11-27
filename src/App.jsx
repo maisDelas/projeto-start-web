@@ -16,10 +16,6 @@ import CadastroPrestadora2 from 'pages/cadastroP/Prestadoratre2'
 import CadastroPrestadora3 from 'pages/cadastroP/Prestadora3'
 import CadastroPrestadora0 from 'pages/cadastroP/Prestadora0'
 
-
-
-
-
 export default function App() {
   return (
     <BrowserRouter>
