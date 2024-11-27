@@ -1,13 +1,14 @@
-import Footer from "./Components/footer/Footer"
+import Footer from "../../Components/footer/footer";
 import * as S from "./Mapa.styles"
 import LogoBranca from "assets/Logo-branca.svg"
 import Map from "./Api.mapa"
-import NavBar from "./Components/navbar/Navbar"
+import NavBar from "Components/navbar/navbar"
 import Cards from './Cards'
 
 function Mapeamento() {
   return (
     <div>
+      <Footer/>
       <NavBar />
       <S.Container>
         <S.Description>

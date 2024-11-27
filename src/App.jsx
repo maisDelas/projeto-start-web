@@ -1,18 +1,16 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Home from './home/Home'
+import Home from 'pages/home/home'
 import Mapeamento from 'pages/mapeamento/Mapa'
 import Cards from 'pages/mapeamento/Cards'
-
 import Trilha from 'pages/trilha/Trilha'
 import Perfil from 'pages/perfil/Perfil'
-import Cadastro from 'pages/cadastro/Cadastro'
-import Dados from  'pages/dados/Dados'
-import Cadastro from 'cadastro/Cadastro'
 import ConteudoTrilha1 from './pages/trilha/TrilhaConteudo1'
 import ConteudoTrilha2 from 'pages/trilha/TrilhaConteudo2'
-
 import CadastroPrestadora from 'pages/cadastroP/TelaP'
+import Dados from 'pages/dados/Dados'
 
+
+  
 
 export default function App() {
   return (
@@ -25,19 +23,13 @@ export default function App() {
         <Route path="/ConteudoTrilha1" element={< ConteudoTrilha1/>} />
         <Route path="/ConteudoTrilha2" element={< ConteudoTrilha2/>} />
         <Route path="/Dados" element={<Dados/>} />
-
         <Route path="/CadastroPrestadora" element={<CadastroPrestadora />} />
-
-
-
-        
         <Route path="/Perfil" element={< Perfil />} />
-        <Route path="/Cadastro" element={<Cadastro />} />
-        <Route path="/Dados" element={<Dados />} />
-        <Route path="/Cadastro" element={<Cadastro />} /> 
+        
+        
       </Routes>
       </BrowserRouter>
-  )
+  ) 
 }
 
 

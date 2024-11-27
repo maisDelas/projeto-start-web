@@ -1,7 +1,7 @@
-import  ImagemLogoTipo from '../assets/Logobranca.svg'
-import mulheres_imagens from '../assets/imagem_mulheres.svg'
+import  ImagemLogoTipo from 'assets/Logobranca.svg'
+import mulheres_imagens from 'assets/imagem_mulheres.svg'
 
-import {GlobalStyle, HomeCont, WhiteLogotipo, Title, Subtitle, HomeImages, ImageMulheres} from './HomeContainer.styles.js'
+import {GlobalStyle, HomeCont, WhiteLogotipo, Title, Subtitle, HomeImages, ImageMulheres} from './HomeContainer.styles'
 
 
 
@@ -23,4 +23,4 @@ function HomeContainer() {
 );
 }
 
-export default HomeContainer;
+export default HomeContainer;   

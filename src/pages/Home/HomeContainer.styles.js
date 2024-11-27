@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import BackGroundIMG from '../assets/backgroundOnda.svg';
+import BackGroundIMG from '../../assets/backgroundOnda.svg';
 import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
@@ -17,6 +17,19 @@ export const GlobalStyle = createGlobalStyle`
 }
 
 `;
+
+
+export const HomeCont = styled.div`
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+
 
 export const HomeContainer = styled.div`
     width: 100%;

@@ -1,63 +1,95 @@
 import styled from "styled-components";
-
+import background from "../../assets/Onda.svg"
 
 export const Container = styled.div`
-  position: relative; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  height: 100vh; 
-  overflow: hidden; 
+  min-height: 100vh; 
+  flex-direction: column;
+
+  
+  img { 
+  width: 200px;
+  margin-top: 10%;
+  margin-bottom: 2%;
+  }
+
+  
+  
 `;
 
-
-export const Onda = styled.img`
-  position: absolute; 
+export const Onda = styled.div`
   width: 100%;
-  height: 100%; 
-  object-fit: cover; 
   z-index: -1;
- 
-`;
+  background-image: url(${background});
+  height: 100vh;
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
 
+
+`;
 
 export const Logo = styled.div`
   display: flex;
   justify-content: center;
-  position: absolute;
-  top: 10px; 
-  left: 50%;
-  transform: translateX(-50%); 
-  width: 30%; 
-`;
-export const NomeImg = styled.div`
-  display: block;
-  margin-bottom: 40px;
-  margin-left: 70px;
+  width: 100%;
+  margin-top: 5%;
+ 
 
-  img { 
-  margin-left: 45px;
-  margin-bottom: 15px;
-
+  img {
+  width: 200px;
   }
-
-        
 `;
 
-export const Form = styled.form`
+export const NomeImg = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 15px;
   width: 100%;
-  max-width: 650px; 
-  margin: 150px auto 0; 
-  padding: 90px 90px;
-  background-color: #ffff;
-  border-radius: 10px;
-  
+  align-items: center;
 
-   h1{ 
+
+  .circulo { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    background-color:#E75109;
+    margin-bottom: 10px;
+    border-radius: 100%;
+    max-width: 50px;
+   
+  }
+
+`;
+
+
+export const Form = styled.form`
+  width: 600px; 
+  border-radius: 10px;
+  background-color: #ffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px; 
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  
+ 
+ 
+
+   div { 
+    margin:10px 0;
+    width: 80%;
+   
+   }
+
+   h3{ 
     color:#f15a24;
-    font-size: 19px;
-    margin-right: 20px;
+    
    }
 `;
 
@@ -93,12 +125,16 @@ export const HelperLink = styled.a`
 export const ButtonGroup = styled.div`
   display: flex;
   justify-content: space-between;
-  margin-top: 20px;
+
+ 
  
 `;
 
+
+
+
 export const Button = styled.button`
-  width: 30%;
+  width: 20%;
   padding: 7px;
   font-size: 16px;
   border: none;
@@ -111,21 +147,26 @@ export const Button = styled.button`
 
 `;
 export const IndicadorG = styled.div`
-
+  
   display: flex;
-  position: relative;
   justify-content: center;
   align-items: center;
-  top: 30px;
-  gap: 10px;
+  width: 100%;
+
+  div:nth-child(2) {
+    margin: 0 7px;
+
+  }
+
+ 
 `;
 
 export const Indicador = styled.div `
-
-  width: 10px;
+  max-width: 10px;
+  width: 100%;
   height: 10px;
-  border-radius: 50%; 
-  background-color: ${(props) => (props.active ? "#f15a24" : "#ddd")}; /* Cor diferenciada para o ativo */
+  border-radius: 100%; 
+  background-color: ${(props) => (props.active ? "#f15a24" : "#ddd")}; 
   transition: background-color 0.3s ease;
 
   &:hover {
