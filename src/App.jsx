@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Home from 'pages/home/Home'
+import Home from 'pages/home/home'
 import Mapeamento from 'pages/mapeamento/Mapa'
 import Cards from 'pages/mapeamento/Cards'
 import Trilha from 'pages/trilha/Trilha'
@@ -9,6 +9,7 @@ import CadastroTipo from 'pages/escolhercadastro/CadastroTipo'
 import Dados from 'pages/dados/Dados'
 import ConteudoTrilha1 from './pages/trilha/TrilhaConteudo1'
 import ConteudoTrilha2 from 'pages/trilha/TrilhaConteudo2'
+import Login from 'pages/login/Login'
 import ResetPassword from 'pages/resetPassword/ResetPassword'
 // import CadastroPrestadora from 'pages/cadastroP/TelaP'
 import CadastroPrestadora1 from 'pages/cadastroP/Prestadora1'
@@ -40,6 +41,7 @@ export default function App() {
         <Route path="CadastroPrestadora1" element={<CadastroPrestadora1 />} />
         <Route path="/CadastroPrestadora2" element={<CadastroPrestadora2 />} />
         <Route path="/CadastroPrestadora3" element={<CadastroPrestadora3 />} />
+        <Route path="/Login" element={<Login />} />
         <Route path="/ResetPassword" element={<ResetPassword />} />
         <Route path="/CadastroTipo" element={<CadastroTipo />} />
       </Routes>
