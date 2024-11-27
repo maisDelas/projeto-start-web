@@ -13,16 +13,14 @@ export default [
     photo: Mulher1 ,
     name:'Vitória Santos',
     profession:'Designer',
-    pin:Pin,
     distance:'2.5 Km',
-    classification: 5
+    classification: 2
   },
   {
     id:1,
     photo: Mulher2,
     name:'Sueli Almeida',
     profession:'Arquiteta',
-    pin: Pin,
     distance:'3 Km',
     classification: 5
   },
@@ -31,25 +29,22 @@ export default [
     photo: Mulher3 ,
     name:'Ana Silva',
     profession:'Cozinheira',
-    pin: Pin,
     distance:'3.2 Km',
-    classification: 5
+    classification: 4
   },
   {
     id:3,
     photo: Mulher4,
     name:'Lucia Alvez',
     profession:'Nutricionista',
-    pin: Pin,
     distance:'2.5 Km',
-    classification: 5
+    classification: 3
   },
   {
     id:4,
     photo: Mulher1,
     name:'Sofia Ameida',
     profession:'Web Designer',
-    pin:Pin,
     distance:'2 Km',
     classification: 5
   },
@@ -58,7 +53,22 @@ export default [
     photo: Mulher3,
     name:'Claudia Santana',
     profession:'Costureira',
-    pin:Pin,
+    distance:'4 Km',
+    classification: 5
+  },
+  {
+    id:6,
+    photo: Mulher1,
+    name:'Sofia Ameida',
+    profession:'Web Designer',
+    distance:'2 Km',
+    classification: 5
+  },
+  {
+    id:7,
+    photo: Mulher3,
+    name:'Claudia Santana',
+    profession:'Costureira',
     distance:'4 Km',
     classification: 5
   },

@@ -16,6 +16,7 @@ function Mapeamento() {
     setIsVerticalOpen((isVerticalOpen) => !isVerticalOpen)
   }
 
+  
   return (
     <>
       {/* Navbar com o icone de usuario funcionando */}
@@ -43,15 +44,17 @@ function Mapeamento() {
           <S.Buttonarrow onClick={handleWithButtonClick}>
             <S.IconArrow />
           </S.Buttonarrow>
-          <S.InputContainer isOpen={isVerticalOpen} >
-            <S.Pesquisa placeholder="Buscar"/>
-            <S.Lupa />
-          </S.InputContainer>
+          <S.ContainerSearch>
           <S.BotaoFiltrar isOpen={isVerticalOpen}>
-            <S.Innertext>Filtrar por área de serviço</S.Innertext>
+            <S.Innertext>Filtrar</S.Innertext>
             <S.Arrow2 />
           </S.BotaoFiltrar>
-          <S.ContainerCards>
+          <S.InputContainer isOpen={isVerticalOpen} >
+            <S.Pesquisa  placeholder="Buscar"/>
+            <S.Lupa />
+          </S.InputContainer>
+          </S.ContainerSearch>
+          <S.ContainerCards >
             {InfoCards.map((x, i) => (
               <Cards key={`Cards_${i}`} {...x} />
             ))}
