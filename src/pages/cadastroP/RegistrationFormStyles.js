@@ -16,9 +16,12 @@ export const LogoContainer = styled.div`  max-width: 1300px;
   justify-content: space-between;
   align-items: center;
   padding: 0 40px;
+  
+   
 
   img {
     margin: 0; /* Remova espaçamento da imagem no header */
+    
   }
 `;
 export const FormBox = styled.div`
@@ -33,13 +36,13 @@ export const FormBox = styled.div`
   h2 {
     color: #e75109;
     margin-bottom: 40px;
+    // font-family:Ag bode-text;
   }
 `;
 
 export const InputGroup = styled.div`
   margin-bottom: 20px;
   text-align: left;
-
 
   label {
     display: block;
@@ -54,10 +57,12 @@ export const InputGroup = styled.div`
     border-radius: 5px;
     outline: none;
     transition: border-color 0.3s ease;
+    
+    
 
-    &:focus {
-      border-color: #e35d1c;
-    }
+    // &:focus {
+    //   border-color: #e35d1c;
+    // }
   }
 
   .error {
@@ -86,9 +91,7 @@ export const StyledButton = styled.button`
   cursor: pointer;
   transition: background-color 0.3s ease;
 
-  &:hover {
-    background-color: #c84d18;
-  }
+
 `;
 
 export const Swapper = styled.div`
