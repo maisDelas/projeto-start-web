@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import InputForm from '../Components/InputForm/InputForm.jsx';
-import logotipo_branca from '../assets/Logotipo_branca.svg';
+import InputForm from 'Components/inputForm/InputForm';
+import logotipo_branca from 'assets/Logobranca.svg';
 import {
   GlobalStyle,
   BodyContainer,
