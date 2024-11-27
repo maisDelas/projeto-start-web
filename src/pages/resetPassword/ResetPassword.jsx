@@ -12,7 +12,8 @@ Description,
 ErrorMsg,
 Button, 
 BackLoginLink, ContainerNav} from './ResetPassword.styles.js';
-import NavBar from "Components/navbar/Navbar" 
+import NavBar from "Components/navbar/navbar.jsx" 
+
 
 const ResetPassword = () => {
 

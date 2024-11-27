@@ -9,7 +9,7 @@ function NavU () {
         <S.NavLogo src={logo}/>
         <S.ListLinks>
           <S.Link>
-            <a href="#">Pagina Inicial</a>
+            <a href="/">Pagina Inicial</a>
           </S.Link>
           <S.Link>
             <a href="#">Fale Conosco</a>

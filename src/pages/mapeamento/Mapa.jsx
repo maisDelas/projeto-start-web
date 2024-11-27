@@ -1,17 +1,10 @@
-import Footer from "Components/footer/Footer"
-import * as S from "./Mapa.styles"
-import LogoBranca from "assets/Logo-branca.svg"
 import Map from "./Api.mapa"
-import NavBar from "Components/navbar/Navbar"
 import Cards from './Cards'
 import { useState } from "react"
-
-
-
-
+import Footer from "Components/Footer/Footer"
+import * as S from "./Mapa.styles"
+import LogoBranca from "assets/Logo-branca.svg"
 import InfoCards from "./InfoCards"
-
-
 import NavU from "Components/navbar/Nav.usuario"
 
 

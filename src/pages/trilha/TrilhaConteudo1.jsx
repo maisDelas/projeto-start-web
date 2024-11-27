@@ -1,15 +1,11 @@
-import React from "react";
-import * as S from './TrilhaConteudo1.styles'
-import logo from '../../imagesTrilha/LogoDelas.svg'
-import IconPerfil from '../../imagesTrilha/iconPerfilT.svg'
-import IconTrilha from '../../imagesTrilha/iconTrilhaT.svg'
-import IconContract from '../../imagesTrilha/iconContract.svg'
-import IconCalendar from '../../imagesTrilha/iconCalendarT.svg'
-import IconConfig from '../../imagesTrilha/iconConfigT.svg'
-import OnGoing from '../../imagesTrilha/OnGoing.svg'
-import checked from '../../imagesTrilha/checked.svg'
+
+import * as S from './TrilhaConteudo.styles1';
+import OnGoing from 'imagesTrilha/OnGoing.svg';
+import checked from 'imagesTrilha/checked.svg';
 import { useNavigate } from "react-router-dom";
 import Button from "Components/botaoglobal/Button";
+import NavU from "Components/navbar/Nav.usuario";
+import SideBarStyle from 'Components/sidebar/Sidebar';
 
 
 const ConteudoTrilha1 = () => {
@@ -18,35 +14,9 @@ const ConteudoTrilha1 = () => {
     return (
 
         <S.PageWrapper>
-            <S.Nav>
-                <div>
-                    <img className="Logo" src={logo} alt="logoIcon" />
-                </div>
-                <S.LinksNav>
-                    <a onClick={() => navigation('/')}>Página inicial</a>
-                    <a href="contato">Fale Conosco</a>
-                </S.LinksNav>
-                <S.PerfilNav>
-                    <div className="Circulo">U</div>
-                    <div className="nome">Sueli123</div>
-                    <div className="seta">▼</div>
-                </S.PerfilNav>
-            </S.Nav>
-
+            <NavU />
             <S.PageContent>
-
-                <S.Sidebar>
-                    <ul>
-                        <li><img src={IconPerfil}></img> <a onClick={() => navigation('/Perfil')}>Perfil</a></li>
-                        <li><img src={IconTrilha}></img> <a href="#trilha">Trilha Financeira</a></li>
-                        <li><img src={IconContract}></img> <a href="#contrato">Contratos</a></li>
-                        <li><img src={IconCalendar}></img> <a href="#calendario">Calendário</a></li>
-                        <li><img src={IconConfig}></img> <a href="#configuracao">Configuração</a></li>
-                    </ul>
-
-                    <hr className="linha"></hr>
-                </S.Sidebar>
-
+                <SideBarStyle />
                 <S.MainContent>
 
                     <S.ProcessContainer>
@@ -76,15 +46,15 @@ const ConteudoTrilha1 = () => {
                         <S.Text>
                             <h2>Como investir em um negócio?</h2>
                             <p>Investir no próprio negócio é uma decisão estratégica que requer planejamento, organização e análise de riscos. Abaixo estão 7 passos e considerações que podem te ajudar a estruturar o investimento no seu próprio negócio:</p>
-                            
+
                             <ol>
                                 <li>Definição do Objetivo do Investimento
                                     <ul>
                                         <li>Por que investir? Determine se o objetivo é geração de renda, diversificação de portfólio, impacto social ou outro motivo.</li>
                                         <li>Horizonte de tempo: Avalie se o investimento é de curto, médio ou longo prazo.</li>
-                                        
                                     </ul>
                                 </li>
+
                                 <li>Pesquisa e Análise
                                     <ul>
                                         <li>Estudo de mercado: Entenda o setor de atuação, tamanho do mercado, concorrência, tendências e oportunidades.</li>
@@ -92,49 +62,56 @@ const ConteudoTrilha1 = () => {
                                         <li>Análise financeira: Verifique a saúde financeira do negócio, incluindo faturamento, lucro, margens e fluxo de caixa.</li>
                                     </ul>
                                 </li>
+
                                 <li>Tipos de Investimento em Negócios
                                     <ul>
                                         <li>Negócios estabelecidos: Menor risco, mas requer maior capital inicial.</li>
-                                        <li>Negócio próprio: Maior controle e liberdade, mas alta dedicação e risco.</li>               
+                                        <li>Negócio próprio: Maior controle e liberdade, mas alta dedicação e risco.</li>
+                                    </ul>
+                                </li>
+
+                                <li> Planejamento e Estruturação
+                                    <ul>
+                                        <li>Plano de negócios: Crie ou avalie um plano sólido que inclua objetivos, estratégias, projeções financeiras e plano de ação.</li>
+                                        <li>Estrutura legal: Escolha o tipo de empresa (MEI, EPP, Ltda., etc.) e registre adequadamente.</li>
+                                    </ul>
+                                </li>
+
+                                <li>Fontes de Financiamento
+                                    <ul>
+                                        <li>Capital próprio: Dinheiro pessoal ou economias.</li>
+                                        <li>Investidores: Sócios, investidores-anjo ou fundos de venture capital.</li>
+                                        <li>Empréstimos: Bancos, fintechs ou linhas de crédito específicas.</li>
+                                        <li>Crowdfunding: Financiamento coletivo com apoio do público.</li>
+                                    </ul>
+                                </li>
+
+                                <li>Riscos e Mitigação
+                                    <ul>
+                                        <li>Riscos financeiros: Fluxo de caixa negativo ou retorno abaixo do esperado.</li>
+                                        <li>Riscos operacionais: Problemas com fornecedores, produção ou equipe.</li>
+                                        <li>Riscos de mercado: Mudanças na demanda, concorrência ou crises econômicas.</li>
+                                        <li>Mitigação: Diversifique, faça seguros, tenha reservas financeiras e revise constantemente sua estratégia.</li>
+                                    </ul>
+                                </li>
+
+                                <li>Gestão e Acompanhamento
+                                    <ul>
+                                        <li>Gestão eficiente: Controle financeiro, operacional e estratégico.</li>
+                                        <li>Monitoramento contínuo: Avalie métricas de desempenho, KPIs e feedback do mercado.</li>
+                                        <li>Capacitação: Invista no aprimoramento da equipe e em tecnologia.</li>
                                     </ul>
                                 </li>
                             </ol>
-                            
+
                         </S.Text>
-
-            
-
                     </S.TextContainer>
-
-                    <Button onClick={() => navigation('/ConteudoTrilha2')}>Próximo</Button> 
-
+                    <Button className='Buttom' onClick={() => navigation('/ConteudoTrilha2')}>Próximo</Button>
 
                 </S.MainContent>
-
-
-
             </S.PageContent>
         </S.PageWrapper>
 
-    )
-}
+    )}
 
 export default ConteudoTrilha1;
-
-
-
-
-
-
-
-
-
-
-{/* <S.Header>
-                        <S.HeaderText>
-                            <h1>Olá, Sueli!</h1>
-                            <h2>Bem vinda a trilha de desenvolvimento!</h2>
-                            <p>Este é o seu espaço de aprendizado.
-                                Cada etapa terá o conteúdo e um quiz para testar suas habilidades,<br /> estabeleça sua meta e inicie essa jornada! </p>
-                        </S.HeaderText>
-                    </S.Header> */}

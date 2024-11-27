@@ -16,7 +16,7 @@ const GlobalStyle = createGlobalStyle`
     background-image: url('src/pages/cadastroP/Imagem/Fundo_completo.svg');
     background-size: cover; 
     
-    background-repeat: no-repeat; /
+    background-repeat: no-repeat; 
     background-position: center; 
 
     
