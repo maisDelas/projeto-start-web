@@ -63,11 +63,9 @@ const Footer = () => {
                 <a href="#">Política de privacidade</a>
               </li>
               <li>
-                <a href="#">Mapeamento de serviços</a>
+                <a href="/Map">Mapeamento de serviços</a>
               </li>
-              <li>
-                <a href="#">Suporte</a>
-              </li>
+              
             </ul>
           </S.FooterLink>
           <S.FooterInscreva>

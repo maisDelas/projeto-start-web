@@ -8,8 +8,10 @@ export const Hero = styled.div`
     align-items: center;
     background-image:url(${BgOnda});
     background-repeat:no-repeat;
+    background-size: cover;
     width:1440px;
-    padding: 35px;
+    height: 600px;
+    padding: 56px;
  
 img{
     display: flex;
