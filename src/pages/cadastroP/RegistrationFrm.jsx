@@ -16,7 +16,7 @@ import GlobalStyle from "./GlobalStyle";
 
 
 
-function RegistrationForm() {
+function CadastroPrestadora1() {
   const [formData, setFormData] = useState({
     fullName: "",
     birthDate: "",
@@ -150,9 +150,7 @@ function RegistrationForm() {
             <StyledButton type="submit">Avançar</StyledButton>
           </ButtonContainer>
             </Link>
-          {/* <ButtonContainer>
-            <StyledButton type="submit">Avançar</StyledButton>
-          </ButtonContainer> */}
+        
 
         </form>
 
@@ -166,4 +164,4 @@ function RegistrationForm() {
   );
 }
 
-export default RegistrationForm;
+export default CadastroPrestadora1;
