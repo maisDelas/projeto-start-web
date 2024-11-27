@@ -1,33 +1,36 @@
 import styled from "styled-components";
 
-
 export const PageWrapper = styled.div`
     display: flex;
     flex-direction: column;
-
 `
 
 export const PageContent = styled.div`
-    display: flex; 
-    height: 100vh;
-    
+    display: flex;      
 `
-
-export const Notification = styled.div`
+export const Config = styled.div`
     display: flex;
-    padding: 150px;
+    flex-direction:column;
+    gap: 35px;
+    padding: 100px;
+    color: #E35D1C;
+    margin: auto;
 
-    h2{
-        color: #E35D1C;
-        margin-bottom: 35px;
+    h2{    
+        margin-bottom: 45px;
+    }
+
+    h3{
+        text-align: center;
+        font-weight:normal;
     }
 
     .boxContent{
         display: flex;
-        flex-direction: row;
         align-items: center;
         justify-content: center;
         gap: 250px;
+        margin-bottom: 50px;
         border: 1px solid #E35D1C;
         box-shadow: 0 5px 10px rgba(85, 85, 85, 0.3);
         width: auto;
@@ -35,6 +38,16 @@ export const Notification = styled.div`
         border-radius: 10px;
     }
 
+    .input{
+        display: flex;
+        flex-direction: column;
+        gap:35px;
 
+        
+        
+    }
+::placeholder{
+    text-align: center;
+
+}
 `
-

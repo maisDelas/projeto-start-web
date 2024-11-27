@@ -23,6 +23,8 @@ function Home() {
       <S.ImageSection>
         <img src={imgMulheres} alt="imgMulheres" />
       </S.ImageSection>
+
+      <S.Container>
       <S.Title>
 
         <h2>Conheça um pouco a +Delas:</h2>
@@ -56,6 +58,7 @@ function Home() {
       <Carrossel />
 
       <Footer />
+      </S.Container>
     </>
   )
 }

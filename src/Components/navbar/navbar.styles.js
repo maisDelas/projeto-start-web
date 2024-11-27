@@ -4,6 +4,33 @@ import GlobalButton from "Components/botaoglobal/Button"
 
 export const Container = styled.div`
   background-color: #f6e5d3;
+  width: 100%;
+  margin: 0;
+  
+
+
+  @media screen and (max-width:1440px) {
+
+width: 95%;
+}
+
+@media screen and (max-width:1024px) {
+
+width: 135%;
+}
+
+@media screen and (max-width:768px) {
+
+width: 180%;
+}
+
+@media screen and (max-width:375px) {
+
+width: 370%;
+font-size: 35px;
+
+}
+
 `
 export const Content = styled.div`
   max-width: 1440px;

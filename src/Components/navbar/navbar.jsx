@@ -23,7 +23,7 @@ function NavBar({ children }) {
               <a href="#">Junte-se a +Delas</a>
             </Link>
             <Button>
-             <IconUser /> Entrar   
+             <IconUser /><a href="/Login">Entrar </a>   
             </Button>
           </ListLinks>
         )}

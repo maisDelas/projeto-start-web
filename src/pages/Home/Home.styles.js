@@ -34,6 +34,34 @@ export const ImageSection = styled.div`
   }   
 `
 
+export const Container = styled.div`
+
+width: 100%;
+margin: 0;
+
+@media screen and (max-width:1440px) {
+
+width: 100%;
+}
+
+@media screen and (max-width:1024px) {
+
+width: 135%;
+}
+
+@media screen and (max-width:768px) {
+
+width: 185%;
+}
+
+@media screen and (max-width:375px) {
+
+width: 365%;
+
+}
+
+`
+
 export const Title = styled.div`
     text-align: center;
     margin-top: 126px;

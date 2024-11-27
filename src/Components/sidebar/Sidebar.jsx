@@ -2,6 +2,7 @@
 import IconPerfil from 'imagesTrilha/iconPerfilT.svg'
 import IconTrilha from 'imagesTrilha/iconTrilhaT.svg'
 import IconConfig from 'imagesTrilha/iconConfigT.svg'
+import IconOut from 'imagesTrilha/Out.svg'
 import {SideBarStyle}  from './Sidebar.styles'
 
 function SideBar() {
@@ -16,6 +17,10 @@ function SideBar() {
             </ul>
 
             <hr class="linha"></hr>
+
+            <ul>               
+                <li><img src={IconOut}></img> <a href="">Sair</a></li>
+            </ul>
         </SideBarStyle>
     )
 }
