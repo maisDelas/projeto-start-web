@@ -6,7 +6,6 @@ export const Hero = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px;
     background-image:url(${BgOnda});
     background-repeat:no-repeat;
     width:1440px;

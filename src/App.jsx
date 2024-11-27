@@ -1,17 +1,11 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-<<<<<<< HEAD
-import Home from 'pages/home/home'
-=======
+
 import Home from 'pages/home/Home'
->>>>>>> 349e990c6e5745eb54572ed45e78679bfd190336
 import Mapeamento from 'pages/mapeamento/Mapa'
 import Cards from 'pages/mapeamento/Cards'
 import Trilha from 'pages/trilha/Trilha'
 import Perfil from 'pages/perfil/Perfil'
-<<<<<<< HEAD
-=======
 import Cadastro from 'cadastro/Cadastro'
->>>>>>> 349e990c6e5745eb54572ed45e78679bfd190336
 import CadastroTipo from 'pages/escolhercadastro/CadastroTipo'
 import Dados from 'pages/dados/Dados'
 import ConteudoTrilha1 from './pages/trilha/TrilhaConteudo1'
@@ -28,11 +22,14 @@ import CadastroPrestadora2 from 'pages/cadastroP/Prestadoratre2'
 import CadastroPrestadora3 from 'pages/cadastroP/Prestadora3'
 import CadastroPrestadora0 from 'pages/cadastroP/Prestadora0'
 
+<<<<<<< HEAD
 
 >>>>>>> 349e990c6e5745eb54572ed45e78679bfd190336
 
 
 
+=======
+>>>>>>> 70523745f57595419e4f8b5607f8f961ea0719bc
 export default function App() {
   return (
     <BrowserRouter>
