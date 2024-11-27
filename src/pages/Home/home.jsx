@@ -1,20 +1,8 @@
 import Carrossel from "./Carrossel"
 import Footer from "Components/footer/Footer"
-import staticService from "Components/cardsService/StaticService"
-import { StyleButton } from "../../Components/botaoglobal/Button.style"
-import Card from "Components/cardsService/CardService"
 import * as S from "./Home.styles"
 import NavBar from "Components/navbar/navbar" 
 import Card from "Components/cardsService/cardService"
-import * as S from "./Home.styles"
-import NavBar from "Components/navbar/Navbar" 
-import HomeContainer from "./HomeContainer"
-
-import Carrossel from "./Carrossel";
-import Footer from "Components/Footer/Footer";
-import Card from "Components/cardsService/cardService";
-import * as S from "pages/home/Home.styles";
-import NavBar from "Components/navbar/navbar";
 import StaticService from "Components/cardsService/StaticService";
 import { StyleButton } from "Components/botaoglobal/Button.style";
 import Logowhite from 'assets/Logobranca.svg'

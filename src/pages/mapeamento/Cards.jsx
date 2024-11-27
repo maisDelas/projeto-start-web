@@ -9,10 +9,10 @@ import { useState } from "react";
 
 function Cards ({photo, name, profession, distance, classification}){
 
-  const [openModal, setOpenModal] = useState(false) 
-
+  const [open, setOpen] = useState(false) 
+  console.log(open)
   return (
-   <S.Minicard onClick={() => setOpenModal(true)}>
+   <S.Minicard onClick={() => setOpen(!open)}>
     <S.Mulherimg src={photo}/>
       <S.CardDescription>
         <h3>{name}</h3>
@@ -27,7 +27,7 @@ function Cards ({photo, name, profession, distance, classification}){
           <S.StarIcon/>
         ))}
        </S.ContainerIcon>
-       <Modal isOpen={openModal}/>
+       <Modal isOpen={open}/>
    </S.Minicard>
   )
 }
