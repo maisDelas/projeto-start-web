@@ -1,6 +1,5 @@
 import styled from "styled-components"
-
-
+import { FaStar } from "react-icons/fa";
 
 
 export const Minicard = styled.div`
@@ -12,6 +11,7 @@ export const Minicard = styled.div`
   align-items: center;
   justify-content: space-between;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 `
 export const Mulherimg = styled.img`
   background: #ddd;
@@ -24,6 +24,8 @@ export const CardDescription = styled.div`
   flex: 1;
   display: flex;
   flex-direction: column;
+  color:var(--dark-orange) ;
+  line-height:16px;
 
   h3{
     font-size: 15.8px;
@@ -34,6 +36,15 @@ export const CardDescription = styled.div`
   }
 
 `
-export const Pin = styled.img`
-  width:17px;
+export const Distance = styled.div`
+  display: flex;
+
+  img {
+    width: 17px;
+  }
+`
+export const StarIcon = styled(FaStar)`
+  width: 16px;
+  color: #FABC03;
+
 `

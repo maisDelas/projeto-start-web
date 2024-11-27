@@ -1,78 +1,37 @@
-import React from 'react';
 import * as S from './Trilha.styles';
-import IconPerfil from '../../imagesTrilha/iconPerfilT.svg'
-import IconTrilha from '../../imagesTrilha/iconTrilhaT.svg'
-import IconContract from '../../imagesTrilha/iconContract.svg'
-import IconCalendar from '../../imagesTrilha/iconCalendarT.svg'
-import IconConfig from '../../imagesTrilha/iconConfigT.svg'
-import logo from '../../imagesTrilha/LogoDelas.svg'
 import imgHeader from '../../imagesTrilha/imgHeader.svg'
 import laptop from '../../imagesTrilha/laptop.svg'
 import grafic from '../../imagesTrilha/grafic.svg'
 import grow from '../../imagesTrilha/grow.svg'
 import Button from 'Components/botaoglobal/Button';
 import { useNavigate } from 'react-router-dom';
-
-
+import NavU from 'Components/navbar/Nav.usuario';
+import SideBarStyle from 'Components/sidebar/Sidebar';
 
 const Trilha = () => {
     const navigation = useNavigate()
-    
+
     return (
         <S.PageWrapper>
-
-            <S.Nav>
-                <div>
-                    <a href="http://localhost:5173/"><img className="Logo" src={logo} alt="logoIcon" /></a>
-                </div>
-                <S.LinksNav>
-                    <a href="home">Página inicial</a>
-                    <a href="contato">Fale Conosco</a>
-                </S.LinksNav>
-                <S.PerfilNav>
-                    <div className="Circulo">U</div>
-                    <div className="nome">Sueli123</div>
-                    <div className="seta">▼</div>
-                </S.PerfilNav>
-            </S.Nav>
-
-
+            <NavU />
             <S.PageContent>
-                <S.Sidebar>
-                    <ul>
-                        <li><img src={IconPerfil}></img> <a onClick={() => navigation('/Perfil')}>Perfil</a></li>
-                        <li><img src={IconTrilha}></img> <a href="#trilha">Trilha Financeira</a></li>
-                        <li><img src={IconContract}></img> <a href="#contrato">Contratos</a></li>
-                        <li><img src={IconCalendar}></img> <a href="#calendario">Calendário</a></li>
-                        <li><img src={IconConfig}></img> <a href="#configuracao">Configuração</a></li>
-                    </ul>
-
-                    <hr class="linha"></hr>
-
-                </S.Sidebar>
-
+                <SideBarStyle />
                 <S.ContentWrapper>
 
                     <S.Header>
                         <img src={imgHeader}></img>
-
                         <S.Section>
-
                             <S.SectionTitle>
                                 <h1>Olá, Sueli!</h1>
                                 <h2>Bem vinda a trilha de desenvolvimento!</h2>
                                 <p>Este é o um espaço de aprendizado projetado para capacitar mulheres em conhecimentos essenciais sobre gestão financeira, planejamento, investimento e muito mais.
-                                Cada etapa terá o conteúdo e um quiz para testar suas habilidades, estabeleça sua meta e inicie essa jornada! </p>
+                                    Cada etapa terá o conteúdo e um quiz para testar suas habilidades, estabeleça sua meta e inicie essa jornada! </p>
                             </S.SectionTitle>
-
                         </S.Section>
-
                     </S.Header>
 
                     <S.iconSection>
-
                         <S.ContainerText>
-
                             <S.iconText>
                                 <img src={laptop}></img>
                                 <h3>Aprenda</h3>
@@ -95,7 +54,6 @@ const Trilha = () => {
                                 <h3>Cresça</h3>
                                 <p>Amadureça sua relação com o dinheiro<br /> e alcance a segurança financeira</p>
                             </S.iconText>
-
                         </S.ContainerText>
                     </S.iconSection>
 
@@ -139,26 +97,14 @@ const Trilha = () => {
                             <p>Compreenda a importância de ter uma reserva financeira para imprevistos.</p>
                         </S.Card>
 
-                        <S.Card>
-                            <div class="circleNumber">7</div>
-                            <h3>Revisão e  Ajustes</h3>
-                            <p>Ensinamos a importância da revisão periódica das suas finanças. Para manter o caminho de uma saúde financeira.</p>
-                        </S.Card>
-
-                        <S.Card>
-                            <div class="circleNumber">8</div>
-                            <h3>Quiz Final</h3>
-                            <p>Aqui você vai testar suas novas habilidades e provar ser uma profissional capacitada!</p>
-                        </S.Card>
+                        
                     </S.CardGrid>
 
-                    <Button>Inicie sua Trilha</Button>
+                    <Button href='/ConteudoTrilha1'> Inicie sua Trilha</Button>
 
                 </S.ContentWrapper>
-
             </S.PageContent>
         </S.PageWrapper>
-    );
-};
+    )};
 
 export default Trilha;

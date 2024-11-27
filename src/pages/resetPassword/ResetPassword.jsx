@@ -13,6 +13,7 @@ Button,
 BackLoginLink, ContainerNav} from './ResetPassword.styles.js';
 import NavBar from "Components/navbar/navbar.jsx" 
 
+
 const ResetPassword = () => {
 
   const [email, setEmail] = useState('');

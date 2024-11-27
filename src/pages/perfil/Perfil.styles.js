@@ -37,7 +37,7 @@ export const Sidebar = styled.div`
 
   .separador {
     background-color: #E75109;
-    height: 2px;
+    height: 1px;
     margin: 20% 0;
     width: 100%;
   }
@@ -99,7 +99,7 @@ export const SegundoPerfil = styled.div`
 
   .separador {
     background-color: #E75109;
-    height: 2px;
+    height: 1px;
     width: 100%;
   }
 `;
@@ -129,6 +129,7 @@ export const Editagem = styled.div`
   display: flex;
   align-items:center;
   justify-content: space-between;
+ 
 
   .coluna {
     display: flex;
@@ -159,11 +160,14 @@ export const Editagem = styled.div`
     h2 {
       color: #E35D1C;
       font-weight: 800;
+
+
     }
 
     p {
       color: #E75109;
       font-weight: 1000;
+
     }
 
     button {
@@ -242,10 +246,10 @@ export const Editagem = styled.div`
       }
 `;
 
-export const ButtonEdit = styled.div`
+export const ButtonEdit  = styled.div`
        align-items: center;
        background-color: #F6E5D3;
-       border: solid #F6E5D3;
+       border: solid #E35D1C;
        border: none;
        border-radius: 10px;
        cursor: pointer;
@@ -255,6 +259,9 @@ export const ButtonEdit = styled.div`
        padding: 8px 16px;
        transition: background-color 0.3s ease;
        color: #E35D1C;
+       color:#E35D1C;
+       
+       
 `;
 
 export const ButtonGrupo = styled.div`
@@ -297,7 +304,6 @@ export const ButtonGrupo = styled.div`
       height: 30px;
       transition: background-color 0.3s ease;
       width: 100%;
-
       &:hover {
       background-color: #f7692e;
       color: #fff;

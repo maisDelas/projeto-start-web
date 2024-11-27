@@ -1,11 +1,5 @@
-import Navbar from "Components/navbar/navbar";
+
 import * as S from "./Perfil.styles";
-import { Link } from "Components/navbar/Navbar.styles";
-import IconPerfil from "../../imagesTrilha/IconPerfilT.svg";
-import IconTrilha from "../../imagesTrilha/iconTrilhaT.svg";
-import IconContrato from "../../imagesTrilha/iconContract.svg";
-import IconCalendar from "../../imagesTrilha/iconCalendarT.svg";
-import IconConfig from "../../imagesTrilha/iconconfigT.svg";
 import facebook from "../../assets/facebook.svg";
 import instagram from "../../assets/instagram.svg";
 import mulherIcon from "../../assets/mulher.svg";
@@ -13,9 +7,9 @@ import linkedin from "../../assets/linkedin.svg";
 import canetaIcon from "../../assets/caneta.svg";
 import city from "../../assets/city.svg";
 import planning from "../../assets/planning.svg";
-import  NavbarItem from "Components/navbaritem/NavbarItem";
-import bola from "../../assets/bola.svg";
 import { useNavigate } from "react-router-dom";
+import  SideBarStyle  from "Components/sidebar/Sidebar";
+import NavU from "Components/navbar/Nav.usuario";
 
 
 
@@ -24,37 +18,10 @@ function Perfil() {
   const navigation = useNavigate()
 
   return (
-        <S.Perfil>
-      <Navbar>
-        <Link>
-          <a href="">Página Inicial </a>
-        </Link>
-        <Link>
-          <a href="">Fale Conosco</a>
-        </Link>
-        <Link>
-         <img src={bola}/>
-         <p>Suelen</p>
-         <p>▼</p>
-        </Link>
-      </Navbar>
+    <S.Perfil>
+     <NavU/>
       <S.Container>
-        <S.Sidebar>
-
-          <NavbarItem src={IconPerfil} alt="Perfil" href="perfil" label="Perfil" />
-
-          <NavbarItem src={IconTrilha} alt='Trilha' href='trilha' label="Trilha" />
-
-          <NavbarItem src={IconContrato} alt="Contrato" href="contrato" label="Contratos" />
-
-          <NavbarItem src={IconCalendar} alt="Calendário" href="calendario" label="Calendário" />
-
-          <NavbarItem src={IconConfig} alt="Configuração" href="configuracao" label="Configuraçãos" />
-
-          <div className="separador"></div>
-
-          
-        </S.Sidebar>
+        <SideBarStyle/>
         <S.PerfilPrincipal>
           <S.SegundoPerfil>
             <h2>Editar Perfil</h2>
@@ -239,7 +206,7 @@ function Perfil() {
 
       </S.Container >
     </S.Perfil >
-   
+
   );
 }
 
