@@ -10,9 +10,13 @@ import Dados from 'pages/dados/Dados'
 import ConteudoTrilha1 from './pages/trilha/TrilhaConteudo1'
 import ConteudoTrilha2 from 'pages/trilha/TrilhaConteudo2'
 import ResetPassword from 'pages/resetPassword/ResetPassword'
+// import CadastroPrestadora from 'pages/cadastroP/TelaP'
+import CadastroPrestadora1 from 'pages/cadastroP/Prestadora1'
+import CadastroPrestadora2 from 'pages/cadastroP/Prestadoratre2'
+import CadastroPrestadora3 from 'pages/cadastroP/Prestadora3'
+import CadastroPrestadora0 from 'pages/cadastroP/Prestadora0'
 
-import CadastroPrestadora from 'pages/cadastroP/TelaP'
-// import ResetPassword from 'pages/resetPassword/ResetPassword'
+
 
 
 
@@ -21,19 +25,27 @@ export default function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
+
         <Route path="/Map" element={<Mapeamento />} />
+
         <Route path="/C" element={<Cards />} />
+
         <Route path="/Trilha" element={< Trilha />} />
         <Route path="/ConteudoTrilha1" element={< ConteudoTrilha1 />} />
-
         <Route path="/ConteudoTrilha2" element={< ConteudoTrilha2 />} />
-        <Route path="/CadastroPrestadora" element={<CadastroPrestadora />} />
+
         <Route path="/Perfil" element={< Perfil />} />
+
         <Route path="/Cadastro" element={<Cadastro />} />
-        {/* <Route path="/Redefinição" element={<ResetPassword/>} /> */}
-        <Route path="/Dados" element={<Dados />} />  
+
+        <Route path="/Dados" element={<Dados />} />
+        {/* <Route path="/CadastroPrestadora" element={<CadastroPrestadora />} /> */}
+        <Route path="/CadastroPrestadora0" element={<CadastroPrestadora0 />} />
+        <Route path="CadastroPrestadora1" element={<CadastroPrestadora1 />} />
+        <Route path="/CadastroPrestadora2" element={<CadastroPrestadora2 />} />
+        <Route path="/CadastroPrestadora3" element={<CadastroPrestadora3 />} />
         <Route path="/ResetPassword" element={<ResetPassword />} />
-        <Route path="/CadastroTipo" element={<CadastroTipo />} />   
+        <Route path="/CadastroTipo" element={<CadastroTipo />} />
       </Routes>
     </BrowserRouter>
   )

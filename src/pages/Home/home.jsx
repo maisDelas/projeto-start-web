@@ -8,8 +8,6 @@ import { StyleButton } from "Components/botaoglobal/Button.style";
 import Logowhite from 'assets/Logobranca.svg'
 import imgMulheres from 'assets/imgMulheres.svg'
 
-
-
 function Home() {
   return (
     <>
