@@ -10,6 +10,11 @@ import {
 } from "./RegistrationFormStyles";
 import Logo from "./Imagem/Logo branca 4.svg";
 import Eu from "./Imagem/LogoNN1.svg";
+import { Link } from "react-router-dom";
+import EU from "./Header.jsx";
+import GlobalStyle from "./GlobalStyle";
+
+
 
 function RegistrationForm() {
   const [formData, setFormData] = useState({
@@ -69,6 +74,10 @@ function RegistrationForm() {
   };
 
   return (
+    <>
+    <EU/>
+    <GlobalStyle/>
+
     <FormContainer>
       <LogoContainer>
         <img src={Logo} alt="Logo" className="logo" />
@@ -135,10 +144,16 @@ function RegistrationForm() {
             />
             {errors.phone && <span className="error">{errors.phone}</span>}
           </InputGroup>
-
-          <ButtonContainer>
+            <Link to='/CadastroPrestadora2'>
+            
+            <ButtonContainer>
             <StyledButton type="submit">Avançar</StyledButton>
           </ButtonContainer>
+            </Link>
+          {/* <ButtonContainer>
+            <StyledButton type="submit">Avançar</StyledButton>
+          </ButtonContainer> */}
+
         </form>
 
         <Swapper>
@@ -147,6 +162,7 @@ function RegistrationForm() {
         </Swapper>
       </FormBox>
     </FormContainer>
+    </>
   );
 }
 
