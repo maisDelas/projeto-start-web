@@ -17,6 +17,7 @@ function RegistrationForm() {
     birthDate: "",
     cpfCnpj: "",
     email: "",
+    phone: "", // Novo campo para número de telefone
     rgFront: null,
     rgBack: null,
     selfieWithRg: null,
@@ -46,6 +47,11 @@ function RegistrationForm() {
     if (!formData.birthDate) newErrors.birthDate = "Este campo é obrigatório";
     if (!formData.cpfCnpj.trim()) newErrors.cpfCnpj = "Este campo é obrigatório";
     if (!formData.email.trim()) newErrors.email = "Este campo é obrigatório";
+    if (!formData.phone.trim()) {
+      newErrors.phone = "Este campo é obrigatório";
+    } else if (!/^\d{10,11}$/.test(formData.phone)) {
+      newErrors.phone = "Insira um número de telefone válido (10-11 dígitos)";
+    }
     if (!formData.rgFront) newErrors.rgFront = "Este campo é obrigatório";
     if (!formData.rgBack) newErrors.rgBack = "Este campo é obrigatório";
     if (!formData.selfieWithRg) newErrors.selfieWithRg = "Este campo é obrigatório";
@@ -65,7 +71,7 @@ function RegistrationForm() {
   return (
     <FormContainer>
       <LogoContainer>
-      <img src={Logo} alt="Logo" className="logo" />
+        <img src={Logo} alt="Logo" className="logo" />
       </LogoContainer>
       <FormBox>
         <img src={Eu} alt="Avatar" />
@@ -117,6 +123,19 @@ function RegistrationForm() {
             />
             {errors.email && <span className="error">{errors.email}</span>}
           </InputGroup>
+
+          <InputGroup>
+            <label>Telefone*</label>
+            <input
+              type="text"
+              name="phone"
+              value={formData.phone}
+              onChange={handleChange}
+              placeholder="Número de Telefone"
+            />
+            {errors.phone && <span className="error">{errors.phone}</span>}
+          </InputGroup>
+
           <ButtonContainer>
             <StyledButton type="submit">Avançar</StyledButton>
           </ButtonContainer>

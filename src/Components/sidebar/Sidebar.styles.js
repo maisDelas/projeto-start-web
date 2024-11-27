@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
-export const Sidebar = styled.div`
-  width: 30%;
+export const SideBarStyle = styled.div`
+  
   background-color: #F4AD58;
-  display: flex;
-  flex-direction: column;
+  display:flex;
+  flex-direction:column;
   padding:20px;
-  height: 2313px;
+  height: auto;
   
 
   img{

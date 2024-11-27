@@ -1,9 +1,9 @@
 import { StyleButton } from "./Button.style";
 
-function Button({children, ...rest}) {
+function Button({children, href, ...rest}) {
 
     return (
-        <StyleButton {...rest}>{children}</StyleButton>
+        <StyleButton href=''{...rest}>{children}</StyleButton>
     );
 };
 

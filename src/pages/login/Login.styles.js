@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { createGlobalStyle } from 'styled-components';
-import BackGroundIMG from "assets/backgroundOnda.svg";
+import BackGroundIMG from "../assets/backgroundOnda.svg";
 
 
 export const GlobalStyle = createGlobalStyle`
@@ -71,14 +71,6 @@ export const HeaderTitle = styled.h1`
 `;
 
 
-export const Description = styled.p`
-    font-size: 13px; 
-    font-weight: normal;
-    margin-top: 20px; 
-    text-align: center; 
-    color: #E35D1C; 
-`;
-
 export const InputForm = styled.input`
     margin-top: 20px;
    margin-bottom: 20px; 
@@ -100,7 +92,7 @@ export const ErrorMsg = styled.span`
     margin-top: 20px;
     position: absolute;
     right: 85px;
-  
+  }
 `;
 
 export const Button = styled.button`
@@ -114,7 +106,7 @@ export const Button = styled.button`
     justify-content: center;
     align-items: center;
 
-    margin-top: 45px;
+    margin-top: 80px;
     width: 150px;
     height: 35px;
     border-radius: 10px;
@@ -135,7 +127,7 @@ export const ContainerNav = styled.p`
    color: #6C5F5F; 
 `;
 
-export const BackLoginLink = styled.a`
+export const CadastroLink = styled.a`
     color:#D24400; 
     text-decoration: none;
 
@@ -143,6 +135,7 @@ export const BackLoginLink = styled.a`
         color:#E35D1C; 
         text-decoration: underline; 
        }
+
 `;
 
 export const ErrorMessage = styled.span`
@@ -150,6 +143,44 @@ export const ErrorMessage = styled.span`
 
 `;
 
-export const ValidationError = styled.div`
-    color: red;
+
+export const ForgotPassword = styled.a`
+    color:#D24400; 
+    text-decoration: none;
+    position: absolute;
+    right: 90px;
+    font-size: 14px;
+    margin-top: 35px;
+
+     &:hover {
+        color:#E35D1C; 
+        text-decoration: underline; 
+       }
+`;
+
+export const Remember = styled.input`
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left: 85px;
+    font-size: 14px;
+    margin-top: 34px;
+    cursor: pointer;
+
+    background-color: #E35D1C;
+    border-color: #D24400;
+
+
+  }
+`;
+
+
+export const RememberLabel = styled.span`
+  font-size: 14px;
+  color: #E35D1C;
+  padding: 5px;
+   position: absolute;
+    left: 100px;
+    font-size: 14px;
+    margin-top: 30px;
 `;

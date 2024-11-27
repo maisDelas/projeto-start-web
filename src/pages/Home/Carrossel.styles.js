@@ -15,13 +15,13 @@ export const BcCa = styled.div`
 `
 
 export const CarrosselContainer = styled.div`
-  width: 49%;
+  width: 65%;
   margin: 0 auto;
   text-align: center;
   
   @media screen and (max-width:1440px) {
 
-    width: 66%;
+    width: 88%;
   }
 
   @media screen and (max-width:1024px) {
