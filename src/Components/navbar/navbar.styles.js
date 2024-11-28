@@ -53,8 +53,12 @@ export const Link = styled.li`
   padding: 1.5rem 0;
   display: flex;
   align-items: center;
+   text-decoration: none;
   
- 
+     &:hover {
+        color:#544e48; 
+        text-decoration: underline; 
+       }
 
   & + & { 
     margin-left: 1rem;
@@ -76,12 +80,13 @@ export const Link = styled.li`
 
 export const Button = styled(GlobalButton)`
   display: inline-flex;
+  font-size: 15px;
   align-items: center;
   background-color: #e35d1c;
   color: #f6e5d3;
   border: none;
   border-radius: 10px;
-  padding: 5px;
+  padding: 9px;
   cursor: pointer;
   transition: background-color 0.3s;
   width: 100px;
@@ -91,4 +96,6 @@ export const Button = styled(GlobalButton)`
 
 export const IconUser = styled(FaRegUserCircle)`
   color: white;
+  width: 20px;
+  height: 20px;
 `
