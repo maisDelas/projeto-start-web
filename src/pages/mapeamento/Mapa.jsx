@@ -1,11 +1,14 @@
 import Map from "./Api.mapa"
 import Cards from './Cards'
-import { useState } from "react"
+import { useState, useContext } from "react"
 import Footer from "Components/Footer/Footer"
 import * as S from "./Mapa.styles"
 import LogoBranca from "assets/Logo-branca.svg"
 import InfoCards from "./InfoCards"
 import NavU from "Components/navbar/Nav.usuario"
+import MapProviders from "./context/MapProviders"
+import { ContextOfModal } from "./context/ContextOfModal"
+import Modal from "Components/modal/Modal"
 
 
 function Mapeamento() {
@@ -14,6 +17,9 @@ function Mapeamento() {
   function handleWithButtonClick() {
     setIsVerticalOpen((isVerticalOpen) => !isVerticalOpen)
   }
+
+const  {isModalOpen, openModal, closeModal} = useContext(ContextOfModal)
+
 
   
   return (
@@ -57,12 +63,14 @@ function Mapeamento() {
             {InfoCards.map((x, i) => (
               <Cards key={`Cards_${i}`} {...x} />
             ))}
+           
           </S.ContainerCards>
         </S.VerticalSlider>
 
         {/* Footer padrão global */}
       </S.MapSection>
       <Footer />
+      {isModalOpen && <Modal/>}
     </>
   )
 }

@@ -120,7 +120,7 @@ export const Lupa = styled(IoIosSearch)`
 `
 
 export const ContainerCards = styled.div`
-  max-height: calc(5 * 94px + 4 * 20px + 94px / 2);
+  max-height: calc(5 * 80px + 5 * 20px + 80px / 2);
   overflow-x: hidden;
   overflow-y: scroll;
   margin-top: 70px;
