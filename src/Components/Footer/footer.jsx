@@ -49,7 +49,7 @@ const Footer = () => {
                 <a href="#">Depoimentos</a>
               </li>
               <li>
-                <a href="#">Junta-se a nós</a>
+                <a href="CadastroPrestadora0">Junte-se a nós</a>
               </li>
             </ul>
           </S.FooterInfor>
