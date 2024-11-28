@@ -186,6 +186,10 @@ p{
   li {
     margin-bottom: 15px; 
   }
+
+  span{
+    font-weight:bold;
+  }
 `;
 
 

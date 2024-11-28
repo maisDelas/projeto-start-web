@@ -11,12 +11,12 @@ import {
 import Logo from "./Imagem/Logo branca 4.svg";
 import Eu from "./Imagem/LogoNN1.svg";
 import { Link } from "react-router-dom";
-import EU from "./Header.jsx";
+import NavCad from "./Header.jsx";
 import GlobalStyle from "./GlobalStyle";
 
 
 
-function RegistrationForm() {
+function CadastroPrestadora1() {
   const [formData, setFormData] = useState({
     fullName: "",
     birthDate: "",
@@ -75,7 +75,7 @@ function RegistrationForm() {
 
   return (
     <>
-    <EU/>
+    <NavCad/>
     <GlobalStyle/>
 
     <FormContainer>
@@ -150,14 +150,13 @@ function RegistrationForm() {
             <StyledButton type="submit">Avançar</StyledButton>
           </ButtonContainer>
             </Link>
-          {/* <ButtonContainer>
-            <StyledButton type="submit">Avançar</StyledButton>
-          </ButtonContainer> */}
+        
 
         </form>
 
         <Swapper>
           <span className="circle active"></span>
+          <span className="circle"></span>
           <span className="circle"></span>
         </Swapper>
       </FormBox>
@@ -166,4 +165,4 @@ function RegistrationForm() {
   );
 }
 
-export default RegistrationForm;
+export default CadastroPrestadora1;

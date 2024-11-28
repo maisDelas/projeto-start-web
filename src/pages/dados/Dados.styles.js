@@ -11,9 +11,10 @@ export const Container = styled.div`
 
   
   img { 
-  width: 200px;
-  margin-top: 10%;
-  margin-bottom: 2%;
+  width: 250px;
+  margin-top: 5%;
+  margin-bottom: 4%;
+
   }
 
   
@@ -35,13 +36,10 @@ export const Onda = styled.div`
 export const Logo = styled.div`
   display: flex;
   justify-content: center;
-  width: 100%;
-  margin-top: 5%;
- 
+  width: 100%;  
 
-  img {
-  width: 200px;
-  }
+  
+
 `;
 
 export const NomeImg = styled.div`
@@ -49,6 +47,7 @@ export const NomeImg = styled.div`
   flex-direction: column;
   width: 100%;
   align-items: center;
+  
 
 
   .circulo { 
@@ -58,7 +57,7 @@ export const NomeImg = styled.div`
     width: 100%;
     height: 50px;
     background-color:#E75109;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     border-radius: 100%;
     max-width: 50px;
    
@@ -68,15 +67,16 @@ export const NomeImg = styled.div`
 
 
 export const Form = styled.form`
-  width: 600px; 
+  width: 570px; 
   border-radius: 10px;
   background-color: #ffff;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 50px; 
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  top: -50px;
   
  
  
@@ -142,6 +142,7 @@ export const Button = styled.button`
   cursor: pointer;
   background-color:${(props) => (props.primary ? "#f15a24" : "#f5a623")};; 
   color: #fff;
+  margin-bottom: 20px;
 
     
 
@@ -152,9 +153,12 @@ export const IndicadorG = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
+  
+  
 
   div:nth-child(2) {
     margin: 0 7px;
+    
 
   }
 
@@ -168,7 +172,7 @@ export const Indicador = styled.div `
   border-radius: 100%; 
   background-color: ${(props) => (props.active ? "#f15a24" : "#ddd")}; 
   transition: background-color 0.3s ease;
-
+  
   &:hover {
     background-color: #f5a623; 
   }

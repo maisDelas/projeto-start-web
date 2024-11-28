@@ -56,13 +56,19 @@ export const CardReset = styled.div`
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     text-align: center;
     position: absolute;
+
+
+    a{
+        
+    }
+
+    
 `;
 
 
 
 export const Button = styled.button`
     background-color: white;
-    font-family: "Poppins", Arial, sans-serif;
     color:#E35D1C ;
     font-size: 27px;
     font-weight: bold;

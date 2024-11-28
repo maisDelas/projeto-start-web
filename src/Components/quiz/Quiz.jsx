@@ -3,25 +3,49 @@ import { QuizWrapper, Question, Options, OptionButton, NextButton, Score } from 
 
 const quizData = [
     {
-        question: "Qual é o primeiro passo para investir no seu negócio?",
+        question: "Qual é a principal finalidade do controle de fluxo de caixa em uma empresa?",
         options: [
-            "Definir seu público-alvo",
-            "Contratar funcionários",
-            "Comprar produtos aleatórios",
-            "Ignorar o planejamento financeiro"
+            "Identificar clientes inadimplentes.",
+            "Monitorar as entradas e saídas de dinheiro.",
+            "Definir metas de longo prazo.",
+            "Automatizar processos internos."
         ],
-        answer: "Definir seu público-alvo",
+        answer: "Monitorar as entradas e saídas de dinheiro.",
     },
     {
-        question: "Por que é importante ter uma reserva de emergência?",
+        question: "Por que é importante realizar a análise de custos e despesas regularmente?",
         options: [
-            "Para pagar dívidas inesperadas",
-            "Para investir em outra empresa",
-            "Para ignorar imprevistos",
-            "Para aumentar custos operacionais"
+            "Para determinar o lucro total da empresa.",
+            "Para identificar oportunidades de redução de gastos.",
+            "Para evitar o uso de tecnologia no controle financeiro.",
+            "Para definir novos fornecedores automaticamente."
         ],
-        answer: "Para pagar dívidas inesperadas",
+        answer: "Para identificar oportunidades de redução de gastos.",
     },
+
+    {
+        question: "Qual é a vantagem de utilizar tecnologia na gestão financeira?",
+        options: [
+            "Automatizar processos e reduzir erros.",
+            "Aumentar as despesas da empresa.",
+            "Controlar apenas as despesas variáveis.",
+            "Eliminar a necessidade de planejamento financeiro."
+        ],
+        answer: "Automatizar processos e reduzir erros.",
+    },
+
+    {
+        question: "O que uma reserva de emergência ajuda a evitar?",
+        options: [
+            "O crescimento do negócio.",
+            "A dependência de crédito em situações inesperadas.",
+            "A necessidade de planejamento financeiro.",
+            "A redução de custos e despesas."
+        ],
+        answer: "A dependência de crédito em situações inesperadas.",
+    },
+
+
 ];
 
 function QuizComponent() {

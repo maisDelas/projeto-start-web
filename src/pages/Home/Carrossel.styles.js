@@ -21,7 +21,7 @@ export const CarrosselContainer = styled.div`
   
   @media screen and (max-width:1440px) {
 
-    width: 88%;
+    width: 70%;
   }
 
   @media screen and (max-width:1024px) {
@@ -31,8 +31,16 @@ width: 92%;
 
 @media screen and (max-width:768px) {
 
-width: 120%;
+width: 75%;
+
 }
+
+@media screen and (max-width:375px) {
+
+width: 66%;
+
+}
+
 
 
 `;

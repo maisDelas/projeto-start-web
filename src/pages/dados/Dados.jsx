@@ -1,14 +1,15 @@
 import * as S from "./Dados.styles"
 import logo from "../../assets/Logobranca.svg"
+import NavCad from "pages/cadastroP/Header"
 
 function Dados() {
   return (
     <>
+    <NavCad/>
       <S.Onda></S.Onda>
       <S.Container>
           <img src={logo} alt="Logo" />
         <S.Form>
-        
           <S.NomeImg>
             <div className="circulo">
               <h2>2</h2>
@@ -41,7 +42,6 @@ function Dados() {
             <S.Indicador active />
             <S.Indicador />
           </S.IndicadorG>
-        
         </S.Form>
       </S.Container>
     </>

@@ -8,8 +8,10 @@ export const Hero = styled.div`
     align-items: center;
     background-image:url(${BgOnda});
     background-repeat:no-repeat;
-    width:1440px;
-    padding: 35px;
+    background-size: cover;
+    width:100%;
+    height: 600px;
+    padding: 56px;
  
 img{
     display: flex;
@@ -25,11 +27,45 @@ h1{
 }
 `
 export const ImageSection = styled.div`
+
+display: flex;
+
   
   img{
     margin-top: 100px;
-    width:1440px;
-  }   
+    width:100%;
+  } 
+  
+
+  
+`
+
+export const Container = styled.div`
+
+width: 100%;
+margin: 0;
+
+@media screen and (max-width:1440px) {
+
+width: 100%;
+}
+
+@media screen and (max-width:1024px) {
+
+width: 135%;
+}
+
+@media screen and (max-width:768px) {
+
+width: 190%;
+}
+
+@media screen and (max-width:375px) {
+
+width: 370%;
+
+}
+
 `
 
 export const Title = styled.div`

@@ -72,7 +72,7 @@ export const HeaderTitle = styled.h1`
 
 
 export const InputForm = styled.input`
-    margin-top: 20px;
+   margin-top: 20px;
    margin-bottom: 20px; 
    text-align: left; 
 
@@ -92,7 +92,7 @@ export const ErrorMsg = styled.span`
     margin-top: 20px;
     position: absolute;
     right: 85px;
-  }
+  
 `;
 
 export const Button = styled.button`
@@ -117,7 +117,7 @@ export const Button = styled.button`
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 
     &:hover {
-        background-color: #D24400; 
+        background-color: #FF7431; 
     }
 `;
 
@@ -150,7 +150,7 @@ export const ForgotPassword = styled.a`
     position: absolute;
     right: 90px;
     font-size: 14px;
-    margin-top: 35px;
+    margin-top: 40px;
 
      &:hover {
         color:#E35D1C; 
@@ -164,23 +164,19 @@ export const Remember = styled.input`
     position: absolute;
     left: 85px;
     font-size: 14px;
-    margin-top: 34px;
+    margin-top: 40px;
     cursor: pointer;
 
-    background-color: #E35D1C;
-    border-color: #D24400;
 
-
-  }
+  
 `;
 
 
 export const RememberLabel = styled.span`
   font-size: 14px;
   color: #E35D1C;
-  padding: 5px;
+  padding: 4px;
    position: absolute;
     left: 100px;
-    font-size: 14px;
-    margin-top: 30px;
+    margin-top: 37px;
 `;

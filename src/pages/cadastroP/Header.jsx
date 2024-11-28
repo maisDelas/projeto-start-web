@@ -1,6 +1,4 @@
-// Header.js
-import React from "react";
-// import { HeaderContainer, Nav, NavList, NavItem, Picklist, LogoImage, }  from "./RegistrationFormStyles.js";
+
 import styled from "styled-components";
 import Logo from "./Imagem/Logomaroon.svg"
 
@@ -37,14 +35,13 @@ const NavItem = styled.li`
 const Picklist = styled.select`
   border: 0;
   background: #f6e5d3;
-  // font-family: "Poppins", sans-serif;
 `;
 
 const LogoImage = styled.img`
   max-width: 150px;
 `;
 
-function EU() {
+function NavCad() {
   return (
     <HeaderContainer>
       <Nav>
@@ -52,7 +49,7 @@ function EU() {
         <nav>
           <NavList>
             <NavItem>
-              <a href="#home">Página inicial</a>
+              <a href="/">Página inicial</a>
             </NavItem>
             <NavItem>
               <a href="#contact">Fale Conosco</a>
@@ -65,4 +62,4 @@ function EU() {
   );
 }
 
-export default EU;
+export default NavCad;

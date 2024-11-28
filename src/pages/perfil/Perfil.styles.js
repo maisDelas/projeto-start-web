@@ -9,51 +9,6 @@ export const Container = styled.div`
   display: flex;
 `;
 
-export const Sidebar = styled.div`
-  background-color: #F4AD58;
-  display: flex;
-  flex-direction: column;
-  padding:20px;
-  width: 20%;
-
-  .navbar-item {
-    align-items: center;
-    display: flex;
-    margin: 24px 0;
-
-    &:first-child {
-      margin-top: 75%;
-    }
-
-    button {
-      border: none;
-      background: none;
-      color: #fff;
-      cursor: pointer;
-      font-family: "Poppins", sans-serif;
-      font-size: 16px;
-    }
-  }
-
-  .separador {
-    background-color: #E75109;
-    height: 1px;
-    margin: 20% 0;
-    width: 100%;
-  }
-
-  img{
-    margin-right: 10px;
-    width: 40px;
-  }
-
-  a {
-    color: #ffff;
-    font-family: "Poppins", sans-serif;
-    text-decoration:none;
-  }
-`;
-
 export const PerfilPrincipal = styled.div`
   align-items: center;
   display: flex;
