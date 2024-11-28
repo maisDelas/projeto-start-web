@@ -1,5 +1,4 @@
 
-import React from "react";
 import styled from "styled-components";
 import Logo from "./Imagem/Logomaroon.svg"
 
@@ -42,7 +41,7 @@ const LogoImage = styled.img`
   max-width: 150px;
 `;
 
-function EU() {
+function NavCad() {
   return (
     <HeaderContainer>
       <Nav>
@@ -50,7 +49,7 @@ function EU() {
         <nav>
           <NavList>
             <NavItem>
-              <a href="#home">Página inicial</a>
+              <a href="/">Página inicial</a>
             </NavItem>
             <NavItem>
               <a href="#contact">Fale Conosco</a>
@@ -63,4 +62,4 @@ function EU() {
   );
 }
 
-export default EU;
+export default NavCad;

@@ -1,5 +1,5 @@
 import logo from "assets/Logo-nav.svg"
-import {Container,IconUser,Button,Content,Logo,Link, ListLinks} from "./Navbar.styles"
+import {Container,IconUser,Button,Content,Logo,Link, ListLinks} from "./navbar.styles"
 
 function NavBar({ children }) {
 

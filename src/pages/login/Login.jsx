@@ -60,7 +60,7 @@ const Login = () => {
       setEmailError('O e-mail não pode estar vazio.');
       valid = false;
     }
- 
+    // Verifica se o e-mail é válido com regex
     else if (!emailRegex.test(email)) {
       setEmailError('E-mail inválido! Tente novamente.');
       valid = false;
@@ -102,7 +102,7 @@ const Login = () => {
         <CardReset>
           <HeaderTitle>Entre com a sua conta</HeaderTitle>
           <form onSubmit={handleSubmit}>
-
+            {/* Campo de e-mail */}
             <InputForm
               htmlFor="email"
               textValue="E-mail"
@@ -118,7 +118,7 @@ const Login = () => {
             />
             {emailError && <ErrorMsg>{emailError}</ErrorMsg>}
 
-
+            {/* Campo de senha */}
             <InputForm
               htmlFor="password"
               textValue="Senha"
@@ -135,7 +135,7 @@ const Login = () => {
             />
             {passwordError && <ErrorMsg>{passwordError}</ErrorMsg>}
 
-
+            {/* Lembrar de mim */}
             <div>
               <Remember
                 type="checkbox"

@@ -11,7 +11,7 @@ import Logo1 from "./Imagem/LogoNN1.svg";
 import Logo2 from "./Imagem/NN2.svg"; 
 
 import { TfiBag } from "react-icons/tfi";
-import EU from "./Header"; 
+import NavCad from "./Header"; 
 import GlobalStyle from "./globalstyle";
 import { IoDocumentTextOutline } from "react-icons/io5";
 import Logo from "./Imagem/Logo branca 4.svg";
@@ -20,7 +20,7 @@ import { Link } from "react-router-dom";
 function CadastroPrestadora0() {
   return (
     <>
-      <EU />
+      <NavCad />
       <GlobalStyle />
       <img src={Logo} alt="Logo" className="logo" />
 

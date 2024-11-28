@@ -9,10 +9,10 @@ import {
   Swapper,
 } from "./StyledComponents";
 import { useNavigate } from "react-router-dom";
-import EU from "./Header.jsx";
 import GlobalStyle from "./GlobalStyle";
 import Logo from "./Imagem/Logo branca 4.svg";
 import NN2 from "pages/cadastroP/Imagem/NN2.svg";
+import NavCad from "./Header.jsx";
 
 function CadastroPrestadora2() {
   const navigate = useNavigate();
@@ -20,7 +20,7 @@ function CadastroPrestadora2() {
   return (
     <>
       <GlobalStyle />
-      <EU />
+      <NavCad />
       <img src={Logo} alt="Logo" className="logo" />
 
       <Container>
@@ -73,7 +73,7 @@ function CadastroPrestadora2() {
           <Button
             type="button"
             primary
-            onClick={() => navigate("/CadastroPrestadora3")}
+            onClick={() => navigate("")}
           >
             Avançar
           </Button>
@@ -82,6 +82,7 @@ function CadastroPrestadora2() {
         <Swapper>
           <span className="circle"></span>
           <span className="circle active"></span>
+          <span className="circle"></span>
         </Swapper>
       </Container>
     </>

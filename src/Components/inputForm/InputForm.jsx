@@ -1,8 +1,8 @@
-import {InputContainer, StyledInput} from './InputForm.styles'
+import {InputContainer, StyledInput, StyledLabel} from './InputForm.styles'
 function InputForm (props)  {
     return(
         <InputContainer>
-            <label htmlFor={props.htmlFor}>{props.textValue}</label>
+            <StyledLabel htmlFor={props.htmlFor}>{props.textValue}</StyledLabel>
             <StyledInput {...props} />
         </InputContainer>
     )

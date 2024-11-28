@@ -11,7 +11,7 @@ import {
 import Logo from "./Imagem/Logo branca 4.svg";
 import Eu from "./Imagem/LogoNN1.svg";
 import { Link } from "react-router-dom";
-import EU from "./Header.jsx";
+import NavCad from "./Header.jsx";
 import GlobalStyle from "./GlobalStyle";
 
 
@@ -75,7 +75,7 @@ function CadastroPrestadora1() {
 
   return (
     <>
-    <EU/>
+    <NavCad/>
     <GlobalStyle/>
 
     <FormContainer>
@@ -156,6 +156,7 @@ function CadastroPrestadora1() {
 
         <Swapper>
           <span className="circle active"></span>
+          <span className="circle"></span>
           <span className="circle"></span>
         </Swapper>
       </FormBox>

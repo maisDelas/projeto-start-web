@@ -11,7 +11,7 @@ export const Container = styled.div`
 
   
   img { 
-  width: 200px;
+  width: 250px;
   margin-top: 5%;
   margin-bottom: 4%;
 
@@ -68,15 +68,15 @@ export const NomeImg = styled.div`
 
 export const Form = styled.form`
   width: 570px; 
-  height: 600px;
   border-radius: 10px;
   background-color: #ffff;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 50px; 
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  top: -50px;
   
  
  

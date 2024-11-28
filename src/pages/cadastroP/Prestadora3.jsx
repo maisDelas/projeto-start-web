@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Box, Title, Text, Button, Link } from "./Prestadora3styles";
 import Logo_completo from './Imagem/Logo_sucesso.svg'
 import GlobalStyle from './globalstyle'
-import EU from './Header'
+import NavCad from './Header'
 
 
 import Logo from "./Imagem/Logo branca 4.svg";
@@ -17,7 +17,7 @@ function CadastroPrestadora3() {
 
   <>
   <GlobalStyle/>
-  <EU/>
+  <NavCad/>
 
  <div className="header"> <img src={Logo} alt="" className="logo"/>
  </div>

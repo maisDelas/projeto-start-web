@@ -35,8 +35,8 @@ export default function App() {
         <Route path="/Configuracao" element={<Configuracao />} />
 
         <Route path="/CadastroTipo" element={<CadastroTipo />} />;
-        <Route path="/Pessoais" element={<Pessoais />} />;
-        <Route path="/Dados" element={<Dados />} />;
+        <Route path="/DadosPessoais" element={<Pessoais />} />;
+        <Route path="/DadosEndereco" element={<Dados />} />;
         <Route path="/CadastroPrestadora0" element={<CadastroPrestadora0 />} />;
         <Route path="/CadastroPrestadora1" element={<CadastroPrestadora1 />} />;
         <Route path="/CadastroPrestadora2" element={<CadastroPrestadora2 />} />;
