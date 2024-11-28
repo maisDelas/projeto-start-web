@@ -152,7 +152,7 @@ const Login = () => {
 
           <ContainerNav>
             Ainda não tem uma conta?
-            <CadastroLink href="#"><p>Cadastre-se</p></CadastroLink>
+            <CadastroLink href="/CadastroTipo"><p>Cadastre-se</p></CadastroLink>
           </ContainerNav>
         </CardReset>
       </CardCenter>
