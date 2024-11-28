@@ -72,7 +72,7 @@ export const HeaderTitle = styled.h1`
 
 
 export const InputForm = styled.input`
-    margin-top: 20px;
+   margin-top: 20px;
    margin-bottom: 20px; 
    text-align: left; 
 
@@ -92,7 +92,7 @@ export const ErrorMsg = styled.span`
     margin-top: 20px;
     position: absolute;
     right: 85px;
-  }
+  
 `;
 
 export const Button = styled.button`
@@ -171,7 +171,7 @@ export const Remember = styled.input`
     border-color: #D24400;
 
 
-  }
+  
 `;
 
 
