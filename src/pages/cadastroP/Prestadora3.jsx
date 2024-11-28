@@ -4,6 +4,7 @@ import Logo_completo from './Imagem/Logo_sucesso.svg'
 import GlobalStyle from './globalstyle'
 import EU from './Header'
 
+
 import Logo from "./Imagem/Logo branca 4.svg";
 
 function CadastroPrestadora3() {

@@ -27,7 +27,7 @@ export const SideBarStyle = styled.div`
     display: flex;
     flex-direction:column;
     margin-top: 145px; 
-    gap:30px; 
+    gap:50px; 
   }
 
 

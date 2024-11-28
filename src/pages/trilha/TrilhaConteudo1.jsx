@@ -25,7 +25,7 @@ const ConteudoTrilha1 = () => {
                                 <img src={OnGoing} alt="OnGoingImage" />
                                 <h3>Em andamento:</h3>
                             </div>
-                            <p>Investindo no <br /> seu Negócio</p>
+                            <p>Gestão Financeira</p>
                         </S.Process>
                         <S.Process>
                             <div className="title">
@@ -37,72 +37,38 @@ const ConteudoTrilha1 = () => {
                     </S.ProcessContainer>
 
                     <S.ProcessTitle>
-                        <h1 className="title1">Etapa 1: Investindo no seu negócio</h1>
+                        <h1 className="title1">Etapa 1: Gestão Financeira</h1>
                         <h1 className="title2">Conteúdo</h1>
                     </S.ProcessTitle>
 
                     <S.TextContainer>
 
                         <S.Text>
-                            <h2>Como investir em um negócio?</h2>
-                            <p>Investir no próprio negócio é uma decisão estratégica que requer planejamento, organização e análise de riscos. Abaixo estão 7 passos e considerações que podem te ajudar a estruturar o investimento no seu próprio negócio:</p>
-
+                            <h2>Como gerir um negócio?</h2>
+                            <p>A gestão financeira é essencial para o sucesso de qualquer negócio, pois ajuda a garantir que os recursos sejam usados de forma eficiente. Aqui estão algumas práticas simples e eficazes para manter suas finanças sob controle:</p>
                             <ol>
-                                <li>Definição do Objetivo do Investimento
-                                    <ul>
-                                        <li>Por que investir? Determine se o objetivo é geração de renda, diversificação de portfólio, impacto social ou outro motivo.</li>
-                                        <li>Horizonte de tempo: Avalie se o investimento é de curto, médio ou longo prazo.</li>
-                                    </ul>
+                                <li><span>Controle de Fluxo de Caixa</span> <br />
+                                    Monitore as entradas e saídas de dinheiro regularmente. Isso garante que você tenha dinheiro disponível para cobrir as despesas e realizar investimentos. Utilize ferramentas simples, como planilhas ou aplicativos financeiros, para registrar cada movimento.
                                 </li>
 
-                                <li>Pesquisa e Análise
-                                    <ul>
-                                        <li>Estudo de mercado: Entenda o setor de atuação, tamanho do mercado, concorrência, tendências e oportunidades.</li>
-                                        <li>Modelo de negócios: Avalie a proposta de valor, estrutura de custos, fontes de receita e escalabilidade do negócio.</li>
-                                        <li>Análise financeira: Verifique a saúde financeira do negócio, incluindo faturamento, lucro, margens e fluxo de caixa.</li>
-                                    </ul>
+                                <li><span>Planejamento Financeiro:</span> <br />
+                                    Estabeleça metas claras para sua receita e despesas. Divida-as por períodos (mensais, trimestrais) para acompanhar o progresso e ajustar os planos quando necessário. Isso ajuda a evitar surpresas e a tomar decisões mais informadas.
                                 </li>
 
-                                <li>Tipos de Investimento em Negócios
-                                    <ul>
-                                        <li>Negócios estabelecidos: Menor risco, mas requer maior capital inicial.</li>
-                                        <li>Negócio próprio: Maior controle e liberdade, mas alta dedicação e risco.</li>
-                                    </ul>
+                                <li><span>Análise de Custo e Despesa:</span><br />
+                                    Revise regularmente seus custos e veja onde é possível reduzir gastos. Isso pode ser feito renegociando fornecedores ou ajustando processos internos. Entender o que está consumindo mais recursos permite melhorar a rentabilidade.
                                 </li>
 
-                                <li> Planejamento e Estruturação
-                                    <ul>
-                                        <li>Plano de negócios: Crie ou avalie um plano sólido que inclua objetivos, estratégias, projeções financeiras e plano de ação.</li>
-                                        <li>Estrutura legal: Escolha o tipo de empresa (MEI, EPP, Ltda., etc.) e registre adequadamente.</li>
-                                    </ul>
+                                <li><span>Ultilize a Tecnologia:</span><br />
+                                Ferramentas como sistemas de gestão financeira e aplicativos de fluxo de caixa podem automatizar processos e reduzir erros. Isso facilita a tomada de decisões rápidas e precisas.
                                 </li>
 
-                                <li>Fontes de Financiamento
-                                    <ul>
-                                        <li>Capital próprio: Dinheiro pessoal ou economias.</li>
-                                        <li>Investidores: Sócios, investidores-anjo ou fundos de venture capital.</li>
-                                        <li>Empréstimos: Bancos, fintechs ou linhas de crédito específicas.</li>
-                                        <li>Crowdfunding: Financiamento coletivo com apoio do público.</li>
-                                    </ul>
-                                </li>
-
-                                <li>Riscos e Mitigação
-                                    <ul>
-                                        <li>Riscos financeiros: Fluxo de caixa negativo ou retorno abaixo do esperado.</li>
-                                        <li>Riscos operacionais: Problemas com fornecedores, produção ou equipe.</li>
-                                        <li>Riscos de mercado: Mudanças na demanda, concorrência ou crises econômicas.</li>
-                                        <li>Mitigação: Diversifique, faça seguros, tenha reservas financeiras e revise constantemente sua estratégia.</li>
-                                    </ul>
-                                </li>
-
-                                <li>Gestão e Acompanhamento
-                                    <ul>
-                                        <li>Gestão eficiente: Controle financeiro, operacional e estratégico.</li>
-                                        <li>Monitoramento contínuo: Avalie métricas de desempenho, KPIs e feedback do mercado.</li>
-                                        <li>Capacitação: Invista no aprimoramento da equipe e em tecnologia.</li>
-                                    </ul>
+                                <li><span>Tenha uma Reserva de Emergência:</span><br />
+                                Planeje ter uma reserva financeira para cobrir períodos de baixa nas vendas ou despesas inesperadas. Isso ajuda a manter o negócio funcionando sem precisar recorrer a crédito ou empréstimos.
                                 </li>
                             </ol>
+
+                            <p>Com essas ações simples, você pode melhorar o controle financeiro do seu negócio, garantindo mais estabilidade e possibilidades de crescimento.</p>
 
                         </S.Text>
                     </S.TextContainer>
@@ -112,6 +78,7 @@ const ConteudoTrilha1 = () => {
             </S.PageContent>
         </S.PageWrapper>
 
-    )}
+    )
+}
 
 export default ConteudoTrilha1;
