@@ -1,4 +1,4 @@
-import * as S from "./Footer.styles";
+import * as S from "Components/footer/Footer.styles";
 import facebookIcon from "../../assets/facebook.svg";
 import linkedinIcon from "../../assets/linkedin.svg";
 import instagramIcon from "../../assets/instagram.svg";
@@ -49,7 +49,7 @@ const Footer = () => {
                 <a href="#">Depoimentos</a>
               </li>
               <li>
-                <a href="#">Junta-se a nós</a>
+                <a href="CadastroPrestadora0">Junte-se a nós</a>
               </li>
             </ul>
           </S.FooterInfor>

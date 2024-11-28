@@ -158,14 +158,16 @@ export const FooterMidias = styled.div`
   width: 100%;
   justify-content: center;
   align-items: center;
-`
+  
+` 
 
 export const SocialIcons = styled.div`
   display: flex;
   justify-content: center;
-  margin-left: 48%;
+  margin-left: 45%;
   gap: 15px;
   margin-top: 5px;
+  
 
   img {
     border: none;
