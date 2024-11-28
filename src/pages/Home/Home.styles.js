@@ -9,7 +9,7 @@ export const Hero = styled.div`
     background-image:url(${BgOnda});
     background-repeat:no-repeat;
     background-size: cover;
-    width:1440px;
+    width:100%;
     height: 600px;
     padding: 56px;
  
@@ -27,11 +27,17 @@ h1{
 }
 `
 export const ImageSection = styled.div`
+
+display: flex;
+
   
   img{
     margin-top: 100px;
-    width:1440px;
-  }   
+    width:100%;
+  } 
+  
+
+  
 `
 
 export const Container = styled.div`
@@ -51,12 +57,12 @@ width: 135%;
 
 @media screen and (max-width:768px) {
 
-width: 185%;
+width: 190%;
 }
 
 @media screen and (max-width:375px) {
 
-width: 365%;
+width: 370%;
 
 }
 
