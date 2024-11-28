@@ -34,7 +34,6 @@ export const Subtitle = styled.h4`
 export const Paragraph = styled.p`
   color: #E75109;
   font-size: 16px;
-  // line-height: 1.6;
   margin-bottom: 4px;
   
 `;
@@ -55,7 +54,7 @@ export const List = styled.ul`
   li {
   display: flex;
 
-  margin-left: 85px; /
+  margin-left: 85px; 
   text-align: left;
   
 width: 320px;
@@ -69,10 +68,6 @@ export const LogoContainer = styled.div`
 
 align-items: center;
 `;
-
-
-
-
 
 export const StyledButton = styled.button`
   width: 161px;

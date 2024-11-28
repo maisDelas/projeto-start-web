@@ -6,17 +6,16 @@ import Trilha from 'pages/trilha/Trilha'
 import Perfil from 'pages/perfil/Perfil'
 import ConteudoTrilha1 from './pages/trilha/TrilhaConteudo1'
 import ConteudoTrilha2 from 'pages/trilha/TrilhaConteudo2'
-/* import CadastroPrestadora from 'pages/cadastroP/TelaP' */
+
 import Dados from 'pages/dados/Dados'
 
 import CadastroTipo from 'pages/escolhercadastro/CadastroTipo'
 import Login from 'pages/login/Login'
 import ResetPassword from 'pages/resetPassword/ResetPassword'
-
-// import CadastroPrestadora1 from 'pages/cadastroP/Prestadora1'
-// import CadastroPrestadora2 from 'pages/cadastroP/Prestadoratre2'
-// import CadastroPrestadora3 from 'pages/cadastroP/Prestadora3'
-// import CadastroPrestadora0 from 'pages/cadastroP/Prestadora0'
+import CadastroPrestadora1 from 'pages/cadastroP/RegistrationFrm'
+import CadastroPrestadora2 from 'pages/cadastroP/Prestadoratre2'
+import CadastroPrestadora3 from 'pages/cadastroP/Prestadora3'
+import CadastroPrestadora0 from 'pages/cadastroP/Prestadora0'
 import Configuracao from 'pages/configuracao/Config'
 
   
@@ -33,14 +32,14 @@ export default function App() {
         <Route path="/ConteudoTrilha1" element={< ConteudoTrilha1/>} />
         <Route path="/ConteudoTrilha2" element={< ConteudoTrilha2/>} />
         <Route path="/Dados" element={<Dados/>} />
-        {/* <Route path="/CadastroPrestadora" element={<CadastroPrestadora />} /> */}
+       
         <Route path="/Perfil" element={< Perfil />} />
         <Route path="/Configuracao" element={<Configuracao/>}/>
         <Route path="/Dados" element={<Dados />} />;
-        {/* <Route path="/CadastroPrestadora0" element={<CadastroPrestadora0 />} />;
+        <Route path="/CadastroPrestadora0" element={<CadastroPrestadora0 />} />; 
         <Route path="CadastroPrestadora1" element={<CadastroPrestadora1 />} />;
         <Route path="/CadastroPrestadora2" element={<CadastroPrestadora2 />} />;
-        <Route path="/CadastroPrestadora3" element={<CadastroPrestadora3 />} />; */}
+        <Route path="/CadastroPrestadora3" element={<CadastroPrestadora3 />} />; 
         <Route path="/Login" element={<Login />} />;
         <Route path="/ResetPassword" element={<ResetPassword />} />;
         <Route path="/CadastroTipo" element={<CadastroTipo />} />;

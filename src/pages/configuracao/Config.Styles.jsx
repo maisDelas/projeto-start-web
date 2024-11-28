@@ -23,6 +23,7 @@ export const Config = styled.div`
     h3{
         text-align: center;
         font-weight:normal;
+        margin-bottom: 12px;
     }
 
     .boxContent{
@@ -38,14 +39,16 @@ export const Config = styled.div`
         border-radius: 10px;
     }
 
-    .input{
+    input {
         display: flex;
         flex-direction: column;
-        gap:35px;
-
-        
-        
+        gap: 25px;
+        border: 1px solid #D4CACA;
+        border-radius: 5px;
+        height: 30px;
+        margin-bottom:25px;
     }
+
 ::placeholder{
     text-align: center;
 

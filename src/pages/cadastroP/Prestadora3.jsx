@@ -3,7 +3,7 @@ import { Container, Box, Title, Text, Button, Link } from "./Prestadora3styles";
 import Logo_completo from './Imagem/Logo_sucesso.svg'
 import GlobalStyle from './globalstyle'
 import EU from './Header'
-// import { Link } from "react-router-dom";
+
 
 import Logo from "./Imagem/Logo branca 4.svg";
 
