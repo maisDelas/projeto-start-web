@@ -11,7 +11,7 @@ export const Container = styled.div`
 
   
   img { 
-  width: 200px;
+  width: 250px;
   margin-top: 5%;
   margin-bottom: 4%;
 
@@ -76,7 +76,7 @@ export const Form = styled.form`
   align-items: center;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   position: relative;
-  top: -25px;
+  top: -50px;
   
  
  
