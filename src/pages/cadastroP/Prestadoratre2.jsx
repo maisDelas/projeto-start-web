@@ -107,7 +107,7 @@ function CadastroPrestadora2() {
             )}
           </Section>
 
-          <Section>
+          {/* <Section>
             <label htmlFor="portfolio">
               Portfólio e Exemplos de Trabalho (foto ou link)*
             </label>
@@ -129,16 +129,21 @@ function CadastroPrestadora2() {
             {errors.portfolio && (
               <span className="error">{errors.portfolio}</span>
             )}
-          </Section>
+          </Section> */}
 
           <ButtonGroup>
             <Button
               type="button"
+              variant="retornar"
               onClick={() => navigate("/CadastroPrestadora1")}
             >
               Retornar
             </Button>
-            <Button type="submit">Avançar</Button>
+            <Button type="submit"
+            
+            ariant="avancar"
+            >
+              Avançar</Button>
           </ButtonGroup>
         </form>
 

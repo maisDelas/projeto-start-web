@@ -39,6 +39,13 @@ const GlobalStyle = createGlobalStyle`
  
   }
  
+   .nn3 {
+    display: block;
+    margin: 10px auto; /* Centraliza horizontalmente e adiciona espaço acima/abaixo */
+    max-width: 200px; /* Define o tamanho máximo */
+  }
+
+
 `;
 
 export default GlobalStyle;
