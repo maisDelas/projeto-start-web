@@ -1,11 +1,14 @@
 import Map from "./Api.mapa"
 import Cards from './Cards'
-import { useState } from "react"
+import { useState, useContext } from "react"
 import Footer from "Components/Footer/Footer"
 import * as S from "./Mapa.styles"
 import LogoBranca from "assets/Logo-branca.svg"
 import InfoCards from "./InfoCards"
 import NavU from "Components/navbar/Nav.usuario"
+import MapProviders from "./context/MapProviders"
+import { ContextOfModal } from "./context/ContextOfModal"
+import Modal from "Components/modal/Modal"
 
 
 function Mapeamento() {
@@ -15,6 +18,10 @@ function Mapeamento() {
     setIsVerticalOpen((isVerticalOpen) => !isVerticalOpen)
   }
 
+const  {isModalOpen, openModal, closeModal} = useContext(ContextOfModal)
+
+
+  
   return (
     <>
       {/* Navbar com o icone de usuario funcionando */}
@@ -42,24 +49,28 @@ function Mapeamento() {
           <S.Buttonarrow onClick={handleWithButtonClick}>
             <S.IconArrow />
           </S.Buttonarrow>
-          <S.InputContainer isOpen={isVerticalOpen} >
-            <S.Pesquisa placeholder="Buscar"/>
-            <S.Lupa />
-          </S.InputContainer>
+          <S.ContainerSearch>
           <S.BotaoFiltrar isOpen={isVerticalOpen}>
-            <S.Innertext>Filtrar por área de serviço</S.Innertext>
+            <S.Innertext>Filtrar</S.Innertext>
             <S.Arrow2 />
           </S.BotaoFiltrar>
-          <S.ContainerCards>
+          <S.InputContainer isOpen={isVerticalOpen} >
+            <S.Pesquisa  placeholder="Buscar"/>
+            <S.Lupa />
+          </S.InputContainer>
+          </S.ContainerSearch>
+          <S.ContainerCards >
             {InfoCards.map((x, i) => (
               <Cards key={`Cards_${i}`} {...x} />
             ))}
+           
           </S.ContainerCards>
         </S.VerticalSlider>
 
         {/* Footer padrão global */}
       </S.MapSection>
       <Footer />
+      {isModalOpen && <Modal/>}
     </>
   )
 }

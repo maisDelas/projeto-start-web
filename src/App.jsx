@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from 'pages/home/home'
-import Mapeamento from 'pages/mapeamento/Mapa'
+import Mapeamento from 'pages/mapeamento/MapLayout'
 import Cards from 'pages/mapeamento/Cards'
 import Trilha from 'pages/trilha/Trilha'
 import Perfil from 'pages/perfil/Perfil'

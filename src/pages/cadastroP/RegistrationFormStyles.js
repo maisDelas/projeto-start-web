@@ -51,14 +51,15 @@ export const InputGroup = styled.div`
   }
 
   input {
-    width: 100%;
-    padding: 5px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    outline: none;
-    transition: border-color 0.3s ease;
-
-  }
+     
+        margin-right: auto;
+        margin-left: auto;
+        border: 1px solid #D4CACA;
+        border-radius: 5px;
+        height: 35px;
+        width: 412px;
+        padding: 5px;
+    }
 
   .error {
     color: red;

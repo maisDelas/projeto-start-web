@@ -35,21 +35,27 @@ export const Section = styled.div`
    
   }
 
-  span {
-    font-size: 12px;
-    color: #888;
-    text-align: right;
-    width: 350px; 
-  }
+  input {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        gap: 25px;
+        border: 1px solid #D4CACA;
+        border-radius: 5px;
+        height: 30px;
+        margin-bottom:25px;
+    }
 
   input {
-    width: 330px; 
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 14px;
-   
-  }
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        gap: 25px;
+        border: 1px solid #D4CACA;
+        border-radius: 5px;
+        height: 30px;
+        margin-bottom:25px;
+    }
 `;
 
 export const TextArea = styled.textarea`

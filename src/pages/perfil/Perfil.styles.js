@@ -155,20 +155,21 @@ export const Editagem = styled.div`
       }
     }
 
-    input[type='file']{
-      border: 1px solid #E35D1C;
-      visibility: hidden;
-    }
+   
 
     textarea {
       height: 180px;
       resize: none;
       width: 100%;
+      border-color:#D4CACA;
+      border-radius: 10px;
+    
     }
 
     .redes-sociais {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
+      gap:55px;
 
       div {
         align-items: center;

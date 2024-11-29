@@ -13,7 +13,8 @@ import Eu from "./Imagem/LogoNN1.svg";
 import { Link } from "react-router-dom";
 import NavCad from "./Header.jsx";
 import GlobalStyle from "./GlobalStyle";
-
+import { AlignRight } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 
 function CadastroPrestadora1() {
@@ -29,7 +30,7 @@ function CadastroPrestadora1() {
   });
 
   const [errors, setErrors] = useState({});
-
+  const navigate = useNavigate();
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
@@ -48,7 +49,7 @@ function CadastroPrestadora1() {
     } else if (formData.fullName.length < 3) {
       newErrors.fullName = "O nome deve ter no mínimo 3 caracteres";
     }
-
+    
     if (!formData.birthDate) newErrors.birthDate = "Este campo é obrigatório";
     if (!formData.cpfCnpj.trim()) newErrors.cpfCnpj = "Este campo é obrigatório";
     if (!formData.email.trim()) newErrors.email = "Este campo é obrigatório";
@@ -57,9 +58,9 @@ function CadastroPrestadora1() {
     } else if (!/^\d{10,11}$/.test(formData.phone)) {
       newErrors.phone = "Insira um número de telefone válido (10-11 dígitos)";
     }
-    if (!formData.rgFront) newErrors.rgFront = "Este campo é obrigatório";
-    if (!formData.rgBack) newErrors.rgBack = "Este campo é obrigatório";
-    if (!formData.selfieWithRg) newErrors.selfieWithRg = "Este campo é obrigatório";
+    // if (!formData.rgFront) newErrors.rgFront = "Este campo é obrigatório";
+    // if (!formData.rgBack) newErrors.rgBack = "Este campo é obrigatório";
+    // if (!formData.selfieWithRg) newErrors.selfieWithRg = "Este campo é obrigatório";
 
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
@@ -69,7 +70,8 @@ function CadastroPrestadora1() {
     e.preventDefault();
     if (validateForm()) {
       console.log(formData);
-      alert("Cadastro enviado com sucesso!");
+      // alert("Cadastro enviado com sucesso!");
+      navigate("/CadastroPrestadora2");
     }
   };
 
@@ -144,12 +146,12 @@ function CadastroPrestadora1() {
             />
             {errors.phone && <span className="error">{errors.phone}</span>}
           </InputGroup>
-            <Link to='/CadastroPrestadora2'>
+            {/* <Link to='/CadastroPrestadora2'> */}
             
             <ButtonContainer>
             <StyledButton type="submit">Avançar</StyledButton>
           </ButtonContainer>
-            </Link>
+            {/* </Link> */}
         
 
         </form>

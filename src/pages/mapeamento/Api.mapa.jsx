@@ -5,14 +5,17 @@ import 'leaflet/dist/leaflet.css';
 
 function Map () {
 
+  function onMapClick (e) {
+      alert(e.latlng)
+  }
 
-  const position = [51.505, -0.09];
+  const position = [-8.050433095454059, -34.8884111530504];
 
   return (
     <MapContainer
       center={position}
       zoom={20}
-      scrollWheelZoom={false}
+      scrollWheelZoom={true}
       // className="map-container"
     >
       <TileLayer
