@@ -17,6 +17,8 @@ import CadastroPrestadora0 from 'pages/cadastroP/Prestadora0'
 import Pessoais from "./pages/pessoais/Pessoais";
 import Configuracao from 'pages/configuracao/Config'
 
+import LoginDados from 'pages/loginDados/Logindados'
+
 
 
 export default function App() {
@@ -41,6 +43,7 @@ export default function App() {
         <Route path="/CadastroPrestadora1" element={<CadastroPrestadora1 />} />;
         <Route path="/CadastroPrestadora2" element={<CadastroPrestadora2 />} />;
         <Route path="/CadastroPrestadora3" element={<CadastroPrestadora3 />} />;
+        <Route path="/LoginDados" element={<LoginDados />} />;
 
         <Route path="/Login" element={<Login />} />;
         <Route path="/ResetPassword" element={<ResetPassword />} />;

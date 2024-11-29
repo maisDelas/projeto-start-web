@@ -40,8 +40,9 @@ export const Config = styled.div`
     }
 
     input {
-        display: flex;
-        flex-direction: column;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
         gap: 25px;
         border: 1px solid #D4CACA;
         border-radius: 5px;
@@ -53,4 +54,9 @@ export const Config = styled.div`
     text-align: center;
 
 }
+
+`
+
+export const FormBox = styled.div`
+
 `

@@ -15,7 +15,7 @@ const GlobalStyle = createGlobalStyle`
     color: rgb(36, 12, 12);
     background-image: url('src/pages/cadastroP/Imagem/Fundo_completo.svg');
     background-size: cover; 
-    
+    font-size: 18px;
     background-repeat: no-repeat; 
     background-position: center; 
 
@@ -38,6 +38,9 @@ const GlobalStyle = createGlobalStyle`
    color: #E35D1C;
  
   }
+::placeholder{
+  font-size: 15px;
+}
  
    .nn3 {
     display: block;

@@ -5,11 +5,31 @@ import { useNavigate } from 'react-router-dom'
 import Switch from "react-switch";
 import React, { useState } from 'react';
 import Button from 'Components/botaoGlobal/Button';
+import { MdMargin } from 'react-icons/md';
 
 const Configuracao = () => {
     const navigation = useNavigate()
     const [emailSwitch, setEmailSwitch] = useState(false);
     const [whatsAppSwitch, setWhatsAppSwitch] = useState(false);
+    const [currentPassword, setCurrentPassword] = useState('');
+    const [newPassword, setNewPassword] = useState('');
+    const [confirmPassword, setConfirmPassword] = useState('');
+    const [errors, setErrors] = useState({});
+
+
+
+    const handleCurrentPassword = (password) => {
+        setCurrentPassword(password);
+    };
+
+    const handleNewPassword = (password) => {
+        setNewPassword(password);
+
+    };
+
+    const handleConfirmPassword = (password) => {
+        setConfirmPassword(password);
+    };
 
     const handleEmailSwitch = (checked) => {
         setEmailSwitch(checked);
@@ -18,6 +38,25 @@ const Configuracao = () => {
     const handleWhatsAppSwitch = (checked) => {
         setWhatsAppSwitch(checked);
     };
+
+    const handleSubmit = (e) => {
+        console.log(currentPassword, newPassword, confirmPassword)
+        e.preventDefault();
+
+        validateForm();
+
+    };
+
+    const validateForm = () => {
+        const errors = {}
+        if (newPassword != confirmPassword) {
+            errors.passwordError = "Senha de confirmação deve ser igual a nova senha.";
+        }
+
+
+        setErrors(errors);
+    };
+
 
 
     return (
@@ -55,19 +94,33 @@ const Configuracao = () => {
                         </div>
                     </div>
 
+
+
                     <div>
-                        <h2>Segurança</h2>
-                        <div className='boxContent'>
+                        <S.FormBox>
+                            <form onSubmit={handleSubmit}>
+                                <h2>Segurança</h2>
+                                <div className='boxContent'>
 
-                            <div className='input'>
-                                <h3>Alterar Senha</h3>
-                                <input type="text" placeholder='Senha Atual' />
-                                <input type="text" placeholder='Nova Senha' />
-                                <input type="text" placeholder='Confirmar Senha' />
-                                <Button>Salvar Alterações</Button>
-                            </div>
+                                    <div className='input'>
+                                        <h3>Alterar Senha</h3>
+                                        <input type="text" onChange={(e) => handleCurrentPassword(e.target.value)} placeholder='Senha Atual' />
+                                        <input type="text" onChange={(e) => handleNewPassword(e.target.value)} placeholder='Nova Senha' />
+                                        <input type="text" onChange={(e) => handleConfirmPassword(e.target.value)} placeholder='Confirmar Senha' />
 
-                        </div>
+                                        {errors.passwordError && <span>{errors.passwordError}</span>}
+
+                                        <Button>
+                                            Salvar Alterações
+                                        </Button>
+                                    </div>
+
+
+
+
+                                </div>
+                            </form>
+                        </S.FormBox>
                     </div>
 
                     <div>
