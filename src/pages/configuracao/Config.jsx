@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom'
 import Switch from "react-switch";
 import React, { useState } from 'react';
 import Button from 'Components/botaoGlobal/Button';
-import { MdMargin } from 'react-icons/md';
+
 
 const Configuracao = () => {
     const navigation = useNavigate()
@@ -144,4 +144,4 @@ const Configuracao = () => {
 }
 
 
-export default Configuracao
+export default Configuracao;

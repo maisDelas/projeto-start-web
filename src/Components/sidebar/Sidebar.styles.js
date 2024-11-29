@@ -3,6 +3,8 @@ import styled from "styled-components";
 export const SideBarStyle = styled.div`
   
   background-color: #F4AD58;
+  box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.2);
+  
   display:flex;
   flex-direction:column;
   padding:20px;

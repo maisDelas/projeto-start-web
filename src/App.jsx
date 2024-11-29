@@ -16,6 +16,7 @@ import CadastroPrestadora3 from 'pages/cadastroP/Prestadora3'
 import CadastroPrestadora0 from 'pages/cadastroP/Prestadora0'
 import Pessoais from "./pages/pessoais/Pessoais";
 import Configuracao from 'pages/configuracao/Config'
+import Contratos from 'pages/contratosP/Contratos'
 
 
 
@@ -33,6 +34,8 @@ export default function App() {
         <Route path="/ConteudoTrilha1" element={<ConteudoTrilha1 />} />
         <Route path="/ConteudoTrilha2" element={<ConteudoTrilha2 />} />
         <Route path="/Configuracao" element={<Configuracao />} />
+        <Route path="/Contratos" element={<Contratos/>} />
+
 
         <Route path="/CadastroTipo" element={<CadastroTipo />} />;
         <Route path="/DadosPessoais" element={<Pessoais />} />;

@@ -4,6 +4,7 @@ import { IoIosArrowDown } from "react-icons/io";
 export const NavContainer = styled.div`
   background-color: #f6e5d3;
   padding-block:12px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
 `
 export const NavContent = styled.div`
   max-width: 1440px;
