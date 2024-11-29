@@ -5,8 +5,6 @@ import instagram from "../../assets/instagram.svg";
 import mulherIcon from "../../assets/mulher.svg";
 import linkedin from "../../assets/linkedin.svg";
 import canetaIcon from "../../assets/caneta.svg";
-import city from "../../assets/city.svg";
-import planning from "../../assets/planning.svg";
 import { useNavigate } from "react-router-dom";
 import  SideBarStyle  from "Components/sidebar/Sidebar";
 import NavU from "Components/navbar/Nav.usuario";
@@ -152,25 +150,6 @@ function Perfil() {
                     <textarea></textarea>
                   </div>
                 </div>
-              </div>
-            </S.Editagem>
-          </S.Card>
-
-          <S.Card>
-            <S.Editagem>
-              <h2>Meus trabalhos</h2>
-              <label htmlFor="files">Upload de nova foto</label>
-              <input id="files" type="file" />
-
-              <S.ButtonEdit>
-                <img src={canetaIcon} alt="caneta" />
-                Editar
-              </S.ButtonEdit>
-            </S.Editagem>
-            <S.Editagem>
-              <div className="image">
-                <img src={city} />
-                <img src={planning} />
               </div>
             </S.Editagem>
           </S.Card>
