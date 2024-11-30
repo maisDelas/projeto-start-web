@@ -3,30 +3,26 @@ import { createGlobalStyle } from 'styled-components';
 import BackGroundIMG from "assets/BgOnda.png";
 
 
-export const GlobalStyle = createGlobalStyle`
-     * { margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-}   
+export const GlobalStyle = createGlobalStyle`  
 
-    body { 
-    font-family: "Poppins", sans-serif;
+body { 
     background-image: url(${BackGroundIMG});
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100vw;
+    height: 500px;    
 }
 
 `;
 
 export const BodyContainer = styled.div`
-     width: 100%;
-  max-width: 500px;
-  padding: 20px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 `;
 
 
@@ -59,17 +55,12 @@ export const CardReset = styled.div`
 
 
     a{
-        
-    }
-
-    
+        color: #E35D1C;
+    } 
 `;
-
-
 
 export const Button = styled.button`
     background-color: white;
-    color:#E35D1C ;
     font-size: 27px;
     font-weight: bold;
     display: block;

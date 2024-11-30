@@ -3,9 +3,11 @@ import { FaRegUserCircle } from "react-icons/fa"
 import GlobalButton from "Components/botaoglobal/Button"
 
 export const Container = styled.div`
-  background-color: #f6e5d3;
+  background-color:  #f6e5d3;
   width: 100%;
   margin: 0;
+  display: flex;
+  height: 90px;
   
 
   
@@ -38,46 +40,45 @@ export const Content = styled.div`
   max-width: 1440px;
   margin-inline: auto;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding-inline: var(--container-padding);
+ 
+  
+  
   
 `
 export const Logo = styled.img`
   width: 140px;
+  margin-right: 600px;
 `
 export const ListLinks = styled.ul`
 
   display:flex; 
-  align-items:center; `
+  align-items:center; 
+ 
+  
+`
 
 export const Link = styled.li`
   list-style-type: none;
-  padding: 1.5rem 0;
+  padding: 15px;
   display: flex;
   align-items: center;
-   text-decoration: none;
+  text-decoration: none;
+
   
      &:hover {
         color:#544e48; 
-        text-decoration: underline; 
        }
 
   & + & { 
     margin-left: 1rem;
   }
     
-  img,p { 
-
-    margin-right: 10px;
-
-   }
      
 
   a {
     color: #544e48;
     text-decoration: none;
-    font-family: "Poppins", sans-serif;
   }
 `
 

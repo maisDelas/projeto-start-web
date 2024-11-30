@@ -3,16 +3,19 @@ import styled from "styled-components";
 import Logo from "./Imagem/Logomaroon.svg"
 
 const HeaderContainer = styled.header`
-  background-color: #f6e5d3;
+  display: flex;
+  background-color:  #f6e5d3;
+  height: 90px;
+  
 `;
 
 const Nav = styled.div`
   max-width: 1300px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 0 40px;
+  gap: 800px;
 `;
 
 const NavList = styled.ul`
@@ -26,16 +29,11 @@ const NavItem = styled.li`
   a {
     text-decoration: none;
     color: #544e48;
-    font-size: 18px;
-
-   
+    
   }
 `;
 
-const Picklist = styled.select`
-  border: 0;
-  background: #f6e5d3;
-`;
+
 
 const LogoImage = styled.img`
   max-width: 150px;

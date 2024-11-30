@@ -58,7 +58,7 @@ const ResetPassword = () => {
               <Description>Após inserir seu endereço de 
                 e-mail você receberá um link para criar
                 uma nova senha. Certifique-se de verificar
-                sua caixa de entrada (ou na pasta de spam, caso não encontre).
+                sua caixa de entrada (ou na pasta de spam).
               </Description>
             </HeaderTitle>
             <form onSubmit={handleSubmit}>
