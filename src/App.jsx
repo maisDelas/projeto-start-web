@@ -4,6 +4,7 @@ import Mapeamento from 'pages/mapeamento/MapLayout'
 import Cards from 'pages/mapeamento/Cards'
 import Trilha from 'pages/trilha/Trilha'
 import Perfil from 'pages/perfil/Perfil'
+import PerfilUser from 'pages/perfilUser/PerfilUser'
 import ConteudoTrilha1 from './pages/trilha/TrilhaConteudo1'
 import ConteudoTrilha2 from 'pages/trilha/TrilhaConteudo2'
 import Dados from 'pages/dados/Dados'
@@ -32,6 +33,7 @@ export default function App() {
         <Route path="/C" element={<Cards />} />
 
         <Route path="/Perfil" element={< Perfil />} />
+        <Route path="/PerfilUser" element={< PerfilUser />} />
         <Route path="/Trilha" element={<Trilha />} />
         <Route path="/ConteudoTrilha1" element={<ConteudoTrilha1 />} />
         <Route path="/ConteudoTrilha2" element={<ConteudoTrilha2 />} />
