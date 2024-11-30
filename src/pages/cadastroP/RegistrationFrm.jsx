@@ -17,13 +17,36 @@ import { AlignRight } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
 
+// const handleSubmit = async (e) => {
+//   e.preventDefault();
+//   if (validateForm()) {
+//     const data = new FormData();
+//     for (const key in formData) {
+//       data.append(key, formData[key]);
+//     }
+//     try {
+//       const response = await axios.post('https://sua-api.com/cadastro', data, {
+//         headers: { 'Content-Type': 'multipart/form-data' },
+//       });
+//       console.log('Sucesso:', response.data);
+//       alert("Cadastro enviado com sucesso!");
+//       navigate("/CadastroPrestadora2");
+//     } catch (error) {
+//       console.error('Erro ao enviar os dados:', error);
+//       alert("Ocorreu um erro ao enviar os dados. Tente novamente.");
+//     }
+//   }
+// };
+
+
+
 function CadastroPrestadora1() {
   const [formData, setFormData] = useState({
     fullName: "",
     birthDate: "",
     cpfCnpj: "",
     email: "",
-    phone: "", // Novo campo para número de telefone
+    phone: "", 
     rgFront: null,
     rgBack: null,
     selfieWithRg: null,
@@ -58,10 +81,7 @@ function CadastroPrestadora1() {
     } else if (!/^\d{10,11}$/.test(formData.phone)) {
       newErrors.phone = "Insira um número de telefone válido (10-11 dígitos)";
     }
-    // if (!formData.rgFront) newErrors.rgFront = "Este campo é obrigatório";
-    // if (!formData.rgBack) newErrors.rgBack = "Este campo é obrigatório";
-    // if (!formData.selfieWithRg) newErrors.selfieWithRg = "Este campo é obrigatório";
-
+   
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   };

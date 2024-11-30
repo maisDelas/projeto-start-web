@@ -16,6 +16,7 @@ import {
   CadastroLink,
   ContainerNav
 } from './Login.styles.js';
+import NavCad from 'pages/cadastroP/Header.jsx';
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -93,6 +94,7 @@ const Login = () => {
 
   return (
     <>
+      <NavCad/>
       <GlobalStyle />
       <BodyContainer />
       <WhiteLogo>
@@ -146,7 +148,7 @@ const Login = () => {
               <RememberLabel>Lembrar de mim</RememberLabel>
             </div>
               
-            <ForgotPassword href="#">Esqueceu sua senha?</ForgotPassword>
+            <ForgotPassword href="/ResetPassword">Esqueceu sua senha?</ForgotPassword>
             <Button type="submit">Entrar</Button>
           </form>
 

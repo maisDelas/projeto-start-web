@@ -6,7 +6,7 @@ WhiteLogo,
 CardCenter, 
 CardReset, 
 Button} from './CadastroTipo.styles.js';
-import NavBar from "Components/navbar/Navbar" 
+import NavCad from 'pages/cadastroP/Header.jsx'; 
  
 
 const CadastroTipo = () => {
@@ -15,7 +15,7 @@ const CadastroTipo = () => {
 
   return (
     <>
-    <NavBar/>
+    <NavCad/>
       <GlobalStyle/>
         <BodyContainer />
         <WhiteLogo>

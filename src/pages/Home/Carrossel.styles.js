@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import cardCarrossel from '../../assets/cardCarrossel.svg';
-import bgcarrossel from '../../assets/BgCarrossel.svg';
+
+import bgcarrossel from '../../assets/BgCarrossel.png';
 
 
 export const BcCa = styled.div`

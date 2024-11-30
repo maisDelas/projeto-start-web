@@ -8,6 +8,8 @@ export const Container = styled.div`
   margin: 0;
   
 
+  
+
 
   @media screen and (max-width:1440px) {
 
@@ -39,6 +41,7 @@ export const Content = styled.div`
   justify-content: space-between;
   align-items: center;
   padding-inline: var(--container-padding);
+  
 `
 export const Logo = styled.img`
   width: 140px;

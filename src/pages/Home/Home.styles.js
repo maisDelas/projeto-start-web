@@ -7,6 +7,7 @@ export const Hero = styled.div`
     flex-direction: column;
     align-items: center;
     background-image:url(${BgOnda});
+    box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.2);
     background-repeat:no-repeat;
     background-size: cover;
     width:100%;
@@ -18,6 +19,7 @@ img{
     margin-top: 25px;
     width: 339px;
     height: 229px;
+    
     
 }
 
