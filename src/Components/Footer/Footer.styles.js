@@ -180,7 +180,7 @@ export const FooterCopyright = styled.div`
     margin-left: 40px;
     text-align: right;
     color: #c76938;
-    font-size: 20px;
+    font-size: 15.8px;
     margin-top: 5px;
   }
 `

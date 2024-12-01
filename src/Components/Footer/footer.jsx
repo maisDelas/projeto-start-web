@@ -6,9 +6,28 @@ import emailIcon from "../../assets/email.svg";
 import telefoneIcon from "../../assets/telefone.svg";
 import logoIcon from "../../assets/logo.svg";
 import arrowTop from "../../assets/arrowTop.svg";
+import { useState } from "react";
 
 const Footer = () => {
   function scrollToTop() { window.scrollTo({ top: 0, behavior: "smooth" }) }
+
+const [email, setEmail] = useState('')
+
+function handleEmail (e) {
+  setEmail(e.target.value)
+}
+
+function handleSubmit (e) {
+  e.preventDefault()
+  setEmail('')
+}
+
+function validarEmail() {
+  const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return regex.test(setEmail);
+}
+// console.log(email)
+
   return (
     <S.footer>
       <S.FooterContainer>
@@ -70,8 +89,10 @@ const Footer = () => {
           </S.FooterLink>
           <S.FooterInscreva>
             <p>Inscreva-se para mais informações</p>
-            <input type="Email" placeholder="Digite seu email" />
-            <button>Se inscreva</button>
+            <form onSubmit={handleSubmit}>
+            <input type="Email" value={email} placeholder="Digite seu email" onChange={handleEmail} />
+            <button type="submit">Se inscreva</button>
+            </form>
           </S.FooterInscreva>
         </div>
         <div className="goToTopContainer">

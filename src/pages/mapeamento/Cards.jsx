@@ -25,9 +25,7 @@ function Cards({ id, photo, name, profession, distance, classification }) {
         </S.Distance>
       </S.CardDescription>
       <S.ContainerIcon>
-        {Array.from({ length: classification }).map(() => (
-          <S.StarIcon />
-        ))}
+        {Array.from({ length: classification }).map(() => (<S.StarIcon />))}
       </S.ContainerIcon>
 
     </S.Minicard>

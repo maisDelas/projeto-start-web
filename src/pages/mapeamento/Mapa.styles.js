@@ -96,6 +96,7 @@ export const InputContainer = styled.div`
   width: 100%;
   max-width: 370px;
   border-radius: 10px;
+  border:none;
   background-color: #fff6eb;
   display: ${(props) => (props.isOpen ? "flex" : "none")};
   align-items: center;
@@ -107,10 +108,15 @@ export const InputContainer = styled.div`
 export const Pesquisa = styled.input`
   flex: 1;
   border: none;
+  outline: none;
   font-size: 16px;
   background: none;
   color: #a59494;
   padding: 5px;
+
+  /* input:focus {
+    outline: 2px solid blue; */
+}
 `
 
 export const Lupa = styled(IoIosSearch)`

@@ -18,7 +18,7 @@ function Mapeamento() {
     setIsVerticalOpen((isVerticalOpen) => !isVerticalOpen)
   }
 
-const  {isModalOpen, openModal, closeModal} = useContext(ContextOfModal)
+const  {isModalOpen} = useContext(ContextOfModal)
 
 
   
