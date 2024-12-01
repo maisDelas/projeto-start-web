@@ -12,7 +12,7 @@ import NavU from "Components/navbar/Nav.usuario";
 
 
 
-function Perfil() {
+function Perfil2() {
   const navigation = useNavigate()
 
   const [name, setName] = useState('');
@@ -267,4 +267,4 @@ function Perfil() {
   );
 }
 
-export default Perfil;
+export default Perfil2;
