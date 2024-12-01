@@ -21,7 +21,7 @@ function SideBar() {
             <hr class="linha"></hr>
 
             <ul>               
-                <li><img src={IconOut}></img> <a href="">Sair</a></li>
+                <li><img src={IconOut}></img> <a href="/">Sair</a></li>
             </ul>
         </SideBarStyle>
     )

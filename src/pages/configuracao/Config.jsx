@@ -39,22 +39,49 @@ const Configuracao = () => {
         setWhatsAppSwitch(checked);
     };
 
-    const handleSubmit = (e) => {
-        console.log(currentPassword, newPassword, confirmPassword)
+    const handleSubmit = async (e) => {
         e.preventDefault();
 
-        validateForm();
+        const isValid = validateForm();
+        if (!isValid) {
+            return;
+        }
+
+        try {
+            const response = await api.put('/update-password', {
+                currentPassword,
+                newPassword,
+            });
+
+
+            console.log("Senha atualizada com sucesso!", response.data);
+            alert("Senha alterada com sucesso!");
+
+            setErrors({});
+
+        } catch (error){
+            console.error("Erro ao alterar senha: ", error);
+            setErrors({ apiError: "Erro ao alterar senha. Por favor, tente novamente." });
+        }
 
     };
 
     const validateForm = () => {
         const errors = {}
-        if (newPassword != confirmPassword) {
-            errors.passwordError = "Senha de confirmação deve ser igual a nova senha.";
+        if (!currentPassword) {
+            errors.currentPasswordError = "A senha atual é obrigatória.";
         }
 
+        if (!newPassword){
+            errors.newPasswordError = "A nova senha é obrigatória.";
+        }
 
+        if (newPassword != confirmPassword) {
+            errors.passwordError = "A confirmação da senha deve ser igual a nova senha.";
+        }
         setErrors(errors);
+
+        return Object.keys(errors).length === 0;
     };
 
 
@@ -104,13 +131,31 @@ const Configuracao = () => {
 
                                     <div className='input'>
                                         <h3>Alterar Senha</h3>
-                                        <input type="text" onChange={(e) => handleCurrentPassword(e.target.value)} placeholder='Senha Atual' />
-                                        <input type="text" onChange={(e) => handleNewPassword(e.target.value)} placeholder='Nova Senha' />
-                                        <input type="text" onChange={(e) => handleConfirmPassword(e.target.value)} placeholder='Confirmar Senha' />
+                                        <input 
+                                        type="text" 
+                                        value={currentPassword}
+                                        onChange={(e) => handleCurrentPassword(e.target.value)} 
+                                        placeholder='Senha Atual' 
+                                        />
+
+                                        <input 
+                                        type="text" 
+                                        value={newPassword} 
+                                        onChange={(e) => handleNewPassword(e.target.value)} 
+                                        placeholder='Nova Senha' 
+                                        />
+
+                                        <input 
+                                        type="text" 
+                                        value={confirmPassword}
+                                        onChange={(e) => handleConfirmPassword(e.target.value)} 
+                                        placeholder='Confirmar Senha' 
+                                        />
 
                                         {errors.passwordError && <span>{errors.passwordError}</span>}
+                                        {errors.apiError && <span>{errors.apiError}</span>}
 
-                                        <Button>
+                                        <Button type='submit'>
                                             Salvar Alterações
                                         </Button>
                                     </div>

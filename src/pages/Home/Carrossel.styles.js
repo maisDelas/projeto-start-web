@@ -16,7 +16,7 @@ export const BcCa = styled.div`
 `
 
 export const CarrosselContainer = styled.div`
-  width: 65%;
+  width: 50%;
   margin: 0 auto;
   text-align: center;
   
