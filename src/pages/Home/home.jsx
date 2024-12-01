@@ -6,7 +6,7 @@ import Card from "Components/cardsService/cardService"
 import StaticService from "Components/cardsService/StaticService";
 import { StyleButton } from "Components/botaoglobal/Button.style";
 import Logowhite from 'assets/Logobranca.svg'
-import imgMulheres from 'assets/imgMulheres.svg'
+import imgMulheres from 'assets/imgMulheres.png'
 
 function Home() {
   return (

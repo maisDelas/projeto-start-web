@@ -139,9 +139,10 @@ function CadastroPrestadora2() {
             >
               Retornar
             </Button>
-            <Button type="submit"
-            
-            ariant="avancar"
+            <Button
+            type="submit"
+            variant="avancar"
+            onClick={()=> navigate('/CadastroPrestadora3')}
             >
               Avançar</Button>
           </ButtonGroup>

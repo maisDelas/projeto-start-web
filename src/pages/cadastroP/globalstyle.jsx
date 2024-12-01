@@ -1,26 +1,16 @@
 
 import { createGlobalStyle } from "styled-components";
+import BackGroundIMG from "assets/BgOnda.png";
 
 const GlobalStyle = createGlobalStyle`
-  
 
-   * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-  body {
-    
-    color: rgb(36, 12, 12);
-    background-image: url('src/pages/cadastroP/Imagem/Fundo_completo.svg');
-    background-size: cover; 
-    font-size: 18px;
-    background-repeat: no-repeat; 
-    background-position: center; 
-
-    
-  }
+body { 
+    background-image: url(${BackGroundIMG});
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    height: 500px;    
+}
 
   .logo {
     display: block;
