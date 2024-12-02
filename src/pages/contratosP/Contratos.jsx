@@ -12,7 +12,7 @@ const Contratos = () => {
     
     const carregarDados = async () => {
         try {
-            const response = await axios.get("https://sua-api.com/pedidos"); // Trocar pela URL real
+            const response = await axios.get(""); // Trocar pela URL do banco de dados
             setDados(response.data); 
         } catch (error) {
             console.error("Erro ao carregar os pedidos:", error);

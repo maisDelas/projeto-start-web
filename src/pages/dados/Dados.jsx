@@ -1,8 +1,10 @@
 import * as S from "./Dados.styles"
 import logo from "../../assets/Logobranca.svg"
 import NavCad from "pages/cadastroP/Header"
+import { useNavigate } from "react-router-dom"
 
 function Dados() {
+  const navigation = useNavigate()
   return (
     <>
     <NavCad/>
@@ -34,7 +36,7 @@ function Dados() {
             <S.Input type="text" placeholder="Logradouro" />
           </div>
           <S.ButtonGroup>
-            <S.Button>Retornar</S.Button>
+            <S.Button onClick={()=> navigation('/DadosPessoais')}>Retornar</S.Button>
             <S.Button primary>Avançar</S.Button>
           </S.ButtonGroup>         
           <S.IndicadorG>

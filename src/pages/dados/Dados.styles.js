@@ -1,19 +1,18 @@
 import styled from "styled-components";
 import background from "../../assets/Onda.svg"
+import BgOnda from 'assets/BgOnda.png'
 
 export const Container = styled.div`
+  max-width: 500px;
+  padding: 20px;
+  margin: 0 auto;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  min-height: 100vh; 
   flex-direction: column;
+  align-items: center;
 
   
   img { 
-  width: 250px;
-  margin-top: 5%;
-  margin-bottom: 4%;
+    margin-bottom: 60px;
 
   }
 
@@ -24,7 +23,7 @@ export const Container = styled.div`
 export const Onda = styled.div`
   width: 100%;
   z-index: -1;
-  background-image: url(${background});
+  background-image: url(${BgOnda});
   height: 100vh;
   position: absolute;
   background-size: contain;
@@ -134,15 +133,16 @@ export const ButtonGroup = styled.div`
 
 
 export const Button = styled.button`
-  width: 20%;
+ margin-bottom: 60px;
   padding: 7px;
   font-size: 16px;
   border: none;
   border-radius: 10px;
   cursor: pointer;
-  background-color:${(props) => (props.primary ? "#f15a24" : "#f5a623")};; 
+  background-color:${(props) => (props.primary ? "#f15a24" : "#F4AD58")};; 
   color: #fff;
-  margin-bottom: 20px;
+  
+  
 
     
 
