@@ -51,7 +51,7 @@ function Carrossel() {
                         <SwiperSlide>
                             <S.Slide> 
                                 <img src={persona1}></img>
-                                <p>Encantada com a qualidade e o carinho dos produtos, é gratificante apoiar mulheres empreendedoras a cada compra!</p>
+                                <p>Encantada com a qualidade e o carinho dos produtos, é gratificante apoiar mulheres empreendedoras a cada compra!</p> 
                                 <h3>- Maria Souza</h3>
 
                             </S.Slide>
@@ -60,7 +60,7 @@ function Carrossel() {
                         <SwiperSlide>
                             <S.Slide>
                                 <img src={persona2}></img> 
-                                <p>A entrega foi rápida e o atendimento ao cliente, impecável. Vou recomendar para todas as minhas amigas!</p>
+                                <p>O contato é feito de forma muito rápida, além de que posso descrever exatamente como quero meu serviço. Recomendo demais!</p>
                                 <h3>- Ana Costa</h3>
 
                             </S.Slide>
@@ -78,7 +78,7 @@ function Carrossel() {
                         <SwiperSlide>
                             <S.Slide>
                                 <img src={persona4}></img> 
-                                <p>Ofereço meus serviços com segurança para clientes que valorizam o trabalho de mulheres como eu.</p>
+                                <p>A trilha de desenvolvimento profissional e pessoal foi um divisor de águas na minha trajetória de empreendedora.</p>
                                 <h3>- Sofia Almeida</h3>
                             </S.Slide>
                         </SwiperSlide>

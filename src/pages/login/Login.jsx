@@ -17,8 +17,10 @@ import {
   ContainerNav
 } from './Login.styles.js';
 import NavCad from 'pages/cadastroP/Header.jsx';
+import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
+  const navigate = useNavigate()
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [rememberMe, setRememberMe] = useState(false);
@@ -149,7 +151,7 @@ const Login = () => {
             </div>
               
             <ForgotPassword href="/ResetPassword">Esqueceu sua senha?</ForgotPassword>
-            <Button type="submit">Entrar</Button>
+            <Button type="submit" onClick={()=> navigate('/Perfil')}>Entrar</Button>
           </form>
 
           <ContainerNav>

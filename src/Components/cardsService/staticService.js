@@ -31,7 +31,7 @@ export default [
         altName: 'Assistencia'
     },
     {
-        title: 'Terapias Holísticas',
+        title: 'Saúde e Bem-Estar',
         iconUrl: heartbeat,
         description: 'Terapias Holísticas, personal trainer,nutrição e dietética aconselhamento psicológico, etc.',
         altName: 'Beating heart'

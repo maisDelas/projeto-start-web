@@ -28,7 +28,7 @@ const ConteudoTrilha2 = () => {
                                 <img src={OnGoing} alt="OnGoingImage" />
                                 <h3>Em andamento:</h3>
                             </div>
-                            <p>Investindo no <br /> seu Negócio</p>
+                            <p>Gestão Financeira</p>
                         </S.Process>
                         <S.Process>
                             <div className="title">
@@ -40,7 +40,7 @@ const ConteudoTrilha2 = () => {
                     </S.ProcessContainer>
 
                     <S.ProcessTitle>
-                        <h1 className="title1">Etapa 1: Investindo no seu negócio</h1>
+                        <h1 className="title1">Etapa 1: Gestão Financeira</h1>
                         <h1 className="title2">Conteúdo</h1>
                     </S.ProcessTitle>
 

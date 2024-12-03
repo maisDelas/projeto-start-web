@@ -104,7 +104,8 @@ function Perfil2() {
             <S.Editagem>
               <h2>Informações Pessoais</h2>
               <S.ButtonEdit>
-               <button>Editar</button>
+                <img src={canetaIcon} alt="caneta" />
+                Editar
               </S.ButtonEdit>
             </S.Editagem>
             <S.Editagem>
