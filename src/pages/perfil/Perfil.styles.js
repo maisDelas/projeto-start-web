@@ -76,7 +76,7 @@ export const Card = styled.div`
   flex-direction: column;
   padding: 45px;
   gap:20px;
-  box-shadow: 10px 7px 18px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   width: 75%;
 `;
 
@@ -121,20 +121,23 @@ export const Editagem = styled.div`
 
     p {
       color: #E75109;
-      font-weight: 1000;
+      
 
     }
 
     button {
       width: 5%;
       color: #F6E5D3;
+      
     }
 
     input {
       border: 1px solid #D4CACA;
-      border-radius: 5px;
+      border-radius: 10px;
       height: 30px;
       padding-left: 5px;
+    
+      
     }
 
     label {
@@ -145,9 +148,9 @@ export const Editagem = styled.div`
       width: 150px;
       height: 30px;
       border: 1px solid #E35D1C;
-      border-radius: 10px;
       cursor: pointer;
       transition: background-color 0.3s ease;
+      
 
       &:hover {
        background-color: #f7692e;
@@ -155,20 +158,21 @@ export const Editagem = styled.div`
       }
     }
 
-    input[type='file']{
-      border: 1px solid #E35D1C;
-      visibility: hidden;
-    }
+   
 
     textarea {
       height: 180px;
       resize: none;
       width: 100%;
+      border-color:#D4CACA;
+      border-radius: 10px;
+    
     }
 
     .redes-sociais {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
+      gap:55px;
 
       div {
         align-items: center;
@@ -202,20 +206,15 @@ export const Editagem = styled.div`
 `;
 
 export const ButtonEdit  = styled.div`
-       align-items: center;
-       background-color: #F6E5D3;
-       border: solid #E35D1C;
-       border: none;
-       border-radius: 10px;
-       cursor: pointer;
-       display: flex;
-       gap: 8px;
-       justify-content: center;
-       padding: 8px 16px;
-       transition: background-color 0.3s ease;
-       color: #E35D1C;
-       color:#E35D1C;
-       
+      display: flex;
+      color: #E35D1C;
+      background-color: #F6E5D3;
+      border-radius: 10px;
+      cursor: pointer;     
+      gap: 8px;
+      padding: 8px 16px;
+      transition: background-color 0.3s ease;   
+      
        
 `;
 
@@ -223,20 +222,6 @@ export const ButtonGrupo = styled.div`
   display: flex;
   gap: 10px;
   flex-direction: column;
-
-  button {
-    border: 1px solid #e75109;
-    border-radius: 15px;
-    color: #fff;
-    font-size: 14px;
-    padding: 10px 15px;
-    text-decoration: none;
-    transition: all 0.3s;
-
-    &:hover {
-      background-color: #f7692e;
-    }
-  }
 
   div {
     display: flex;
@@ -251,14 +236,16 @@ export const ButtonGrupo = styled.div`
     label {
       align-items: center;
       border: 1px solid #E35D1C;
-      border-radius: 15px;
+      border-radius: 10px;
       color: #E35D1C;
       cursor: pointer;
       display: flex;
       justify-content: center;
-      height: 30px;
+      height: 35px;
       transition: background-color 0.3s ease;
-      width: 100%;
+      width: 210px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      
       &:hover {
       background-color: #f7692e;
       color: #fff;

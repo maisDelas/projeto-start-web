@@ -1,11 +1,12 @@
 import * as S from "./PessoaisStyles"
 import logo from "../../assets/Logobranca.svg"
-import NavU from "Components/navbar/Nav.usuario"
+import NavCad from "pages/cadastroP/Header"
+
 
 function Pessoais() {
   return (
     <>
-     <NavU/>
+    <NavCad/>
      <S.Onda></S.Onda>
       <S.Container>
       <img src={logo} alt="Logo" />

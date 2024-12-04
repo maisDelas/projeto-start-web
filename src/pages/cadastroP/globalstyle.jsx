@@ -1,26 +1,16 @@
 
 import { createGlobalStyle } from "styled-components";
+import BackGroundIMG from "assets/BgOnda.png";
 
 const GlobalStyle = createGlobalStyle`
-  
 
-   * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-  body {
-    
-    color: rgb(36, 12, 12);
-    background-image: url('src/pages/cadastroP/Imagem/Fundo_completo.svg');
-    background-size: cover; 
-    
-    background-repeat: no-repeat; 
-    background-position: center; 
-
-    
-  }
+body { 
+    background-image: url(${BackGroundIMG});
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    height: 500px;    
+}
 
   .logo {
     display: block;
@@ -38,7 +28,17 @@ const GlobalStyle = createGlobalStyle`
    color: #E35D1C;
  
   }
+::placeholder{
+  font-size: 15px;
+}
  
+   .nn3 {
+    display: block;
+    margin: 10px auto; /* Centraliza horizontalmente e adiciona espaço acima/abaixo */
+    max-width: 200px; /* Define o tamanho máximo */
+  }
+
+
 `;
 
 export default GlobalStyle;

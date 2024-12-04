@@ -8,7 +8,7 @@ export const Minicard = styled.div`
   border-radius: 10px;
   padding: 15px;
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: space-between;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   cursor: pointer;
@@ -47,4 +47,8 @@ export const StarIcon = styled(FaStar)`
   width: 16px;
   color: #FABC03;
 
+`
+export const ContainerIcon = styled.div`
+  display:flex;
+  align-items: flex-start;
 `

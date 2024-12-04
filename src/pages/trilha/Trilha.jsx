@@ -98,7 +98,7 @@ const Trilha = () => {
                         
                     </S.CardGrid>
 
-                    <Button href='/ConteudoTrilha1'> Inicie sua Trilha</Button>
+                    <Button > <a href="/ConteudoTrilha1">Inicie sua Trilha</a></Button>
 
                 </S.ContentWrapper>
             </S.PageContent>

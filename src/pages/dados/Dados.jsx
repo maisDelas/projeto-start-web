@@ -1,11 +1,11 @@
 import * as S from "./Dados.styles"
 import logo from "../../assets/Logobranca.svg"
-import NavU from "Components/navbar/Nav.usuario"
+import NavCad from "pages/cadastroP/Header"
 
 function Dados() {
   return (
     <>
-    <NavU/>
+    <NavCad/>
       <S.Onda></S.Onda>
       <S.Container>
           <img src={logo} alt="Logo" />

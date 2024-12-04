@@ -1,40 +1,37 @@
-import * as S from "./Cards.style";
-import Pin from 'assets/Pin-mapa.svg'
+import * as S from "./Cards.style"
+import Pin from "assets/Pin-mapa.svg"
+// import Modal from "Components/modal/Modal"
+import useModal from "./hooks/useModal"
+import InfoCards from "./InfoCards"
 
+function Cards({ id, photo, name, profession, distance, classification }) {
+  // const [isModalOpen, setIsModalOpen] = useState(false)
 
-
-
-function Cards ({photo, name, profession, distance}){
+  const  { openModal, setCard} = useModal()
+  function handlclickCards (){
+    openModal()
+    setCard(InfoCards.find(x => x.id === id))
+  }
+ console.log(InfoCards.find(x => x.id === id))
   return (
-   <S.Minicard>
-    <S.Mulherimg src={photo}/>
+    <S.Minicard onClick={handlclickCards}>
+      <S.Mulherimg src={photo} />
       <S.CardDescription>
         <h3>{name}</h3>
         <p>{profession}</p>
         <S.Distance>
-          <img src={Pin}/>
+          <img src={Pin} />
           <p>{distance}</p>
         </S.Distance>
-        <S.StarIcon/>
       </S.CardDescription>
-   </S.Minicard>
+      <S.ContainerIcon>
+        {Array.from({ length: classification }).map(() => (
+          <S.StarIcon />
+        ))}
+      </S.ContainerIcon>
+
+    </S.Minicard>
   )
 }
 
-export default Cards;
-
-
-
-
-{/* <S.Minicard>
-    <S.Mulherimg src={Mulher1}/>
-      <S.CardDescription>
-        <h3>Vitoria Santos</h3>
-        <p>Designer</p>
-        <S.Distance>
-          <img src={Pin}/>
-          <p>2.5 km</p>
-        </S.Distance>
-        <S.StarIcon/>
-      </S.CardDescription>
-   </S.Minicard> */}
+export default Cards

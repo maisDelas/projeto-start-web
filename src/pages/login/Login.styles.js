@@ -1,32 +1,28 @@
 import styled from 'styled-components';
 import { createGlobalStyle } from 'styled-components';
-import BackGroundIMG from "assets/backgroundOnda.svg";
+import BackGroundIMG from "assets/BgOnda.png";
 
 
-export const GlobalStyle = createGlobalStyle`
-     * { margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-}   
+export const GlobalStyle = createGlobalStyle`  
 
     body { 
-    font-family: "Poppins", sans-serif;
     background-image: url(${BackGroundIMG});
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100vw;
+    height: 500px;    
 }
 
 `;
 
 export const BodyContainer = styled.div`
-     width: 100%;
-  max-width: 500px;
-  padding: 20px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 `;
 
 
@@ -117,7 +113,7 @@ export const Button = styled.button`
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 
     &:hover {
-        background-color: #D24400; 
+        background-color: #FF7431; 
     }
 `;
 
@@ -150,7 +146,7 @@ export const ForgotPassword = styled.a`
     position: absolute;
     right: 90px;
     font-size: 14px;
-    margin-top: 35px;
+    margin-top: 40px;
 
      &:hover {
         color:#E35D1C; 
@@ -164,11 +160,8 @@ export const Remember = styled.input`
     position: absolute;
     left: 85px;
     font-size: 14px;
-    margin-top: 34px;
+    margin-top: 40px;
     cursor: pointer;
-
-    background-color: #E35D1C;
-    border-color: #D24400;
 
 
   
@@ -178,9 +171,8 @@ export const Remember = styled.input`
 export const RememberLabel = styled.span`
   font-size: 14px;
   color: #E35D1C;
-  padding: 5px;
+  padding: 4px;
    position: absolute;
     left: 100px;
-    font-size: 14px;
-    margin-top: 30px;
+    margin-top: 37px;
 `;

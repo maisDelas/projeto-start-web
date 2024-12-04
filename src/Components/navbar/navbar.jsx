@@ -1,5 +1,5 @@
 import logo from "assets/Logo-nav.svg"
-import {Container,IconUser,Button,Content,Logo,Link, ListLinks} from "./Navbar.styles"
+import {Container,IconUser,Button,Content,Logo,Link, ListLinks} from "./navbar.styles"
 
 function NavBar({ children }) {
 
@@ -20,7 +20,7 @@ function NavBar({ children }) {
               <a href="#" onClick={scrollToDepoiment}>Depoimentos</a>
             </Link>
             <Link>
-              <a href="#">Junte-se a +Delas</a>
+              <a href="/CadastroPrestadora0">Junte-se a +Delas</a>
             </Link>
             <Button>
              <IconUser /><a href="/Login">Entrar </a>   

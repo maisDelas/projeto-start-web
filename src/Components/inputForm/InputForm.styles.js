@@ -4,6 +4,7 @@ export const InputContainer = styled.div`
   margin: auto;
   width: 412px;
   height: 30px;
+  margin-top: 30px;
 `;
 
 export const StyledInput = styled.input`
@@ -22,4 +23,9 @@ export const StyledInput = styled.input`
     color: #A59494;
     font-size: 15px;
   }
+`;
+
+export const StyledLabel = styled.label`
+  position: absolute;
+  color: #6C5F5F;
 `;

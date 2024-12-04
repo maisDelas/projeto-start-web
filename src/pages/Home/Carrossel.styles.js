@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import cardCarrossel from '../../assets/cardCarrossel.svg';
-import bgcarrossel from '../../assets/BgCarrossel.svg';
+
+import bgcarrossel from '../../assets/BgCarrossel.png';
 
 
 export const BcCa = styled.div`
@@ -15,7 +16,7 @@ export const BcCa = styled.div`
 `
 
 export const CarrosselContainer = styled.div`
-  width: 65%;
+  width: 50%;
   margin: 0 auto;
   text-align: center;
   

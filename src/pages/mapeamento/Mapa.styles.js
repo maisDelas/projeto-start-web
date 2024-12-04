@@ -1,7 +1,6 @@
 import styled from "styled-components"
-import Onda from "assets/Vector.svg"
+import BgOnda from "assets/BgOnda.png"
 import { FaChevronRight } from "react-icons/fa"
-import { MapContainer } from "react-leaflet"
 import { IoIosSearch } from "react-icons/io"
 import { IoIosArrowDown } from "react-icons/io"
 
@@ -10,11 +9,12 @@ export const MapSection = styled.div`
 `
 
 export const Container = styled.div`
-  background-image: url(${Onda});
+  background-image: url(${BgOnda});
   align-items: center;
   width: 100%;
   height: 550px;
   background-size: cover;
+  box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.2);
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
@@ -25,7 +25,6 @@ export const Description = styled.div`
   margin-inline: auto;
   padding-top:60px;
   padding-inline: var(--container-padding);
-  color: var(--dark-orange);
 
   h3 {
     font-size: 30.7px;
@@ -43,7 +42,6 @@ export const Logo = styled.img`
 `
 export const ContainerMap = styled.div`
   position: absolute;
-  /* left: 0; */
   width: 100%; /* Faz o mapa ocupar toda a largura */
   top: 470px;
   display: flex;
@@ -72,7 +70,10 @@ export const IconArrow = styled(FaChevronRight)`
   color: white;
 `
 
-export const ContainerCarrossel = styled.div``
+export const ContainerSearch = styled.div`
+  display: flex;
+  /* align-items: center; */
+`
 export const VerticalSlider = styled.div`
   display: flex;
   flex-direction: column;
@@ -91,22 +92,16 @@ export const VerticalSlider = styled.div`
   border-radius: 10px;
   z-index: 2;
 `
-
-export const MapaApi = styled(MapContainer)`
-  /* z-index: 3; */
-`
-
 export const InputContainer = styled.div`
   position: relative;
   width: 100%;
-  max-width: 400px;
+  max-width: 370px;
   border-radius: 10px;
   background-color: #fff6eb;
-  display: flex;
+  display: ${(props) => (props.isOpen ? "flex" : "none")};
   align-items: center;
   padding: 5px 15px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  /* margin-inline: 55px; */
   margin-left: auto;
 `
 
@@ -126,7 +121,7 @@ export const Lupa = styled(IoIosSearch)`
 `
 
 export const ContainerCards = styled.div`
-  max-height: calc(5 * 94px + 4 * 20px + 94px / 2);
+  max-height: calc(5 * 80px + 5 * 20px + 80px / 2);
   overflow-x: hidden;
   overflow-y: scroll;
   margin-top: 70px;
@@ -146,7 +141,7 @@ export const BotaoFiltrar = styled.button`
   border-radius: 20px;
   padding: 10px 20px;
   margin-left: auto;
-  margin-top: 19px;
+  /* margin-top: 19px; */
   font-size: 16px;
   display: ${(props) => (props.isOpen ? "flex" : "none")};
   align-items: center;
