@@ -1,8 +1,7 @@
 import styled from "styled-components"
-import { IoIosArrowDown } from "react-icons/io";
 
 export const NavContainer = styled.div`
-  background-color: #f6e5d3;
+  background-color: #f2f2f2;
   padding-block:12px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
 `
@@ -39,7 +38,8 @@ export const Link = styled.li`
      
 
   a {
-    color: #544e48;
+    color: #D9974D;
+    font-weight:bold;
     text-decoration: none;
   }
 `
@@ -50,7 +50,8 @@ export const User = styled.div`
 
   p {
     font-size: 15.8px;
-    color: #544e48;
+    color: #D9974D;
+    font-weight:bold;
   }
 
 `
@@ -69,7 +70,4 @@ export const Usericon = styled.div`
   justify-content: center;
   align-items: center;
   margin-inline: 25px;
-`
-export const Arrow = styled(IoIosArrowDown)`
-  color: #544e48;
 `

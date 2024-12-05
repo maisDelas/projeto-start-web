@@ -10,6 +10,7 @@ export const Hero = styled.div`
     box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.2);
     background-repeat:no-repeat;
     background-size: cover;
+    font-size: 25px;
     width:100%;
     height: 600px;
     padding: 56px;
@@ -77,25 +78,12 @@ export const Title = styled.div`
     font-weight: 600;
 
      h2{
-        font-family: "Poppins", sans-serif;
-        font-style: normal;
-        color: #E75109;
+        color: #F2913D;
         font-size: 40px;
 }
 `
-export const Bgcard = styled.div`
-     background-color: #F6E5D3;
-     margin-top: 20px;
-     min-height: 100vh;
-     flex-direction: column; 
-     justify-content: space-between; 
-     padding-bottom: 40px;
-     margin-bottom:50px;
 
-     a{
-        font-size: 20px;
- }
-`
+
 export const Containervideo = styled.div`
     margin-top: 90px;
     display: flex;
@@ -108,6 +96,8 @@ export const Styledifreme = styled.iframe`
     cursor: pointer; 
     position: absolute;  
     margin-top: -150px;
+    width: 800px;
+    height: 400px;
 `
 
 export const Styletitle = styled.div`
@@ -116,9 +106,7 @@ export const Styletitle = styled.div`
     font-weight:600; 
 
     h2 {
-        font-family: "Poppins", sans-serif;
-        font-style: normal;
-        color: #E75109;
+        color: #F2913D;
         font-size: 40px;
     }
 `
@@ -131,3 +119,6 @@ export const Cardcontainer = styled.div`
     margin-bottom: 50px;
     justify-content: center;    
 `
+
+
+

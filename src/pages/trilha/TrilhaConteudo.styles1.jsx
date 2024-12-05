@@ -13,61 +13,6 @@ export const PageContent = styled.div`
   display: flex;  
 `;
 
-export const Sidebar = styled.div`
-  width: 20%;
-  background-color: #F4AD58;
-  display: flex;
-  flex-direction: column;
-  padding:20px;
-  height: auto;
-  
-
-  img{
-  margin: 24px 0;
-  height: 50px;
-  
-  }
-
-  a{
-    font-family: "Poppins", sans-serif;
-    text-decoration:none;
-    color:#FFFFFF;
-    padding:16px;
-    font-size: 19.75px; 
-    cursor: pointer; 
-  }
-
-  ul{
-    display: flex;
-    flex-direction:column;
-    margin-top: 145px; 
-    gap:30px; 
-  }
-
-
-  li{
-    display: flex;
-    align-items: center;
-    border-radius:10px;
-    transition: background-color 0.3s ease;
-    height: 50px;
-
-
-    &:hover {
-    background-color: #FDCCA1;
-    
-  }
-
-  }
-
-  .linha{
-    
-    border: 1px solid #E75109;
-    filter: opacity(50%);
-    margin: 80px 0;
-  }
-
-`;
 
 export const MainContent = styled.div`
     display: flex;
@@ -81,24 +26,24 @@ export const MainContent = styled.div`
 `
 
 export const ProcessContainer = styled.div`
+    
     display: flex;
     margin-top: 20px;
     gap: 45px;
 `
 
 export const Process = styled.div`
+    background-color: #FFFFFF;
     display: flex;
     flex-direction:column ;
     align-items: center;
     justify-content: center;
     gap: 20px;
-    border:transparent;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
     width: 239px;
     height: 185px;
     border-radius:10px;
-    font-family: "Poppins", sans-serif;
-    color: #E75109;
+    color: #F2913D;
     font-size: 20px;
    
 
@@ -114,7 +59,7 @@ img{
 }
 
 p{
- font-weight:600;
+ font-weight:bold;
  padding-left: 14px;
 
 }
@@ -124,10 +69,9 @@ export const ProcessTitle = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: "Poppins", sans-serif;
   
 .title1{
-    color: #E75109;
+    color: #F2913D;
     padding-top: 50px;
 }
 
@@ -138,7 +82,7 @@ export const ProcessTitle = styled.div`
     text-align: center;
     margin-top: 25px;
     border-radius: 10px;
-    background-color:#E75109;
+    background-color:#F2913D;
     width:317px;
     height:80px;
     color: #FFFFFF;
@@ -146,18 +90,22 @@ export const ProcessTitle = styled.div`
 `
 
 export const TextContainer = styled.div`
-  border: 0.1px solid #E75109;
-  width: 1015px;
+  
+  border: 0.1px solid #8E8B8B;
+  background-color:#FFFFFF;
+  width: auto;
   height: auto;
+  padding: 20px;
+  margin: 0 180px ;
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(53, 52, 52, 0.5);
-  margin-top: 50px;
+  
 
  
 `
 
 export const Text = styled.div`
- color:  #E75109;
+ color:  #8E8B8B;
  margin: 36px;
  font-size: 18px;
  line-height: 38px;
@@ -172,11 +120,6 @@ p{
   margin-bottom: 50px;
 }
 
-
-  color:  #E75109;
-  margin: 36px;
-
-
   ol {
     
     padding-left: 20px;
@@ -185,6 +128,7 @@ p{
 
   li {
     margin-bottom: 15px; 
+    color: #706D6D;
   }
 
   span{

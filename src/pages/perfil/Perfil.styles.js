@@ -21,17 +21,19 @@ export const PerfilPrincipal = styled.div`
   }
 
   button {
-    background-color: #E35D1C;
+    background-color: #E75109;
     border-radius: 10px;
-    border: 1px solid;
+    border:none;
     color: #fff;
+    font-weight:bold;
+    font-size:16px;
     cursor: pointer;
     height: 40px;
     transition: background-color 0.3s ease;
     width: 150px;
 
     &:hover{
-      background-color: #f7692e;
+      background-color: #FF8347;
       color: #fff;
       }
     }
@@ -46,14 +48,14 @@ export const SegundoPerfil = styled.div`
   width: 80%;
 
   h2 {
-    color:#E75109;
+    color:#F2913D;
     font-weight: 800;
     font-size: 40px;
     margin-bottom: 20px;
   }
 
   .separador {
-    background-color: #E75109;
+    background-color: #F2913D;
     height: 1px;
     width: 100%;
   }
@@ -70,7 +72,7 @@ export const Foto = styled.div`
 `;
 
 export const Card = styled.div`
-  border: 1px solid #E6956E;
+  background-color: #FFFFFF;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -113,14 +115,14 @@ export const Editagem = styled.div`
     }
 
     h2 {
-      color: #E35D1C;
+      color: #F2913D;
       font-weight: 800;
 
 
     }
 
     p {
-      color: #E75109;
+      color: #544E48;
       
 
     }
@@ -223,16 +225,17 @@ export const ButtonGrupo = styled.div`
     width: 100%;
 
     input[type='file']{
-      border: 1px solid #E35D1C;
+    
       visibility: hidden;
       width: 100%;
     }
 
     label {
       align-items: center;
-      border: 1px solid #E35D1C;
+      background-color:#F2913D;
       border-radius: 10px;
-      color: #E35D1C;
+      color: #FFFFFF;
+      font-weight:bold;
       cursor: pointer;
       display: flex;
       justify-content: center;
@@ -242,7 +245,7 @@ export const ButtonGrupo = styled.div`
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
       
       &:hover {
-      background-color: #f7692e;
+      background-color: #FFA85C;
       color: #fff;
       }
     }

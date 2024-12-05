@@ -1,35 +1,35 @@
-import Button from "Components/botaoglobal/Button";
+
 import styled from "styled-components";
 
 export const Stylequadrado = styled.div`
     width: 300px;
     height: 310px;
-    background-color: #F4AD58;
+    background-color: #DDDDDD;
+    
     border-radius: 10px;
-    padding: 23px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    
 `
 
 export const IconService = styled.img`
-    width: 50px;
-`
-export const TitleService = styled.h3`
-    font-family: "Poppins", sans-serif;
-    color: white;
-    padding:5px 0px;
-    font-size: 18px;
-`
-export const Descricao = styled.p`
-    font-family: "Poppins", sans-serif;
-    font-size: 15.75px;
-    color: white;
-`
-export const CardButton = styled(Button)`
-    width:160px;
     
 `
+export const TitleService = styled.h3`   
+    padding: 23px;
+    font-size: 26px;
+    color: #8E8B8B;
+`
+export const Descricao = styled.p`
+    padding: 0 23px;
+    color: #8E8B8B;
+    font-weight: bold;
+    font-size: 18px;
+   
+    
+`
+
 
 
 

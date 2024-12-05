@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 export const StyleButton = styled.button`
     width: auto;
-    background-color: #E35D1C;
+    background-color: #F2913D;
     font-family: "Poppins", sans-serif;
     font-style: normal;
     color: white;
@@ -20,6 +20,6 @@ export const StyleButton = styled.button`
     }
 
     &:hover {
-        background-color: #FF7431;
+        background-color: #FFA85C;
     }
 `

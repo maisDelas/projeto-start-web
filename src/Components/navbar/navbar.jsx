@@ -3,8 +3,8 @@ import {Container,IconUser,Button,Content,Logo,Link, ListLinks} from "./navbar.s
 
 function NavBar({ children }) {
 
-  function scrollToService() { window.scrollTo({ top: 2000, behavior: "smooth" }) }
-  function scrollToDepoiment() { window.scrollTo({ top: 2900, behavior: "smooth" }) }
+  function scrollToService() { window.scrollTo({ top: 2150, behavior: "smooth" }) }
+  function scrollToDepoiment() { window.scrollTo({ top: 3000, behavior: "smooth" }) }
   return (
     <Container>
       <Content>

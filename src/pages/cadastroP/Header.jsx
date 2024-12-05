@@ -4,7 +4,7 @@ import Logo from "./Imagem/Logomaroon.svg"
 
 const HeaderContainer = styled.header`
   display: flex;
-  background-color:  #f6e5d3;
+  background-color:  #F2F2F2;
   height: 90px;
   
 `;
@@ -28,7 +28,9 @@ const NavItem = styled.li`
 
   a {
     text-decoration: none;
-    color: #544e48;
+    color: #D9974D;
+    font-weight:bold;
+
     
   }
 `;

@@ -6,10 +6,9 @@ const GlobalStyle = createGlobalStyle`
 
 body { 
     background-image: url(${BackGroundIMG});
-    background-position: center;
     background-repeat: no-repeat;
     background-size: 100vw;
-    height: 500px;    
+    height: 100vh;    
 }
 
   .logo {

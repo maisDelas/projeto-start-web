@@ -1,7 +1,6 @@
 import styled from 'styled-components';
-import cardCarrossel from '../../assets/cardCarrossel.svg';
-
-import bgcarrossel from '../../assets/BgCarrossel.png';
+import cardCarrossel from 'assets/cardCarrossel.svg';
+import bgcarrossel from 'assets/BgCarrossel.png';
 
 
 export const BcCa = styled.div`
@@ -12,6 +11,7 @@ export const BcCa = styled.div`
   height:700px;
   display: flex;
   align-items:center;
+  margin-top: 150px;
 
 `
 
@@ -67,17 +67,10 @@ export const Slide = styled.div`
   }
 
   p{
-    font-size: 14px;
-    font-family: "Poppins", sans-serif;
-    font-weight:200;
-    color: #FFFFFF;
+    font-size: 15px;
+    font-weight:bold;
     text-align: left;
     margin:0 10px 15px;  
-  }
-
-  h3{
-    font-family: "Poppins", sans-serif; 
-    margin-bottom:5px;
   }
 
 `;
@@ -87,7 +80,7 @@ export const Slide = styled.div`
 export const Title = styled.h2`
   font-family: "Poppins", sans-serif;
   font-style: normal;
-  color: #FFFFFF;
+  color: #F2913D;
   font-size: 40px;
   margin-bottom: 20px;
   text-align: center;

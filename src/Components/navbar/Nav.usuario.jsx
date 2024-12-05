@@ -19,7 +19,7 @@ function NavU () {
             
              <S.UserName>
               <p>Fulano123</p>
-              <S.Arrow/>
+              
              </S.UserName>
             
           </S.User>

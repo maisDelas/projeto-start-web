@@ -22,7 +22,7 @@ export const ContentWrapper = styled.div`
 
 export const Header = styled.div`
 
-  background-color: #E35D1C;
+  background-color: #F2913D;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
@@ -43,11 +43,9 @@ export const Section = styled.div`
 
 export const SectionTitle = styled.div`
   color: #FFFFFF; 
-  font-family: "Poppins", sans-serif;
   padding-bottom:20px;
 
  p{
-    font-family: "Poppins", sans-serif;
     font-size: 18px;
     line-height:25px;
  }
@@ -67,19 +65,22 @@ export const iconText = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    color:#D24400;
+    color:#F2913D;
     align-content:center; 
-    font-family: "Poppins", sans-serif; 
+    
+
     
 h3{
+  font-size: 25px;
   padding-top: 16px;
-  font-weight:500;
+  font-weight:bold;
 
 }
 
 p{
     padding-top: 10px;
-    font-size: 12px;
+    font-size: 16px;
+    font-weight: bold;
     text-align:center;
     
 }
@@ -95,6 +96,7 @@ export const line = styled.div`
 export const CardGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  
   gap: 139px;
   margin-top: 156px;
   margin-bottom: 45px;
@@ -103,47 +105,33 @@ export const CardGrid = styled.div`
 `;
 
 export const Card = styled.div`
- position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: #E35D1C;
-  width: 220px;
-  height: 210px;
-  color: white;
-  padding: 20px;
-  border-radius: 8px;
-  text-align: center;
-  font-family: "Poppins", sans-serif;
-
-  .circleNumber{
-    position: absolute;
-    left: 35%;
-    top: -16px;
-    width: 60px;
-    height: 60px; 
-    background-color: #F4A261;
-    color: #E75A1A; 
-    font-size: 24px; 
-    font-weight: bold; 
-    align-content:center; 
-    border-radius: 50%;
-    border: 3px solid white; 
-    margin: -25px auto 15px;
+  background-color: #DDDDDD;
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+  color: #8E8B8B;
+  font-weight: bold;
   
+
+  .number{
+    margin-right: 190px;
+    margin-bottom:10px;
+    
+    img{
+      width: 40px;
+    }
   }
   
-
   h3{
-    
-    padding-bottom: 12px;
+    padding:0 20px;
+    font-size: 21px;
     
   }
 
   p{
-    
+    padding: 20px;
     text-align: left;
-    font-size: 12px;
+    font-size: 16px;
   }
 
   &:hover {

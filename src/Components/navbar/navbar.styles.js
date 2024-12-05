@@ -3,7 +3,7 @@ import { FaRegUserCircle } from "react-icons/fa"
 import GlobalButton from "Components/botaoglobal/Button"
 
 export const Container = styled.div`
-  background-color:  #f6e5d3;
+  background-color:  #f2f2f2;
   width: 100%;
   margin: 0;
   display: flex;
@@ -66,10 +66,6 @@ export const Link = styled.li`
   text-decoration: none;
 
   
-     &:hover {
-        color:#544e48; 
-       }
-
   & + & { 
     margin-left: 1rem;
   }
@@ -77,17 +73,16 @@ export const Link = styled.li`
      
 
   a {
-    color: #544e48;
+    color: #D9974D;
+    font-weight:bold;
     text-decoration: none;
   }
 `
-
 export const Button = styled(GlobalButton)`
   display: inline-flex;
   font-size: 15px;
   align-items: center;
-  background-color: #e35d1c;
-  color: #f6e5d3;
+  background-color: #F2913D;
   border: none;
   border-radius: 10px;
   padding: 9px;
