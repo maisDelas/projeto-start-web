@@ -17,4 +17,3 @@ export default function ProviderOfModal({ children }) {
     </ContextOfModal.Provider>
   )
 }
-

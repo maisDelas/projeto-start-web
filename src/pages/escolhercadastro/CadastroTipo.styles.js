@@ -53,7 +53,7 @@ export const CardReset = styled.div`
     text-align: center;
     position: absolute;
 
-
+    
     a{
         color: #E35D1C;
     } 
@@ -80,5 +80,9 @@ export const Button = styled.button`
 
     &:hover {
         background-color: #f0f0f0; 
+    }
+
+    a{
+    color: #E35D1C;
     }
 `;

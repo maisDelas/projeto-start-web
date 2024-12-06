@@ -1,43 +1,28 @@
-import * as S from "Components/footer/Footer.styles";
-import facebookIcon from "../../assets/facebook.svg";
-import linkedinIcon from "../../assets/linkedin.svg";
-import instagramIcon from "../../assets/instagram.svg";
-import emailIcon from "../../assets/email.svg";
-import telefoneIcon from "../../assets/telefone.svg";
-import logoIcon from "../../assets/logo.svg";
-import arrowTop from "../../assets/arrowTop.svg";
-import { useState } from "react";
+import * as S from "Components/footer/Footer.styles"
+import facebookIcon from "../../assets/facebook.svg"
+import linkedinIcon from "../../assets/linkedin.svg"
+import instagramIcon from "../../assets/instagram.svg"
+import emailIcon from "../../assets/email.svg"
+import telefoneIcon from "../../assets/telefone.svg"
+import logoIcon from "../../assets/logo.svg"
+import arrowTop from "../../assets/arrowTop.svg"
 
 const Footer = () => {
-  function scrollToTop() { window.scrollTo({ top: 0, behavior: "smooth" }) }
-
-const [email, setEmail] = useState('')
-
-function handleEmail (e) {
-  setEmail(e.target.value)
-}
-
-function handleSubmit (e) {
-  e.preventDefault()
-  setEmail('')
-}
-
-function validarEmail() {
-  const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  return regex.test(setEmail);
-}
-// console.log(email)
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: "smooth" })
+  }
 
   return (
     <S.footer>
       <S.FooterContainer>
-        <div className="logoContainer">
-          <img className="logo" src={logoIcon} alt="logoIcon" />
-        </div>
+        {/* <div className="logoContainer">
+          
+        </div> */}
         <div className="teste">
           <S.FooterContatos>
-            <h3>Contatos</h3>
+            <S.Logo src={logoIcon} alt="logoIcon" />
             <S.FooterImg>
+              <p>Contatos</p>
               <div>
                 <img src={emailIcon} alt="emailIcon" />
                 <p>delas@maisdelas.com</p>
@@ -84,16 +69,8 @@ function validarEmail() {
               <li>
                 <a href="/Map">Mapeamento de serviços</a>
               </li>
-              
             </ul>
           </S.FooterLink>
-          <S.FooterInscreva>
-            <p>Inscreva-se para mais informações</p>
-            <form onSubmit={handleSubmit}>
-            <input type="Email" value={email} placeholder="Digite seu email" onChange={handleEmail} />
-            <button type="submit">Se inscreva</button>
-            </form>
-          </S.FooterInscreva>
         </div>
         <div className="goToTopContainer">
           <button onClick={scrollToTop}>
@@ -120,7 +97,7 @@ function validarEmail() {
         </S.FooterPai>
       </S.FooterMidias>
     </S.footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

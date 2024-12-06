@@ -1,31 +1,27 @@
 import Map from "./Api.mapa"
-import Cards from './Cards'
-import { useState, useContext } from "react"
-import Footer from "Components/Footer/Footer"
+import Cards from "./Cards"
+import { useState } from "react"
 import * as S from "./Mapa.styles"
 import LogoBranca from "assets/Logo-branca.svg"
+import useModal from "./hooks/useModal"
 import InfoCards from "./InfoCards"
-import NavU from "Components/navbar/Nav.usuario"
-import MapProviders from "./context/MapProviders"
-import { ContextOfModal } from "./context/ContextOfModal"
 import Modal from "Components/modal/Modal"
-
+import useApiMap from "./hooks/useApiMap"
+import useToogle from "./hooks/useToogle"
 
 function Mapeamento() {
-  const [isVerticalOpen, setIsVerticalOpen] = useState(true)
+  const [isVerticalOpen, handleWithButtonClick] = useToogle(true)
+  const { isModalOpen } = useModal()
 
-  function handleWithButtonClick() {
-    setIsVerticalOpen((isVerticalOpen) => !isVerticalOpen)
-  }
+  const [CEPinstance] = useApiMap({
+    method: "getLocale",
+    body: {},
+  })
+  console.log(CEPinstance)
 
-const  {isModalOpen} = useContext(ContextOfModal)
-
-
-  
   return (
     <>
       {/* Navbar com o icone de usuario funcionando */}
-      <NavU />
 
       <S.MapSection>
         {/* Div com o backgroud laranja */}
@@ -50,27 +46,26 @@ const  {isModalOpen} = useContext(ContextOfModal)
             <S.IconArrow />
           </S.Buttonarrow>
           <S.ContainerSearch>
-          <S.BotaoFiltrar isOpen={isVerticalOpen}>
-            <S.Innertext>Filtrar</S.Innertext>
-            <S.Arrow2 />
-          </S.BotaoFiltrar>
-          <S.InputContainer isOpen={isVerticalOpen} >
-            <S.Pesquisa  placeholder="Buscar"/>
-            <S.Lupa />
-          </S.InputContainer>
+            <S.BotaoFiltrar isOpen={isVerticalOpen}>
+              <S.Innertext>Filtrar</S.Innertext>
+              <S.Arrow2 />
+            </S.BotaoFiltrar>
+            <S.InputContainer isOpen={isVerticalOpen}>
+              <S.Pesquisa placeholder="Buscar" />
+              <S.Lupa />
+            </S.InputContainer>
           </S.ContainerSearch>
-          <S.ContainerCards >
+          <S.ContainerCards>
             {InfoCards.map((x, i) => (
               <Cards key={`Cards_${i}`} {...x} />
             ))}
-           
           </S.ContainerCards>
         </S.VerticalSlider>
 
         {/* Footer padrão global */}
       </S.MapSection>
-      <Footer />
-      {isModalOpen && <Modal/>}
+
+      {isModalOpen && <Modal />}
     </>
   )
 }

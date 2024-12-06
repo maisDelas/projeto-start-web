@@ -1,6 +1,5 @@
 import * as S from "./Cards.style"
 import Pin from "assets/Pin-mapa.svg"
-// import Modal from "Components/modal/Modal"
 import useModal from "./hooks/useModal"
 import InfoCards from "./InfoCards"
 
@@ -12,7 +11,6 @@ function Cards({ id, photo, name, profession, distance, classification }) {
     openModal()
     setCard(InfoCards.find(x => x.id === id))
   }
- console.log(InfoCards.find(x => x.id === id))
   return (
     <S.Minicard onClick={handlclickCards}>
       <S.Mulherimg src={photo} />

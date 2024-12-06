@@ -5,24 +5,25 @@ export const footer = styled.footer`
   width: 100%;
   background-color: #f6e5d3;
   display: flex;
-  color: #c76938;
-  font-family: Arial, sans-serif;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: auto;
 `
 
 export const FooterContatos = styled.div`
   display: flex;
   flex-direction: column;
+  justify-content:space-between;
+  align-items: space-between;
 
-  h3 {
-    font-size: 25px;
+  p {
+    font-size: 19.8px;
     font-weight: 500;
     color: #e35d1c;
     margin-bottom: 5px;
   }
+`
+export const Logo = styled.img`
+  width: 140px;
+  margin-bottom:5px;
 `
 
 export const FooterImg = styled.div`
@@ -37,13 +38,17 @@ export const FooterImg = styled.div`
       margin-right: 10px;
     }
   }
+
+  p {
+    font-size: 12.6px;
+  }
 `
 
 export const FooterSobre = styled.div`
-  margin: 0 5%;
+  margin-inline:5%;
 
   h3 {
-    font-size: 25px;
+    font-size: 19.8px;
     color: #e35d1c;
     font-weight: 500;
     margin-bottom: 5px;
@@ -51,19 +56,19 @@ export const FooterSobre = styled.div`
 
   p {
     color: #c76938;
-    font-size: 15px;
+    font-size: 15.8px;
     word-wrap: break-word;
     width: 200px;
   }
 `
 
 export const FooterInfor = styled.div`
-  margin: 0 5%;
+  margin-inline:5%;
   display: flex;
   flex-direction: column;
 
   h3 {
-    font-size: 25px;
+    font-size: 19.8px;
     color: #c76938;
     font-weight: 500;
     color: #e35d1c;
@@ -77,7 +82,7 @@ export const FooterInfor = styled.div`
   }
 
   a {
-    font-size: 15px;
+    font-size: 15.8px;
     color: #c76938;
     text-decoration: none;
   }
@@ -88,11 +93,11 @@ export const FooterInfor = styled.div`
 `
 
 export const FooterLink = styled.div`
-  margin: 0 5%;
+  margin-inline:5%;
 
   h3 {
     white-space: nowrap;
-    font-size: 25px;
+    font-size: 19.8px;
     font-weight: 500;
     color: #e35d1c;
   }
@@ -107,7 +112,7 @@ export const FooterLink = styled.div`
   }
 
   a {
-    font-size: 15px;
+    font-size: 15.8px;
     color: #c76938;
     text-decoration: none;
   }
@@ -117,40 +122,7 @@ export const FooterLink = styled.div`
   }
 `
 
-export const FooterInscreva = styled.div`
-  display: flex;
-  flex-direction: column;
-  margin-top: -5%;
 
-  input {
-    padding-left: 10px;
-    width: 200px;
-    height: 40px;
-    border-radius: 10px;
-    border: 1px solid #d3a484;
-    margin-top: 8px;
-    margin-bottom: 8px;
-  }
-
-  button {
-    width: 100px;
-    background-color: #e35d1c;
-    color: white;
-    padding: 7px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: 15px;
-  }
-
-  p {
-    color: #e35d1c;
-  }
-
-  button:hover {
-    background-color: #ff7431;
-  }
-`
 
 export const FooterMidias = styled.div`
   display: flex;
@@ -204,7 +176,7 @@ export const FooterContainer = styled.div`
 
   .teste {
     display: flex;
-    width: 85%;
+    width: 80%;
     justify-content: space-between;
   }
 

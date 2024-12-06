@@ -128,6 +128,7 @@ export const Editagem = styled.div`
     button {
       width: 5%;
       color: #F6E5D3;
+      
     }
 
     input {
@@ -135,6 +136,8 @@ export const Editagem = styled.div`
       border-radius: 10px;
       height: 30px;
       padding-left: 5px;
+    
+      
     }
 
     label {
@@ -147,6 +150,7 @@ export const Editagem = styled.div`
       border: 1px solid #E35D1C;
       cursor: pointer;
       transition: background-color 0.3s ease;
+      
 
       &:hover {
        background-color: #f7692e;
@@ -210,6 +214,7 @@ export const ButtonEdit  = styled.div`
       gap: 8px;
       padding: 8px 16px;
       transition: background-color 0.3s ease;   
+      
        
 `;
 

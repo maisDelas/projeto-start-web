@@ -15,6 +15,10 @@ export const Container = styled.div`
   img {
   
   margin-bottom: 20px;
+  height: auto;
+  width: 13%;
+  
+  
   }
 
 `;
