@@ -20,7 +20,7 @@ function NavBar({ children }) {
               <a href="#" onClick={scrollToDepoiment}>Depoimentos</a>
             </Link>
             <Link>
-              <a href="#">Junte-se a +Delas</a>
+              <a href="/CadastroPrestadora0">Junte-se a +Delas</a>
             </Link>
             <Button>
              <IconUser /><a href="/Login">Entrar </a>   

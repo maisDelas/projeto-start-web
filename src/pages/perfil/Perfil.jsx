@@ -1,35 +1,95 @@
-
+import { useState, useEffect } from "react";
 import * as S from "./Perfil.styles";
 import facebook from "../../assets/facebook.svg";
 import instagram from "../../assets/instagram.svg";
 import mulherIcon from "../../assets/mulher.svg";
 import linkedin from "../../assets/linkedin.svg";
 import canetaIcon from "../../assets/caneta.svg";
-import city from "../../assets/city.svg";
-import planning from "../../assets/planning.svg";
 import { useNavigate } from "react-router-dom";
-import  SideBarStyle  from "Components/sidebar/Sidebar";
+import SideBar from "Components/sidebar/Sidebar";
 import NavU from "Components/navbar/Nav.usuario";
 
 
 
 
-function Perfil() {
+function Perfil2() {
   const navigation = useNavigate()
+
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [phone, setPhone] = useState(null);
+  const [profile, setProfile] = useState([]);
+  const [editing, setEditing] = useState(null);
+
+  useEffect(() => {
+    fetchProfile();
+  }, []);
+
+  const fetchProfile = async () => {
+    try {
+      const response = await api.get();
+      const { name, email, phone } = response.data;
+      setProfile(response.data);
+      setName(name);
+      setEmail(email);
+      setPhone(phone);
+
+    } catch (error) {
+      console.error(`Erro ao buscar dados: ${error}`);
+    }
+  }
+
+  async function handleSubmit(e) {
+    e.preventDefault();
+
+    try {
+      if (editing) {
+
+        const updates = {};
+        if (name !== profile.name) updates.name = name;
+        if (email !== profile.email) updates.email = email;
+        if (phone !== profile.phone) updates.phone = phone;
+
+        if (Object.keys(updates).length === 0) {
+          console.log("Nenhum campo foi editado");
+          return;
+        }
+
+        await api.put(`updateItem/${editing.id}`, updates);
+
+        console.log("Perfil atualizado com sucesso!")
+        setEditing(false);
+        fetchProfile();
+
+      } else {
+        console.error("Nenhum item está sendo editado.");
+      }
+
+    } catch (error) {
+      console.error('Erro ao atualizar item: ', error);
+    }
+  }
+
+  const handleEdit = () => {
+    setEditing(profile);
+  };
+
+
 
   return (
     <S.Perfil>
-     <NavU/>
+      <NavU />
       <S.Container>
-        <SideBarStyle/>
+        <SideBar />
         <S.PerfilPrincipal>
           <S.SegundoPerfil>
             <h2>Editar Perfil</h2>
             <S.Foto>
+              
               <img className="perfil-img" src={mulherIcon} alt="mulherIcon" />
               <S.ButtonGrupo>
                 <div>
-                  <label htmlFor="files">Upload da foto</label>
+                  <label htmlFor="files">Upload de foto</label>
                   <input id="files" type="file" />
                 </div>
                 <button type="submit">
@@ -44,22 +104,38 @@ function Perfil() {
             <S.Editagem>
               <h2>Informações Pessoais</h2>
               <S.ButtonEdit>
-                <img src={canetaIcon} alt="caneta" />
-                Editar
+               <button>Editar</button>
               </S.ButtonEdit>
             </S.Editagem>
             <S.Editagem>
               <div className="coluna">
                 <p>Nome</p>
-                <input type="text" />
+                <input
+                  type="text"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  disabled={!editing}
+                />
               </div>
+
               <div className="coluna">
                 <p>E-mail</p>
-                <input type="email" />
+                <input
+                  type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  disabled={!editing}
+                />
               </div>
+
               <div className="coluna">
                 <p>Telefone</p>
-                <input type="tel" />
+                <input
+                  type="tel"
+                  value={phone || ''}
+                  onChange={(e) => setPhone(e.target.value)}
+                  disabled={!editing}
+                />
               </div>
             </S.Editagem>
           </S.Card>
@@ -158,25 +234,6 @@ function Perfil() {
 
           <S.Card>
             <S.Editagem>
-              <h2>Meus trabalhos</h2>
-              <label htmlFor="files">Upload de nova foto</label>
-              <input id="files" type="file" />
-
-              <S.ButtonEdit>
-                <img src={canetaIcon} alt="caneta" />
-                Editar
-              </S.ButtonEdit>
-            </S.Editagem>
-            <S.Editagem>
-              <div className="image">
-                <img src={city} />
-                <img src={planning} />
-              </div>
-            </S.Editagem>
-          </S.Card>
-
-          <S.Card>
-            <S.Editagem>
               <h2>Redes sociais</h2>
               <S.ButtonEdit>
                 <img src={canetaIcon} alt="caneta" />
@@ -210,4 +267,4 @@ function Perfil() {
   );
 }
 
-export default Perfil;
+export default Perfil2;

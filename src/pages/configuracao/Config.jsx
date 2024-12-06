@@ -6,10 +6,30 @@ import Switch from "react-switch";
 import React, { useState } from 'react';
 import Button from 'Components/botaoGlobal/Button';
 
+
 const Configuracao = () => {
     const navigation = useNavigate()
     const [emailSwitch, setEmailSwitch] = useState(false);
     const [whatsAppSwitch, setWhatsAppSwitch] = useState(false);
+    const [currentPassword, setCurrentPassword] = useState('');
+    const [newPassword, setNewPassword] = useState('');
+    const [confirmPassword, setConfirmPassword] = useState('');
+    const [errors, setErrors] = useState({});
+
+
+
+    const handleCurrentPassword = (password) => {
+        setCurrentPassword(password);
+    };
+
+    const handleNewPassword = (password) => {
+        setNewPassword(password);
+
+    };
+
+    const handleConfirmPassword = (password) => {
+        setConfirmPassword(password);
+    };
 
     const handleEmailSwitch = (checked) => {
         setEmailSwitch(checked);
@@ -18,6 +38,52 @@ const Configuracao = () => {
     const handleWhatsAppSwitch = (checked) => {
         setWhatsAppSwitch(checked);
     };
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+
+        const isValid = validateForm();
+        if (!isValid) {
+            return;
+        }
+
+        try {
+            const response = await api.put('/update-password', {
+                currentPassword,
+                newPassword,
+            });
+
+
+            console.log("Senha atualizada com sucesso!", response.data);
+            alert("Senha alterada com sucesso!");
+
+            setErrors({});
+
+        } catch (error){
+            console.error("Erro ao alterar senha: ", error);
+            setErrors({ apiError: "Erro ao alterar senha. Por favor, tente novamente." });
+        }
+
+    };
+
+    const validateForm = () => {
+        const errors = {}
+        if (!currentPassword) {
+            errors.currentPasswordError = "A senha atual é obrigatória.";
+        }
+
+        if (!newPassword){
+            errors.newPasswordError = "A nova senha é obrigatória.";
+        }
+
+        if (newPassword != confirmPassword) {
+            errors.passwordError = "A confirmação da senha deve ser igual a nova senha.";
+        }
+        setErrors(errors);
+
+        return Object.keys(errors).length === 0;
+    };
+
 
 
     return (
@@ -55,19 +121,51 @@ const Configuracao = () => {
                         </div>
                     </div>
 
+
+
                     <div>
-                        <h2>Segurança</h2>
-                        <div className='boxContent'>
+                        <S.FormBox>
+                            <form onSubmit={handleSubmit}>
+                                <h2>Segurança</h2>
+                                <div className='boxContent'>
 
-                            <div className='input'>
-                                <h3>Alterar Senha</h3>
-                                <input type="text" placeholder='Senha Atual' />
-                                <input type="text" placeholder='Nova Senha' />
-                                <input type="text" placeholder='Confirmar Senha' />
-                                <Button>Salvar Alterações</Button>
-                            </div>
+                                    <div className='input'>
+                                        <h3>Alterar Senha</h3>
+                                        <input 
+                                        type="text" 
+                                        value={currentPassword}
+                                        onChange={(e) => handleCurrentPassword(e.target.value)} 
+                                        placeholder='Senha Atual' 
+                                        />
 
-                        </div>
+                                        <input 
+                                        type="text" 
+                                        value={newPassword} 
+                                        onChange={(e) => handleNewPassword(e.target.value)} 
+                                        placeholder='Nova Senha' 
+                                        />
+
+                                        <input 
+                                        type="text" 
+                                        value={confirmPassword}
+                                        onChange={(e) => handleConfirmPassword(e.target.value)} 
+                                        placeholder='Confirmar Senha' 
+                                        />
+
+                                        {errors.passwordError && <span>{errors.passwordError}</span>}
+                                        {errors.apiError && <span>{errors.apiError}</span>}
+
+                                        <Button type='submit'>
+                                            Salvar Alterações
+                                        </Button>
+                                    </div>
+
+
+
+
+                                </div>
+                            </form>
+                        </S.FormBox>
                     </div>
 
                     <div>
@@ -91,4 +189,4 @@ const Configuracao = () => {
 }
 
 
-export default Configuracao
+export default Configuracao;

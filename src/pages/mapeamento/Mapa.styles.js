@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import Onda from "assets/Vector.svg"
+import BgOnda from "assets/BgOnda.png"
 import { FaChevronRight } from "react-icons/fa"
 import { IoIosSearch } from "react-icons/io"
 import { IoIosArrowDown } from "react-icons/io"
@@ -9,11 +9,12 @@ export const MapSection = styled.div`
 `
 
 export const Container = styled.div`
-  background-image: url(${Onda});
+  background-image: url(${BgOnda});
   align-items: center;
   width: 100%;
   height: 550px;
   background-size: cover;
+  box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.2);
   background-position: center;
   background-repeat: no-repeat;
   position: relative;

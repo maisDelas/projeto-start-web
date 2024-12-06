@@ -1,19 +1,17 @@
 
 import IconPerfil from 'imagesTrilha/iconPerfilT.svg'
-import IconTrilha from 'imagesTrilha/iconTrilhaT.svg'
 import IconContract from 'imagesTrilha/iconContract.svg'
 import IconConfig from 'imagesTrilha/iconConfigT.svg'
 import IconOut from 'imagesTrilha/Out.svg'
-import {SideBarStyle}  from './Sidebar.styles'
+import {SideBarStyle}  from 'Components/sidebar/Sidebar.styles.js'
 
-function SideBar() {
+function SideBar2() {
 
     return (
 
         <SideBarStyle>        
             <ul>
-                <li><img src={IconPerfil}></img> <a href="/Perfil">Perfil</a></li>
-                <li><img src={IconTrilha}></img> <a href="/Trilha">Trilha de desenvolvimento</a></li>
+                <li><img src={IconPerfil}></img> <a href="/PerfilUser">Perfil</a></li>
                 <li><img src={IconConfig}></img> <a href="/Configuracao">Configuração</a></li>
                 <li><img src={IconContract}></img> <a href="/Contratos">Contratos</a></li>
             </ul>
@@ -27,4 +25,4 @@ function SideBar() {
     )
 }
 
-export default SideBar;
+export default SideBar2;

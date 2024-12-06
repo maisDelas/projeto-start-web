@@ -11,8 +11,8 @@ HeaderTitle,
 Description, 
 ErrorMsg,
 Button, 
-BackLoginLink, ContainerNav} from './ResetPassword.styles.js';
-import NavBar from "Components/navbar/navbar.jsx" 
+BackLoginLink, ContainerNav} from './ResetPassword.styles.js'; 
+import NavCad from 'pages/cadastroP/Header.jsx';
 
 
 const ResetPassword = () => {
@@ -45,7 +45,7 @@ const ResetPassword = () => {
 
   return (
     <>
-    <NavBar/>
+    <NavCad/>
       <GlobalStyle/>
         <BodyContainer />
         <WhiteLogo>
@@ -58,7 +58,7 @@ const ResetPassword = () => {
               <Description>Após inserir seu endereço de 
                 e-mail você receberá um link para criar
                 uma nova senha. Certifique-se de verificar
-                sua caixa de entrada (ou na pasta de spam, caso não encontre).
+                sua caixa de entrada (ou na pasta de spam).
               </Description>
             </HeaderTitle>
             <form onSubmit={handleSubmit}>
@@ -78,7 +78,7 @@ const ResetPassword = () => {
             </form>
 
             <ContainerNav>
-              Redefinição feita? <BackLoginLink href="">Login</BackLoginLink>
+              Redefinição feita? <BackLoginLink href="/Login">Login</BackLoginLink>
             </ContainerNav>
           </CardReset>
         </CardCenter>
