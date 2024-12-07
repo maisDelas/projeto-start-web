@@ -17,25 +17,18 @@ body {
     max-width: 200px; 
   }
 
- .nn2 {
-    display: block;
-    margin: 10px auto; 
-    max-width: 200px; 
-  }
+ 
 
   .Icons {
-   color: #E35D1C;
+   color: #F2913D;
+   
  
   }
 ::placeholder{
   font-size: 15px;
 }
  
-   .nn3 {
-    display: block;
-    margin: 10px auto; /* Centraliza horizontalmente e adiciona espaço acima/abaixo */
-    max-width: 200px; /* Define o tamanho máximo */
-  }
+   
 
 
 `;

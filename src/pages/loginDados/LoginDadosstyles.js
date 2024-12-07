@@ -1,22 +1,34 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+  padding: 20px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  height: 100vh;
 `;
 
 export const Form = styled.form`
-  display: flex;
+ display: flex;
   flex-direction: column;
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  width: 400px;
-  // text-align: center;
+  align-items: center;
+  background-color: #ffffff;
+  width: 500px;
+  padding: 50px;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  position: relative;
+
+  h1{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color: #E75109;
+    width:60px;
+    height: 60px;
+    border-radius:50%;
+  }
 
   h2 {
     margin-bottom: 20px;
@@ -32,6 +44,7 @@ export const Form = styled.form`
 `;
 
 export const Input = styled.input`
+  display: block;
   margin-bottom: 20px;
   padding: 2px;
   font-size: 16px;

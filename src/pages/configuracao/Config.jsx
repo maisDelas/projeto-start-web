@@ -4,7 +4,7 @@ import SideBar from 'Components/sidebar/Sidebar'
 import { useNavigate } from 'react-router-dom'
 import Switch from "react-switch";
 import React, { useState } from 'react';
-import Button from 'Components/botaoGlobal/Button';
+import Button from 'Components/botaoglobal/Button'; 
 
 
 const Configuracao = () => {

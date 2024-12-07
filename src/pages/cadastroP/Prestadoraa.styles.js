@@ -1,6 +1,10 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+  padding: 20px;
+`
+
+export const Box = styled.div`
   max-width: 440px;
   margin: 0 auto;
   padding: 50px;
@@ -11,28 +15,41 @@ export const Container = styled.div`
   
 `;
 
+
 export const Title = styled.h1`
-  color: #e35d1c;
+  color: #F2913D;
   font-size: 24px;
   margin-bottom: 16px;
   text-align: left;
-  padding: 20px;
+  padding: 12px 0;
 `;
 
 export const Subtitle = styled.h4`
-  color: #706d6d;
   font-size: 18px;
   margin-bottom: 12px;
   display: flex; 
   align-items: center; 
   gap: 8px;
   margin-bottom: -20px; 
+
+  h1{
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    background-color: #F2913D;
+    padding: 20px;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+  }
   
 `;
 
 
 export const Paragraph = styled.p`
-  color: #E75109;
+  color: #8E8B8B;
+  font-weight: bold;
+  text-align: left;
   font-size: 16px;
   margin-bottom: 4px;
   
@@ -42,9 +59,8 @@ export const List = styled.ul`
  text-align: left;
  
  
-  color: #6c5f5f;
+  color: #8E8B8B;
   font-size: 16px;
-  
   margin: 0 0 24px 0;
   padding: 0;
   list-style-type: none;
@@ -63,25 +79,23 @@ width: 320px;
   
 `;
 export const LogoContainer = styled.div` 
-
-
-
-align-items: center;
+  align-items: center;
 `;
 
 export const StyledButton = styled.button`
   width: 161px;
   padding: 12px;
-  background-color: #e35d1c;
+  background-color: #F2913D;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   color: white;
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
-  transition: background-color 0.3s;
 
-  
+  &:hover {
+        background-color: #FFA85C;
+    }
 `;
 
 

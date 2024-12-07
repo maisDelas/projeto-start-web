@@ -1,6 +1,6 @@
 import Carrossel from "./Carrossel"
-import Footer from "Components/footer/Footer"
-import * as S from "./Home.styles"
+import Footer from "Components/Footer/footer" 
+import * as S from "./Home.styles" 
 import NavBar from "Components/navbar/navbar"
 import Card from "Components/cardsService/cardService"
 import StaticService from "Components/cardsService/StaticService";

@@ -1,15 +1,39 @@
 import styled from "styled-components";
 
+export const Box = styled.div`
+
+padding: 20px;
+
+`
+
 export const Container = styled.div`
   max-width: 500px;
   margin: 0 auto;
   padding: 20px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 20px;
   background-color: #fff;
-  border-radius: 8px;
+  border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+  h1{
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    background-color: #F2913D;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+  }
+  h2 {
+    color: #F2913D;
+    margin-bottom: 40px;
+    
+  }
 `;
 
 export const Title = styled.h1`
@@ -81,16 +105,17 @@ export const Button = styled.button`
   min-width: 100px; 
   padding: 10px 20px;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   font-size: 16px;
   cursor: pointer;
-  background-color: ${({ primary }) => (primary ? "#E35D1C" : "#F4AD58")};
+  background-color: #F2913D;
    color:#fff;
 
 
-  // &:hover {
-  //   background-color: ${({ primary }) => (primary ? "#c44a17" : "#d89d4e")}; 
-  // }
+  &:hover {
+    background-color:#FFA85C;
+  }
+
 `;
 export const Swapper = styled.div`
   display: flex;
@@ -103,10 +128,9 @@ export const Swapper = styled.div`
     width: 12px;
     height: 12px;
     background-color: #888;
-    cursor: pointer;
 
     &.active {
-      background-color: #e35d1c;
+      background-color: #FFA85C;
     }
   }
 `;

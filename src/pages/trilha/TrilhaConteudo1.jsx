@@ -1,7 +1,7 @@
 
 import * as S from './TrilhaConteudo.styles1';
-import OnGoing from 'imagesTrilha/OnGoing.svg';
-import checked from 'imagesTrilha/checked.svg';
+import OnGoing from 'assets/OnGoing.svg';
+import checked from 'assets/checked.svg';
 import { useNavigate } from "react-router-dom";
 import Button from "Components/botaoglobal/Button";
 import NavU from "Components/navbar/Nav.usuario";

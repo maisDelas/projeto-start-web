@@ -5,6 +5,7 @@ export const InputContainer = styled.div`
   width: 412px;
   height: 30px;
   margin-top: 30px;
+
 `;
 
 export const StyledInput = styled.input`
@@ -12,20 +13,19 @@ export const StyledInput = styled.input`
   width: 100%;
   padding: 5px;
   color: #A59494;
+  font-size: 16px;
   border: 1px solid #ddd;
-  border-radius: 5px;
+  border-radius: 3px;
   outline: none;
   transition: border-color 0.3s ease;
-  font-family: "Poppins", sans-serif;
 
-  &::placeholder {
-    font-family: "Poppins", sans-serif;
-    color: #A59494;
-    font-size: 15px;
-  }
 `;
 
 export const StyledLabel = styled.label`
+  
   position: absolute;
+  font-weight: bold;
   color: #6C5F5F;
+  font-size: 18px;
+  
 `;

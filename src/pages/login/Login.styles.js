@@ -61,9 +61,9 @@ export const CardReset = styled.div`
 export const HeaderTitle = styled.h1`
     text-align: center;
     font-weight: bold;
-    font-size: 24.6px;
+    font-size: 25px;
     margin-top: 15px;
-    color: #E35D1C; 
+    color: #F2913D; 
 `;
 
 
@@ -83,8 +83,7 @@ export const InputForm = styled.input`
 
 export const ErrorMsg = styled.span`
     color: red;
-    font-family: "Poppins", sans-serif;
-    font-size: 12.6px;
+    font-size: 13px;
     margin-top: 20px;
     position: absolute;
     right: 85px;
@@ -92,16 +91,12 @@ export const ErrorMsg = styled.span`
 `;
 
 export const Button = styled.button`
-    background-color: #E35D1C;
-    font-family: "Poppins", sans-serif;
-    color: white;
-    white-space: nowrap;
+    background-color: #F2913D;
+    color: #fff;
     font-size: 16px;
-    font-weight: 500;
     display: inline-flex;
     justify-content: center;
     align-items: center;
-
     margin-top: 80px;
     width: 150px;
     height: 35px;
@@ -113,18 +108,18 @@ export const Button = styled.button`
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 
     &:hover {
-        background-color: #FF7431; 
+        background-color: #FFA85C;
     }
 `;
 
 
 export const ContainerNav = styled.p`
    margin-top: 20px; 
-   color: #6C5F5F; 
+   color: #6D6B69; 
 `;
 
 export const CadastroLink = styled.a`
-    color:#D24400; 
+    color:#F2913D; 
     text-decoration: none;
 
      &:hover {
@@ -136,12 +131,11 @@ export const CadastroLink = styled.a`
 
 export const ErrorMessage = styled.span`
     color: red;
-
 `;
 
 
 export const ForgotPassword = styled.a`
-    color:#D24400; 
+    color:#F2913D; 
     text-decoration: none;
     position: absolute;
     right: 90px;
@@ -162,15 +156,12 @@ export const Remember = styled.input`
     font-size: 14px;
     margin-top: 40px;
     cursor: pointer;
-
-
-  
 `;
 
 
 export const RememberLabel = styled.span`
   font-size: 14px;
-  color: #E35D1C;
+  color: #F2913D;
   padding: 4px;
    position: absolute;
     left: 100px;

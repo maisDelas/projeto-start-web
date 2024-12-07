@@ -4,11 +4,9 @@ import { FaStar } from "react-icons/fa";
 
 export const Minicard = styled.div`
   background: white;
-  color: black;
   border-radius: 10px;
   padding: 15px;
   display: flex;
-  /* align-items: center; */
   justify-content: space-between;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   cursor: pointer;
@@ -28,11 +26,13 @@ export const CardDescription = styled.div`
   line-height:16px;
 
   h3{
-    font-size: 15.8px;
+    font-size: 18px;
+    padding-bottom:3px;
   }
 
   p {
-    font-size: 12.6px;
+    font-size: 15px;
+    padding-bottom: 3px;
   }
 
 `
@@ -40,7 +40,7 @@ export const Distance = styled.div`
   display: flex;
 
   img {
-    width: 17px;
+    width: 20px;
   }
 `
 export const StarIcon = styled(FaStar)`

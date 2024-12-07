@@ -33,18 +33,18 @@ const Contratos = () => {
                     <h1>Seus Contratos: </h1>
                     <S.SearchBox>
                         <input type="text" placeholder="Buscar..." />
-                        <IoSearch style={{ color: "#e75109", }} />
+                        <IoSearch style={{ color: "#F2913D", }} />
                     </S.SearchBox>
 
                     <S.ContractsSection>
                         <table>
                             <thead>
                                 <tr>
-                                    <th>ID Pedido<S.Arrow /></th>
-                                    <th>Cliente<S.Arrow /></th>
-                                    <th>Contato<S.Arrow /></th>
-                                    <th>Data do pedido<S.Arrow /></th>
-                                    <th>Status<S.Arrow /></th>
+                                    <th>ID Pedido<S.Arrow/></th>
+                                    <th>Cliente<S.Arrow/></th>
+                                    <th>Contato<S.Arrow/></th>
+                                    <th>Data do pedido<S.Arrow/></th>
+                                    <th>Status<S.Arrow/></th>
                                 </tr>
                             </thead>
                             <tbody>

@@ -40,8 +40,6 @@ export default function App() {
 
         <Route path="/PerfilUsuario" element={< PerfilUsuario />} />
         
-
-
         <Route path="/CadastroTipo" element={<CadastroTipo />} />;
         <Route path="/DadosPessoais" element={<Pessoais />} />;
         <Route path="/DadosEndereco" element={<Dados />} />;

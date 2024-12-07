@@ -1,9 +1,9 @@
 import Map from "./Api.mapa"
 import Cards from './Cards'
 import { useState, useContext } from "react"
-import Footer from "Components/Footer/Footer"
+import Footer from "Components/Footer/footer" 
 import * as S from "./Mapa.styles"
-import LogoBranca from "assets/Logo-branca.svg"
+import LogoBranca from "assets/Logobranca.svg"
 import InfoCards from "./InfoCards"
 import NavU from "Components/navbar/Nav.usuario"
 import MapProviders from "./context/MapProviders"

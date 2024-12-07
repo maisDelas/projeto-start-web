@@ -1,5 +1,5 @@
 import * as S from "./Dados.styles"
-import logo from "../../assets/Logobranca.svg"
+import logo from "assets/Logobranca.svg"
 import NavCad from "pages/cadastroP/Header"
 import { useNavigate } from "react-router-dom"
 
@@ -14,7 +14,7 @@ function Dados() {
         <S.Form>
           <S.NomeImg>
             <div className="circulo">
-              <h2>2</h2>
+              <h1>2</h1>
             </div>
             <h3>Dados do endereço</h3>
           </S.NomeImg>

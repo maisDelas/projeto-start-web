@@ -3,10 +3,9 @@ import styled from "styled-components"
 
 export const footer = styled.footer`
   width: 100%;
-  background-color: #f6e5d3;
+  background-color: #f2f2f2;
   display: flex;
-  color: #c76938;
-  font-family: Arial, sans-serif;
+  color: #F2913D;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -20,7 +19,7 @@ export const FooterContatos = styled.div`
   h3 {
     font-size: 25px;
     font-weight: 500;
-    color: #e35d1c;
+    color: #F2913D;
     margin-bottom: 5px;
   }
 `
@@ -44,16 +43,16 @@ export const FooterSobre = styled.div`
 
   h3 {
     font-size: 25px;
-    color: #e35d1c;
+    color: #F2913D;
     font-weight: 500;
     margin-bottom: 5px;
   }
 
   p {
-    color: #c76938;
-    font-size: 15px;
+    color: #F2913D;
+    font-size: 16px;
     word-wrap: break-word;
-    width: 200px;
+    width: 230px;
   }
 `
 
@@ -64,26 +63,23 @@ export const FooterInfor = styled.div`
 
   h3 {
     font-size: 25px;
-    color: #c76938;
+    color: #F2913D;
     font-weight: 500;
-    color: #e35d1c;
     margin-bottom: 5px;
   }
 
   li {
     list-style-type: none;
     margin: 5px 0;
-    transition: transform 0.3s ease;
   }
 
   a {
     font-size: 15px;
-    color: #c76938;
-    text-decoration: none;
+    color: #F2913D;
   }
 
   a:hover {
-    transform: scale(1.2);
+   text-decoration: underline;
   }
 `
 
@@ -94,12 +90,9 @@ export const FooterLink = styled.div`
     white-space: nowrap;
     font-size: 25px;
     font-weight: 500;
-    color: #e35d1c;
+    color: #F2913D;
   }
 
-  ul {
-    color: #d9974d;
-  }
 
   li {
     list-style-type: none;
@@ -108,7 +101,7 @@ export const FooterLink = styled.div`
 
   a {
     font-size: 15px;
-    color: #c76938;
+    color: #F2913D;
     text-decoration: none;
   }
 
@@ -127,14 +120,14 @@ export const FooterInscreva = styled.div`
     width: 200px;
     height: 40px;
     border-radius: 10px;
-    border: 1px solid #d3a484;
+    border: 1px solid #F2913D;
     margin-top: 8px;
     margin-bottom: 8px;
   }
 
   button {
     width: 100px;
-    background-color: #e35d1c;
+    background-color: #F2913D;
     color: white;
     padding: 7px;
     border: none;
@@ -144,11 +137,12 @@ export const FooterInscreva = styled.div`
   }
 
   p {
-    color: #e35d1c;
+    color: #F2913D;
+    font-weight:bold;
   }
 
   button:hover {
-    background-color: #ff7431;
+    background-color: #FFA85C;
   }
 `
 
@@ -179,14 +173,14 @@ export const FooterCopyright = styled.div`
   p {
     margin-left: 40px;
     text-align: right;
-    color: #c76938;
+    color:  #F2913D;
     font-size: 20px;
     margin-top: 5px;
   }
 `
 
 export const FooterPai = styled.div`
-  border-top: 1px solid #d3a484;
+  border-top: 1px solid  #F2913D;
   width: 90%;
   display: flex;
   flex-direction: row;
@@ -223,15 +217,16 @@ export const FooterContainer = styled.div`
       justify-content: center;
       border-radius: 5px;
       border: none;
+      cursor: pointer;
       align-items: center;
-      background-color: #e35d1c;
+      background-color:  #F2913D;
       color: #ffff;
       height: 24px;
       width: 24px;
     }
 
     button:hover {
-      background-color: #c4511a;
+      background-color: #FFA85C;
     }
   }
 `

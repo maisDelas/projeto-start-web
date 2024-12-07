@@ -1,20 +1,19 @@
-import React from "react";
+
 import {
   Container,
+  Box,
   Title,
   Subtitle,
   Paragraph,
   List,
   StyledButton,
 } from "pages/cadastroP/Prestadoraa.styles.js";
-import Logo1 from "./Imagem/LogoNN1.svg";
-import Logo2 from "./Imagem/NN2.svg"; 
 
 import { TfiBag } from "react-icons/tfi";
 import NavCad from "./Header"; 
 import GlobalStyle from "./globalstyle";
 import { IoDocumentTextOutline } from "react-icons/io5";
-import Logo from "./Imagem/Logo branca 4.svg";
+import Logo from "assets/Logobranca.svg";
 import { Link } from "react-router-dom";
 
 function CadastroPrestadora0() {
@@ -22,9 +21,11 @@ function CadastroPrestadora0() {
     <>
       <NavCad />
       <GlobalStyle />
+      <Container>
       <img src={Logo} alt="Logo" className="logo" />
 
-      <Container>
+      <Box>
+        
         <Paragraph>
           Para realizar seu cadastro como prestadora de serviços, é necessário
           ter alguns documentos e informações à mão. Isso ajudará a agilizar o
@@ -35,7 +36,7 @@ function CadastroPrestadora0() {
 
         <List>
           <Subtitle>
-            <img src={Logo1} alt="Logo" />
+            <h1>1</h1>
             <IoDocumentTextOutline className="Icons" /> Documentos pessoais:
           </Subtitle>
 
@@ -46,19 +47,19 @@ function CadastroPrestadora0() {
 
         <List>
           <Subtitle>
-            <img src={Logo2} alt="Logo" />
+            <h1>2</h1>
             <TfiBag className="Icons" /> Dados de serviço:
           </Subtitle>
 
           <li>Descrição de Serviço;</li>
-          <li>Experiência;</li>
-          <li>Portfólio e Exemplos de Trabalho (foto ou link).</li>
+          <li>Experiência;</li>  
         </List>
 
         {/* Link para a próxima página */}
         <Link to="/CadastroPrestadora1">
           <StyledButton>Iniciar Cadastro</StyledButton>
         </Link>
+      </Box>
       </Container>
     </>
   );

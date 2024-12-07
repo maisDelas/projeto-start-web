@@ -1,6 +1,6 @@
 
 import styled from "styled-components";
-import Logo from "./Imagem/Logomaroon.svg"
+import Logo from "assets/Logomarron.svg"
 
 const HeaderContainer = styled.header`
   display: flex;

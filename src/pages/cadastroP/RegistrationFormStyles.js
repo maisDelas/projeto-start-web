@@ -3,7 +3,6 @@ import styled from "styled-components";
 
 
 export const FormContainer = styled.div`
-  max-width: 500px;
   padding: 20px;
   margin: 0 auto;
   display: flex;
@@ -11,21 +10,13 @@ export const FormContainer = styled.div`
   align-items: center;
 `;
 
-export const LogoContainer = styled.div`  max-width: 1300px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 40px;
-  
-   
-
-  img {
-    margin: 0; 
-    
-  }
+export const LogoContainer = styled.div`  
+ 
 `;
 export const FormBox = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #ffffff;
   width: 500px;
   padding: 50px;
@@ -34,8 +25,21 @@ export const FormBox = styled.div`
   text-align: center;
   position: relative;
 
+
+  h1{
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    background-color: #F2913D;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+  }
+
   h2 {
-    color: #e75109;
+    color: #F2913D;
     margin-bottom: 40px;
     
   }
@@ -49,6 +53,7 @@ export const InputGroup = styled.div`
     display: block;
     color: #706d6d;
     margin-bottom: 5px;
+    font-weight:bold;
   }
 
   input {
@@ -78,17 +83,20 @@ export const ButtonContainer = styled.div`
 `;
 
 export const StyledButton = styled.button`
-  width: 30%;
-  padding: 10px;
-  background-color: #e35d1c;
+   width: 130px;
+  padding: 12px;
+  background-color: #F2913D;
   border: none;
-  border-radius: 5px;
-  color: #fff;
+  border-radius: 10px;
+  color: white;
   font-size: 16px;
+  font-weight: bold;
   cursor: pointer;
-  transition: background-color 0.3s ease;
 
-
+  &:hover {
+        background-color: #FFA85C;
+    }
+ 
 `;
 
 export const Swapper = styled.div`
@@ -104,10 +112,9 @@ export const Swapper = styled.div`
     width: 12px;
     height: 12px;
     background-color: #888;
-    cursor: pointer;
 
     &.active {
-      background-color: #e35d1c;
+      background-color: #F2913D;
     }
   }
 `;

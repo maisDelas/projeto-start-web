@@ -1,45 +1,39 @@
-import { Container, Box, Title, Text, Button, Link } from "./Prestadora3styles";
-import Logo_completo from './Imagem/Logo_sucesso.svg'
-import GlobalStyle from './globalstyle'
-import NavCad from './Header'
+import { Container, Box, Title, Text, Link } from "./Prestadora3styles";
+import confirm from 'assets/Imgconfirm.svg'
+import GlobalStyle from "./globalstyle"; 
+import NavCad from './Header' 
 import { useNavigate } from "react-router-dom";
+import Logo from "assets/Logobranca.svg";
+
+function CadastroPrestadora3() { 
+  const navigate = useNavigate();
 
 
-import Logo from "./Imagem/Logo branca 4.svg";
-
-function CadastroPrestadora3() {
-  const navigate = useNavigate(); 
-
-  
 
   return (
 
-  <>
-  <GlobalStyle/>
-  <NavCad/>
+    <>
+      <GlobalStyle />
+      <NavCad />
+      <Container>
+        <div className="header"> <img src={Logo} alt="" className="logo" />
+      </div>
+          <Box>
+          <Title>Cadastro finalizado com sucesso!</Title>
 
- <div className="header"> <img src={Logo} alt="" className="logo"/>
- </div>
-  
-  <Container>
-      <Box>
-        <Title>Cadastro finalizado com sucesso!</Title>
+          <img src={confirm} alt="" className="image_confirm" />
 
-        <img src={Logo_completo } alt="" className="Logo_sucesso"/>
+
+          <Text>
+            Entre com a sua conta:{" "}
+            <Link href="/login" style={{ display: "inline" }}>
+              Login
+            </Link>
+          </Text>
+          </Box>
         
-   
-        <Text>
-          Entre com a sua conta:{" "}
-          <Link href="/login" style={{ display: "inline" }}>
-            Login
-          </Link>
-        </Text>
-
-
-        <Button onClick={()=> navigate('/')}>Voltar a tela inicial</Button>
-      </Box>
-    </Container>
-  </>
+      </Container>
+    </>
   );
 }
 

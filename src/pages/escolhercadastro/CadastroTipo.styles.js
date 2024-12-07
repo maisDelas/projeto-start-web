@@ -54,9 +54,7 @@ export const CardReset = styled.div`
     position: absolute;
 
     
-    a{
-        color: #E35D1C;
-    } 
+    
 `;
 
 export const Button = styled.button`
@@ -83,6 +81,6 @@ export const Button = styled.button`
     }
 
     a{
-    color: #E35D1C;
+    color: #F2913D;
     }
 `;

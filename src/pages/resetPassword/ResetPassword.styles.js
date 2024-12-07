@@ -59,18 +59,18 @@ export const CardReset = styled.div`
 export const HeaderTitle = styled.h1`
     text-align: center;
     font-weight: bold;
-    font-size: 24.6px;
+    font-size: 25px;
     margin-top: 15px;
-    color: #E35D1C; 
+    color: #F2913D; 
 `;
 
 
 export const Description = styled.p`  
     font-size: 16px; 
-    font-weight: normal;
+    font-weight: bold;
     margin-top: 20px; 
-    text-align: center; 
-    color: #E35D1C; 
+    text-align: left; 
+    color: #8E8B8B; 
 `;
 
 export const InputForm = styled.input`
@@ -89,19 +89,16 @@ export const InputForm = styled.input`
 
 export const ErrorMsg = styled.span`
     color: red;
-    font-family: "Poppins", sans-serif;
-    font-size: 12.6px;
-    margin-top: 20px;
+    font-size: 14px;
+    margin-top: 25px;
     position: absolute;
     right: 85px;
   
 `;
 
 export const Button = styled.button`
-    background-color: #E35D1C;
-    font-family: "Poppins", sans-serif;
+    background-color: #F2913D;
     color: white;
-    white-space: nowrap;
     font-size: 16px;
     font-weight: 500;
     display: inline-flex;
@@ -119,7 +116,7 @@ export const Button = styled.button`
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 
     &:hover {
-        background-color: #D24400; 
+        background-color: #FFA85C;
     }
 `;
 
@@ -130,7 +127,7 @@ export const ContainerNav = styled.p`
 `;
 
 export const BackLoginLink = styled.a`
-    color:#D24400; 
+    color:#F2913D; 
     text-decoration: none;
 
      &:hover {

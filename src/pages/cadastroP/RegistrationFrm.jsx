@@ -8,11 +8,10 @@ import {
   StyledButton,
   Swapper,
 } from "./RegistrationFormStyles";
-import Logo from "./Imagem/Logo branca 4.svg";
-import Eu from "./Imagem/LogoNN1.svg";
+import Logo from "assets/Logobranca.svg";
 import { Link } from "react-router-dom";
 import NavCad from "./Header.jsx";
-import GlobalStyle from "./GlobalStyle";
+import GlobalStyle from "./globalstyle"; 
 import { AlignRight } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
@@ -105,7 +104,7 @@ function CadastroPrestadora1() {
         <img src={Logo} alt="Logo" className="logo" />
       </LogoContainer>
       <FormBox>
-        <img src={Eu} alt="Avatar" />
+        <h1>1</h1>
         <h2>Dados Pessoais:</h2>
         <form onSubmit={handleSubmit}>
           <InputGroup>

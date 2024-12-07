@@ -28,7 +28,7 @@ export const Container = styled.dialog`
   align-items: center;
   width: 750px;
   height: 600px;
-  background-color: white;
+  background-color: #f2f2f2;
   border-radius: 10px;
 `
 export const Logo = styled.img`
@@ -59,11 +59,11 @@ export const DescriptionContent = styled.div`
 `
 export const Name = styled.h3`
   font-size: 30.7px;
-  color: var(--dark-orange);
+  color: #F2913D;
 `
 export const Profession = styled.p`
   font-size: 19.8px;
-  color: var(--dark-orange);
+  color: #F2913D;
 `
 export const Locality = styled.div`
   display: flex;
@@ -75,7 +75,7 @@ export const Pin = styled.img`
 `
 export const Distance = styled.p`
   font-size: 15.8px;
-  color: var(--dark-orange);
+  color: #F2913D;
 `
 export const IconStar = styled(FaStar)`
   width: 20px;
@@ -91,7 +91,8 @@ export const Summarire = styled.div`
 `
 export const Information = styled.p`
   font-size: 15.8px;
-  color: var(--dark-orange);
+  color: #706D6D;
+  font-weight: bold;
 `
 export const Contract = styled(Button)`
   margin-left: 0;
@@ -109,7 +110,7 @@ export const ContactsConatent = styled.div`
 
 export const Title = styled.h3`
   font-size: 30.7px;
-  color: var(--dark-orange);
+  color: #F2913D;
   margin-left: 40px;
 `
 export const Email = styled.div`
@@ -118,7 +119,7 @@ export const Email = styled.div`
   margin-left: 40px;
 `
 export const IconEmail = styled(MdEmail)`
-  color: var(--dark-orange);
+  color: #F2913D;
 `
 export const Telephone = styled.div`
   display: flex;
@@ -127,10 +128,10 @@ export const Telephone = styled.div`
   margin-top: 10px;
 `
 export const IconTelephone = styled(BsFillTelephoneInboundFill)`
-  color: var(--dark-orange);
+  color: #F2913D;
 `
 export const Text = styled.a`
-  color: var(--dark-orange);
+  color: #706D6D;
 `
 export const PessoalContent = styled.div`
   /* display: flex; */
@@ -142,19 +143,19 @@ export const SocialContent = styled.div`
 export const Division = styled.div``
 
 export const IconInstagram = styled(FaInstagramSquare)`
-  color: var(--dark-orange);
+  color: #F2913D;
   font-size: 40px;
 `
 export const IconFacebook = styled(FaFacebookSquare)`
-  color: var(--dark-orange);
+  color: #F2913D;
   font-size: 40px;
 `
 export const IconLinkedin = styled(FaLinkedin)`
-  color: var(--dark-orange);
+  color:#F2913D;
   font-size: 40px;
 `
 export const ContainerClose = styled.div`
-  background-color: var(--dark-orange);
+  background-color: #F2913D;
   position: absolute;
   top: 0;
   right: -39px;

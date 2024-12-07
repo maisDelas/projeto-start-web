@@ -87,7 +87,6 @@ export const Button = styled(GlobalButton)`
   border-radius: 10px;
   padding: 9px;
   cursor: pointer;
-  transition: background-color 0.3s;
   width: 100px;
   gap: 10px;
   margin-left:88px;

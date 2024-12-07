@@ -18,7 +18,7 @@ export const ContractArea = styled.div`
     margin: 150px;
 
 h1{
-    color: var(--dark-orange);
+    color: #F2913D;
     
 
 }
@@ -46,12 +46,11 @@ export const SearchBox = styled.div`
             background: transparent;
             width: 100%;
             font-size: 16px;
-            color:#f4a261;
             
         }
         
         ::placeholder{
-                color: #f4a261;
+                color: #F2913D;
             }
     
 `
@@ -59,6 +58,7 @@ export const SearchBox = styled.div`
 export const ContractsSection = styled.div`
 
         table {
+            background-color: #fff;
             width: 1000px; 
             height:55px;
             border-collapse: collapse; 
@@ -75,69 +75,40 @@ export const ContractsSection = styled.div`
         th, td {
              padding: 44px;
              text-align: left;
-             color: var(--dark-orange);
+             color: #8E8B8B;
+             font-weight: bold;
             }
   
         th {
             background-color: #fff8f2;
-           color: var(--dark-orange);
+           color: #F2913D;
            }
 
         td{
             
             border-bottom: 1px solid rgba(243, 164, 126, 100);   
         }
-        
-        
-
-
-
 `
+
 
 export const DeleteArea = styled.div`
     margin-top: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: var(--dark-orange);
+    color: #F2913D;
 
 .buttonDelete{
     margin-top: 50px;
     width: 90px;
+    font-size: 16px;
+    background-color: #E35D1C;
 }
 
 
 `
 
-      
-    /* display: flex;
-        flex-direction: column;
-        align-items:center;
-        margin: 50px;
-        width: auto;
-        height: 500px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-        border-radius:10px;
-
-        .contractTitle{
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            color: var(--dark-orange);
-            gap: 35px;
-            background-color: #FFF6EB;
-            padding: 25px;
-            
-        }
-
-        .spacing{
-            margin-right: 68px;
-        } */
-
-    
-
-
 export const Arrow = styled(IoIosArrowDown)`
-  color: var(--dark-orange);
+  color:#F2913D;
   
 `

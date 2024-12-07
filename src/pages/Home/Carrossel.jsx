@@ -4,12 +4,12 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import * as S from './Carrossel.styles';
-import arrowLeft from '../../assets/arrowLeft.svg';
-import arrowRight from '../../assets/arrowRight.svg'; 
-import persona1 from '../../assets/imgPersona1.svg';
-import persona2 from '../../assets/imgPersona2.svg'; 
-import persona3 from '../../assets/imgPersona3.svg';
-import persona4 from '../../assets/imgPersona4.svg';
+import arrowLeft from 'assets/arrowLeft.svg';
+import arrowRight from 'assets/arrowRight.svg'; 
+import persona1 from 'assets/imgPersona1.svg';
+import persona2 from 'assets/imgPersona2.svg'; 
+import persona3 from 'assets/imgPersona3.svg';
+import persona4 from 'assets/imgPersona4.svg';
 
 
 function Carrossel() {

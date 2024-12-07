@@ -55,7 +55,7 @@ export const ContainerMap = styled.div`
   }
 `
 export const Buttonarrow = styled.button`
-  background-color: var(--dark-orange);
+  background-color: #F8DEBF;
   border: none;
   padding: 1rem;
   border-radius: 10px;
@@ -72,14 +72,14 @@ export const IconArrow = styled(FaChevronRight)`
 
 export const ContainerSearch = styled.div`
   display: flex;
-  /* align-items: center; */
+
 `
 export const VerticalSlider = styled.div`
   display: flex;
   flex-direction: column;
   width: ${(props) => (props.isOpen ? "550px" : "0px")};
   max-height: 850px;
-  background-color: var(--dark-orange);
+  background-color: #F8DEBF;
   position: absolute;
   top: 70%; /* Centraliza verticalmente */
   right: 30px; /* Encosta na direita */

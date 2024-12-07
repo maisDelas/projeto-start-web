@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import background from "../../assets/Onda.svg"
 import BgOnda from 'assets/BgOnda.png'
 
 export const Container = styled.div`

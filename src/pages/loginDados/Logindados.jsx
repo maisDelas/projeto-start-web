@@ -1,13 +1,8 @@
 import React, { useState } from "react";
 import { Container, Form, Input, Button, Validation, ButtonGroup } from "./LoginDadosstyles";
 
-import Logo from "./Imagem/Logo branca 4.svg";
-
-import Logo3 from './Imagem/N3.svg'
-
+import Logo from "assets/Logobranca.svg"
 import NavCad from "pages/cadastroP/Header";
-
-
 import GlobalStyle from "pages/cadastroP/globalstyle";
 
 const LoginDados = () => {
@@ -38,82 +33,80 @@ const LoginDados = () => {
 
   return (
 
-   <>
-    <GlobalStyle/>
+    <>
+      <GlobalStyle />
+      <NavCad />
+      <img src={Logo} alt="Logo" className="logo" />
+      <Container>
+        <Form>
+          <h1>3</h1>
+          <h2>Dados do Login</h2>
+          <label>Email</label>
+          <Input
+            type="E-mail"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            placeholder="E-mail"
+          />
+          <label>Senha</label>
+          <Input
+            type="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            pha
+            placeholder=" Senha"
+          />
+          <label>Confirmar Senha</label>
+          <Input
+            type="password"
+            value={confirmPassword}
+            onChange={(e) => setConfirmPassword(e.target.value)}
+            placeholder="Confirmar Senha"
+          />
+          <Validation valid={validations.hasUppercase}>
+            ✔ Pelo menos 1 caractere maiúsculo
+          </Validation>
+          <Validation valid={validations.hasLowercase}>
+            ✔ Pelo menos 1 caractere minúsculo
+          </Validation>
+          <Validation valid={validations.hasSpecialChar}>
+            ✔ Pelo menos 1 caractere especial (@, *)
+          </Validation>
+          <Validation valid={validations.hasNumber}>
+            ✔ Pelo menos 1 número
+          </Validation>
+          <Validation valid={validations.hasMinLength}>
+            ✔ Pelo menos 6 caracteres
+          </Validation>
+          <Validation valid={validations.hasMaxLength}>
+            ✔ No máximo 7 caracteres
+          </Validation>
 
-    <NavCad/>
-   
-    <img src={Logo} alt="Logo" className="logo" />
-    <Container>
-      <Form>
-        <img src={Logo3} alt="" className="nn3" />
-        <h2>Dados do Login</h2>
-        <label>Email</label>
-        <Input
-          type="E-mail"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          placeholder="E-mail"
-        />
-        <label>Senha</label>
-        <Input
-          type="password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          pha
-          placeholder=" Senha"
-        />
-        <label>Confirmar Senha</label>
-        <Input
-          type="password"
-          value={confirmPassword}
-          onChange={(e) => setConfirmPassword(e.target.value)}
-          placeholder="Confirmar Senha"
-        />
-        <Validation valid={validations.hasUppercase}>
-          ✔ Pelo menos 1 caractere maiúsculo
-        </Validation>
-        <Validation valid={validations.hasLowercase}>
-          ✔ Pelo menos 1 caractere minúsculo
-        </Validation>
-        <Validation valid={validations.hasSpecialChar}>
-          ✔ Pelo menos 1 caractere especial (@, *)
-        </Validation>
-        <Validation valid={validations.hasNumber}>
-          ✔ Pelo menos 1 número
-        </Validation>
-        <Validation valid={validations.hasMinLength}>
-          ✔ Pelo menos 6 caracteres
-        </Validation>
-        <Validation valid={validations.hasMaxLength}>
-          ✔ No máximo 7 caracteres
-        </Validation>
+          <ButtonGroup>
+            <Button
+              type="button"
+              onClick={() => alert("Retornar ao início")}
+              className="secondary"
+            >
+              Retornar
+            </Button>
+            <Button
+              type="button"
+              onClick={handleSubmit}
+              disabled={
+                !(
+                  Object.values(validations).every((v) => v) &&
+                  password === confirmPassword
+                )
+              }
+            >
+              Finalizar
+            </Button>
+          </ButtonGroup>
+        </Form>
+      </Container>
 
-        <ButtonGroup>
-          <Button
-            type="button"
-            onClick={() => alert("Retornar ao início")}
-            className="secondary"
-          >
-            Retornar
-          </Button>
-          <Button
-            type="button"
-            onClick={handleSubmit}
-            disabled={
-              !(
-                Object.values(validations).every((v) => v) &&
-                password === confirmPassword
-              )
-            }
-          >
-            Finalizar
-          </Button>
-        </ButtonGroup>
-      </Form>
-    </Container>
-   
-   </>
+    </>
   );
 };
 

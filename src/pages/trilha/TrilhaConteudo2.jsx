@@ -1,11 +1,11 @@
 import * as S from 'pages/trilha/TrilhaConteudo.styles1'
-import OnGoing from 'imagesTrilha/OnGoing.svg'
-import checked from 'imagesTrilha/checked.svg'
+import OnGoing from 'assets/OnGoing.svg'
+import checked from 'assets/checked.svg'
 import { useNavigate } from "react-router-dom";
 import Button from "Components/botaoglobal/Button";
 import NavU from "Components/navbar/Nav.usuario";
 import SideBarStyle from 'Components/sidebar/Sidebar';
-import QuizComponent from 'Components/quiz/quiz';
+import QuizComponent from 'Components/quiz/Quiz'; 
 
 
 const ConteudoTrilha2 = () => {
