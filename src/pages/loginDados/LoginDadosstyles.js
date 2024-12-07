@@ -16,48 +16,45 @@ export const Form = styled.form`
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   width: 400px;
-  // text-align: center;
 
   h2 {
     margin-bottom: 20px;
-    color: #333;
+    color: #e75109;
     text-align: center;
-    color: #E75109;
   }
 
-  label{
-  color:#706D6D;
+  label {
+    color: #706d6d;
     margin-bottom: 5px;
   }
 `;
 
 export const Input = styled.input`
   margin-bottom: 20px;
-  padding: 2px;
+  padding: 10px;
   font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  
 `;
 
 export const Button = styled.button`
   padding: 10px 20px;
   font-size: 16px;
   color: #fff;
-  background-color: #E35D1C;
+  background-color: #e35d1c;
   border: none;
   border-radius: 5px;
   cursor: pointer;
 
   &:hover {
-    background-color: #E35D1C;
+    background-color: #d44d0b;
   }
 
   &.secondary {
-    background-color: #F4AD58;
+    background-color: #f4ad58;
 
     &:hover {
-      background-color: #E35D1C;
+      background-color: #e35d1c;
     }
   }
 `;
@@ -71,6 +68,5 @@ export const ButtonGroup = styled.div`
 
 export const Validation = styled.div`
   margin-top: 10px;
-  color: ${(props) => (props.valid ? "#E35D1C" : "#E35D1C")};  
+  color: ${(props) => (props.valid ? "green" : "red")};
 `;
-
