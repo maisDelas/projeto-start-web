@@ -7,13 +7,13 @@ import {
   Paragraph,
   List,
   StyledButton,
-} from "pages/cadastroP/Prestadoraa.styles.js";
+} from "./Prestadoraa.styles";
 
 import { TfiBag } from "react-icons/tfi";
 import NavCad from "./Header"; 
 import GlobalStyle from "./globalstyle";
 import { IoDocumentTextOutline } from "react-icons/io5";
-import Logo from "assets/Logobranca.svg";
+import Logo from "../../assets/Logobranca.svg";
 import { Link } from "react-router-dom";
 
 function CadastroPrestadora0() {

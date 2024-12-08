@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import * as S from './Contratos.styles';
-import NavU from 'Components/navbar/Nav.usuario';
-import SideBar from 'Components/sidebar/Sidebar';
+import NavU from '../../Components/navbar/Nav.usuario';
+import SideBar from '../../Components/sidebar/Sidebar';
 import { IoSearch } from "react-icons/io5";
-import Button from 'Components/botaoglobal/Button';
+import Button from '../../Components/botaoglobal/Button';
 // import axios from 'axios'
 
 const Contratos = () => {

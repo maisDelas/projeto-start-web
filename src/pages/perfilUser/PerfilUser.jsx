@@ -1,9 +1,9 @@
-import * as S from "pages/perfil/Perfil.styles.js";
+import * as S from "../perfil/Perfil.styles";
 import mulherIcon from "/src/assets/Sua foto.svg";
 import canetaIcon from "../../assets/caneta.svg";
 import { useNavigate } from "react-router-dom";
-import SideBarStyle from "Components/sidebarUser.jsx/SidebarUser.jsx";
-import NavU from "Components/navbar/Nav.usuario";
+import SideBarStyle from "../../Components/sidebarUser.jsx/SidebarUser.jsx";
+import NavU from "../../Components/navbar/Nav.usuario";
 
 function PerfilUsuario() {
   const navigation = useNavigate();

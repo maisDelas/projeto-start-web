@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import InputForm from 'Components/inputForm/InputForm';
-import logotipo_branca from 'assets/Logobranca.svg';
+import InputForm from '../../Components/inputForm/InputForm';
+import logotipo_branca from '../../assets/Logobranca.svg';
 import {
   GlobalStyle,
   BodyContainer,
@@ -16,7 +16,7 @@ import {
   CadastroLink,
   ContainerNav
 } from './Login.styles.js';
-import NavCad from 'pages/cadastroP/Header.jsx';
+import NavCad from '../cadastroP/Header';
 import { useNavigate } from 'react-router-dom';
 
 const Login = () => {

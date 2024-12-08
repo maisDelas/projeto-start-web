@@ -1,4 +1,4 @@
-import logo from "assets/Logomarron.svg"
+import logo from "../../assets/Logomarron.svg"
 import {Container,IconUser,Button,Content,Logo,Link, ListLinks} from "./navbar.styles"
 
 function NavBar({ children }) {

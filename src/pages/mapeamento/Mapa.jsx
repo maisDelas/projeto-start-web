@@ -1,14 +1,14 @@
 import Map from "./Api.mapa"
 import Cards from './Cards'
 import { useState, useContext } from "react"
-import Footer from "Components/Footer/footer" 
+import Footer from "../../Components/Footer/footer" 
 import * as S from "./Mapa.styles"
-import LogoBranca from "assets/Logobranca.svg"
+import LogoBranca from "../../assets/Logobranca.svg"
 import InfoCards from "./InfoCards"
-import NavU from "Components/navbar/Nav.usuario"
+import NavU from "../../Components/navbar/Nav.usuario"
 import MapProviders from "./context/MapProviders"
 import { ContextOfModal } from "./context/ContextOfModal"
-import Modal from "Components/modal/Modal"
+import Modal from "../../Components/modal/Modal"
 
 
 function Mapeamento() {

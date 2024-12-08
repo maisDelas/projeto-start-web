@@ -1,6 +1,6 @@
 
 import { createGlobalStyle } from "styled-components";
-import BackGroundIMG from "assets/BgOnda.png";
+import BackGroundIMG from "../../assets/BgOnda.png";
 
 const GlobalStyle = createGlobalStyle`
 

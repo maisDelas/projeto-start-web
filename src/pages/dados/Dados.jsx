@@ -1,6 +1,6 @@
 import * as S from "./Dados.styles"
-import logo from "assets/Logobranca.svg"
-import NavCad from "pages/cadastroP/Header"
+import logo from "../../assets/Logobranca.svg"
+import NavCad from "../cadastroP/Header"
 import { useNavigate } from "react-router-dom"
 
 function Dados() {

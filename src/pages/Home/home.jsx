@@ -1,12 +1,12 @@
 import Carrossel from "./Carrossel"
-import Footer from "Components/Footer/footer" 
+import Footer from "../../Components/Footer/footer" 
 import * as S from "./Home.styles" 
-import NavBar from "Components/navbar/navbar"
-import Card from "Components/cardsService/cardService"
-import StaticService from "Components/cardsService/StaticService";
-import { StyleButton } from "Components/botaoglobal/Button.style";
-import Logowhite from 'assets/Logobranca.svg'
-import imgMulheres from 'assets/imgMulheres.png'
+import NavBar from "../../Components/navbar/navbar"
+import Card from "../../Components/cardsService/cardService"
+import StaticService from "../../Components/cardsService/staticService";
+import { StyleButton } from "../../Components/botaoglobal/Button.style";
+import Logowhite from '../../assets/Logobranca.svg'
+import imgMulheres from '../../assets/imgMulheres.png'
 
 function Home() {
   return (

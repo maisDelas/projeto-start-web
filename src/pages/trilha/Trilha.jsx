@@ -1,18 +1,18 @@
 import * as S from './Trilha.styles';
-import imgHeader from 'assets/imgHeader.svg'
-import laptop from 'assets/laptop.svg'
-import grafic from 'assets/grafic.svg'
-import grow from 'assets/grow.svg'
-import Button from 'Components/botaoglobal/Button';
+import imgHeader from '../../assets/imgHeader.svg'
+import laptop from '../../assets/laptop.svg'
+import grafic from '../../assets/grafic.svg'
+import grow from '../../assets/grow.svg'
+import Button from '../../Components/botaoglobal/Button';
 import { useNavigate } from 'react-router-dom';
-import NavU from 'Components/navbar/Nav.usuario';
-import SideBarStyle from 'Components/sidebar/Sidebar';
-import num1 from 'assets/num1.svg'
-import num2 from 'assets/num2.svg'
-import num3 from 'assets/num3.svg'
-import num4 from 'assets/num4.svg'
-import num5 from 'assets/num5.svg'
-import num6 from 'assets/num6.svg'
+import NavU from '../../Components/navbar/Nav.usuario';
+import SideBarStyle from '../../Components/sidebar/Sidebar';
+import num1 from '../../assets/num1.svg'
+import num2 from '../../assets/num2.svg'
+import num3 from '../../assets/num3.svg'
+import num4 from '../../assets/num4.svg'
+import num5 from '../../assets/num5.svg'
+import num6 from '../../assets/num6.svg'
 
 const Trilha = () => {
     const navigation = useNavigate()

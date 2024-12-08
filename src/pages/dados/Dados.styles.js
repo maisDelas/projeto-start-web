@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import BgOnda from 'assets/BgOnda.png'
+import BgOnda from '../../assets/BgOnda.png'
 
 export const Container = styled.div`
   max-width: 500px;

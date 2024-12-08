@@ -1,9 +1,9 @@
 import { Container, Box, Title, Text, Link } from "./Prestadora3styles";
-import confirm from 'assets/Imgconfirm.svg'
+import confirm from '../../assets/Imgconfirm.svg'
 import GlobalStyle from "./globalstyle"; 
 import NavCad from './Header' 
 import { useNavigate } from "react-router-dom";
-import Logo from "assets/Logobranca.svg";
+import Logo from "../../assets/Logobranca.svg";
 
 function CadastroPrestadora3() { 
   const navigate = useNavigate();

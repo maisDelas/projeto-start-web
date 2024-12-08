@@ -10,7 +10,7 @@ import {
 } from "./styledcomponents";  
 import { useNavigate } from "react-router-dom";
 import GlobalStyle from "./globalstyle";
-import Logo from "assets/Logobranca.svg";
+import Logo from "../../assets/Logobranca.svg";
 import NavCad from "./Header.jsx";
 
 function CadastroPrestadora2() {

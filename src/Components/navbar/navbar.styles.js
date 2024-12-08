@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import { FaRegUserCircle } from "react-icons/fa"
-import GlobalButton from "Components/botaoglobal/Button"
+import GlobalButton from "../../Components/botaoglobal/Button"
 
 export const Container = styled.div`
   background-color:  #f2f2f2;

@@ -8,7 +8,7 @@ import {
   StyledButton,
   Swapper,
 } from "./RegistrationFormStyles";
-import Logo from "assets/Logobranca.svg";
+import Logo from "../../assets/Logobranca.svg";
 import { Link } from "react-router-dom";
 import NavCad from "./Header.jsx";
 import GlobalStyle from "./globalstyle"; 

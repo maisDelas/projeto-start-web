@@ -5,15 +5,14 @@ import jsconfigpaths from 'vite-jsconfig-paths'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react(), jsconfigpaths()],
+  plugins: [react()],
   server: {
-    host: true
+    port: 3000,
+    host: true,
   },
-  css: {
-    postcss: {
-      plugins: [
-        autoprefixer,
-      ],
-    },
+  preview: {
+    port: 3000,
+    host: true,
+    strictPort: true,
   },
-})
+});

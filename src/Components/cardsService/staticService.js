@@ -1,9 +1,9 @@
-import IconMaquiagem from 'assets/IconMaquiagem.svg'
-import IconDesktop from 'assets/IconDesktop.svg'
-import IconCalendario from 'assets/IconCalendario.svg'
-import IconEngrenagens from 'assets/IconEngrenagens.svg'
-import IconCoracao from 'assets/IconCoracao.svg'
-import IconChapeuChef from 'assets/IconChapeuChef.svg'
+import IconMaquiagem from '../../assets/IconMaquiagem.svg'
+import IconDesktop from '../../assets/IconDesktop.svg'
+import IconCalendario from '../../assets/IconCalendario.svg'
+import IconEngrenagens from '../../assets/IconEngrenagens.svg'
+import IconCoracao from '../../assets/IconCoracao.svg'
+import IconChapeuChef from '../../assets/IconChapeuChef.svg'
 
 
 export default [

@@ -1,4 +1,4 @@
-import logo from "assets/Logomarron.svg"
+import logo from "../../assets/Logomarron.svg"
 import * as S from './Nav.usuario.styles'
 
 

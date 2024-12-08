@@ -1,8 +1,8 @@
-import Mulher1 from 'assets/imgPersona1.svg'
-import Mulher2 from 'assets/imgPersona2.svg'
-import Mulher3 from 'assets/imgPersona3.svg'
-import Mulher4 from 'assets/imgPersona4.svg'
-import Pin from 'assets/Pin-mapa.svg'
+import Mulher1 from '../../assets/imgPersona1.svg'
+import Mulher2 from '../../assets/imgPersona2.svg'
+import Mulher3 from '../../assets/imgPersona3.svg'
+import Mulher4 from '../../assets/imgPersona4.svg'
+// import Pin from 'assets/Pin-mapa.svg'
 
 
 export default [

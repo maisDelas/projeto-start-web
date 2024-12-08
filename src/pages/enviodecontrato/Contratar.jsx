@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import logotipo_branca from 'assets/LogoBranca.svg'
+import logotipo_branca from '../../assets/Logobranca.svg'
 import {
   GlobalStyle,
   BodyContainer,

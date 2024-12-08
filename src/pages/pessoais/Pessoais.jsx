@@ -8,9 +8,9 @@ import {
   StyledButton,
   Swapper,
 } from "./PessoaisStyles";
-import Logo from "assets/Logobranca.svg";
-import NavCad from "pages/cadastroP/Header";
-import GlobalStyle from "pages/cadastroP/globalstyle";
+import Logo from "../../assets/Logobranca.svg";
+import NavCad from "../cadastroP/Header";
+import GlobalStyle from "../cadastroP/globalstyle";
 import { useNavigate } from "react-router-dom";
 
 

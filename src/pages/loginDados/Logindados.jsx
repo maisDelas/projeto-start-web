@@ -8,9 +8,9 @@ import {
   ButtonGroup 
 } from "./LoginDadosstyles";
 
-import Logo from "assets/Logobranca.svg"
-import NavCad from "pages/cadastroP/Header";
-import GlobalStyle from "pages/cadastroP/globalstyle";
+import Logo from "../../assets/Logobranca.svg"
+import NavCad from "../cadastroP/Header";
+import GlobalStyle from "../cadastroP/globalstyle";
 
 const LoginDados = () => {
   const [email, setEmail] = useState("");

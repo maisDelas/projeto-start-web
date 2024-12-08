@@ -1,13 +1,13 @@
 import { useState, useEffect } from "react";
 import * as S from "./Perfil.styles";
-import facebook from "assets/facebook.svg";
-import instagram from "assets/instagram.svg";
-import mulherIcon from "assets/mulher.svg";
-import linkedin from "assets/linkedin.svg";
-import canetaIcon from "assets/caneta.svg";
+import facebook from "../../assets/facebook.svg";
+import instagram from "../../assets/instagram.svg";
+import mulherIcon from "../../assets/mulher.svg";
+import linkedin from "../../assets/linkedin.svg";
+import canetaIcon from "../../assets/caneta.svg";
 import { useNavigate } from "react-router-dom";
-import SideBar from "Components/sidebar/Sidebar";
-import NavU from "Components/navbar/Nav.usuario";
+import SideBar from "../../Components/sidebar/Sidebar";
+import NavU from "../../Components/navbar/Nav.usuario";
 
 function Perfil2() {
   const navigation = useNavigate();

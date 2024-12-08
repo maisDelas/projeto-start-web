@@ -5,7 +5,7 @@ import {
   FaFacebookSquare,
   FaLinkedin,
 } from "react-icons/fa"
-import Button from "Components/botaoglobal/Button"
+import Button from '../botaoglobal/Button'
 import { MdEmail, MdClose } from "react-icons/md"
 import { BsFillTelephoneInboundFill } from "react-icons/bs"
 

@@ -1,10 +1,10 @@
-import LogoMarrom from "assets/Logomarron.svg"
-import mule from "assets/imgPersona2.svg"
-import Pin from "assets/Pin-mapa.svg"
+import LogoMarrom from "../../assets/Logomarron.svg"
+// import mule from "assets/imgPersona2.svg"
+import Pin from "../../assets/Pin-mapa.svg"
 import * as S from "./Modal.styles"
-import useModal from "pages/mapeamento/hooks/useModal"
-import InfoCards from "pages/mapeamento/InfoCards"
-import { StarIcon } from "lucide-react"
+import useModal from "../../pages/mapeamento/hooks/useModal"
+// import InfoCards from "pages/mapeamento/InfoCards"
+// import { StarIcon } from "lucide-react"
 
 
 function Modal() {

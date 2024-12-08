@@ -1,9 +1,9 @@
 
-import IconPerfil from 'assets/iconPerfil.svg'
-import IconTrilha from 'assets/iconTrilha.svg'
-import IconContract from 'assets/iconContract.svg'
-import IconConfig from 'assets/iconConfig.svg'
-import IconOut from 'assets/IconOut.svg'
+import IconPerfil from '../../assets/IconPerfil.svg'
+import IconTrilha from '../../assets/IconTrilha.svg'
+import IconContract from '../../assets/iconContract.svg'
+import IconConfig from '../../assets/IconConfig.svg'
+import IconOut from '../../assets/IconOut.svg'
 import {SideBarStyle}  from './Sidebar.styles'
 
 function SideBar() {

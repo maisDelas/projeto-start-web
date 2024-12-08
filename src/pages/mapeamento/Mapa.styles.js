@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import BgOnda from "assets/BgOnda.png"
+import BgOnda from "../../assets/BgOnda.png"
 import { FaChevronRight } from "react-icons/fa"
 import { IoIosSearch } from "react-icons/io"
 import { IoIosArrowDown } from "react-icons/io"

@@ -1,4 +1,4 @@
-import * as S from "Components/footer/Footer.styles";
+import * as S from "./Footer.styles";
 import facebookIcon from "../../assets/facebook.svg";
 import linkedinIcon from "../../assets/linkedin.svg";
 import instagramIcon from "../../assets/instagram.svg";

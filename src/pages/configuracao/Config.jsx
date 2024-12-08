@@ -1,10 +1,10 @@
 import * as S from './Config.Styles'
-import NavU from 'Components/navbar/Nav.usuario'
-import SideBar from 'Components/sidebar/Sidebar'
+import NavU from '../../Components/navbar/Nav.usuario'
+import SideBar from '../../Components/sidebar/Sidebar'
 import { useNavigate } from 'react-router-dom'
 import Switch from "react-switch";
 import React, { useState } from 'react';
-import Button from 'Components/botaoglobal/Button'; 
+import Button from '../../Components/botaoglobal/Button'; 
 
 
 const Configuracao = () => {

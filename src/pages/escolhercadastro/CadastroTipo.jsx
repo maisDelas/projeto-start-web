@@ -1,12 +1,12 @@
 import React from 'react';
-import logotipo_branca from 'assets/Logobranca.svg';
+import logotipo_branca from '../../assets/Logobranca.svg';
 import {GlobalStyle,
 BodyContainer, 
 WhiteLogo, 
 CardCenter, 
 CardReset, 
 Button} from './CadastroTipo.styles.js';
-import NavCad from 'pages/cadastroP/Header.jsx'; 
+import NavCad from '../cadastroP/Header'; 
  
 
 const CadastroTipo = () => {

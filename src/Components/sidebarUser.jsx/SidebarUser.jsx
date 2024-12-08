@@ -1,9 +1,9 @@
 
-import IconPerfil from 'assets/iconPerfil.svg'
-import IconContract from 'assets/iconContract.svg'
-import IconConfig from 'assets/iconConfig.svg'
-import IconOut from 'assets/iconOut.svg'
-import {SideBarStyle}  from 'Components/sidebar/Sidebar.styles.js'
+import IconPerfil from '../../assets/IconPerfil.svg'
+import IconContract from '../../assets/iconContract.svg'
+import IconConfig from '../../assets/IconConfig.svg'
+import IconOut from '../../assets/IconOut.svg'
+import {SideBarStyle}  from '../sidebar/Sidebar.styles'
 
 function SideBar2() {
 

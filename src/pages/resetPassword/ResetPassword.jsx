@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
-import InputForm from 'Components/inputForm/InputForm';
-import logotipo_branca from 'assets/Logobranca.svg';
+import InputForm from '../../Components/inputForm/InputForm';
+import logotipo_branca from '../../assets/Logobranca.svg';
 import {
   GlobalStyle,
   BodyContainer,
@@ -14,7 +14,7 @@ import {
   Button,
   BackLoginLink, ContainerNav
 } from './ResetPassword.styles.js';
-import NavCad from 'pages/cadastroP/Header.jsx';
+import NavCad from '../cadastroP/Header.jsx';
 
 
 const ResetPassword = () => {

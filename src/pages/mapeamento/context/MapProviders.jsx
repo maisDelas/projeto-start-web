@@ -1,4 +1,4 @@
-import ProviderOfModal from 'pages/mapeamento/context/ContextOfModal'
+import ProviderOfModal from './ContextOfModal'
 
 
 export default function MapProviders({children}){
