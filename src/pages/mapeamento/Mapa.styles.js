@@ -42,18 +42,19 @@ export const Logo = styled.img`
 `
 export const ContainerMap = styled.div`
   position: absolute;
-  width: 100%; /* Faz o mapa ocupar toda a largura */
-  top: 470px;
+  width: 100%;
   display: flex;
   justify-content: center;
 
-  div {
-    width: 1300px;
-    height: 600px;
+  div.map-container {
+    width: 1440px;
+    max-width: 1300px;
+    height: 50vh;
     border-radius: 10px;
     z-index: 1;
+    position: relative;
   }
-`
+`;
 export const Buttonarrow = styled.button`
   background-color: #F8DEBF;
   border: none;

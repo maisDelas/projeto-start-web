@@ -42,7 +42,7 @@ const  {isModalOpen, openModal, closeModal} = useContext(ContextOfModal)
           <div>
             <Map />
           </div>
-        </S.ContainerMap>
+        </S.ContainerMap> 
 
         {/* Container com os cards das prestadoras */}
         <S.VerticalSlider isOpen={isVerticalOpen}>
