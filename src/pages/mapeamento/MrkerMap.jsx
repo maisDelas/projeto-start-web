@@ -1,12 +1,11 @@
-import React, { useState, useEffect } from "react";
-import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
-import 'leaflet/dist/leaflet.css';
+import { Marker, Popup } from "react-leaflet";
 
-
-function Marker () {
-  return  (
-    
-  )
+function MarkerComponent({ position, description }) {
+  return (
+    <Marker position={position}>
+      <Popup>{description || "Localização"}</Popup>
+    </Marker>
+  );
 }
 
-export default Marker;
+export default MarkerComponent;

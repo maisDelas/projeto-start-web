@@ -30,6 +30,7 @@ export const Container = styled.dialog`
   height: 600px;
   background-color: #f2f2f2;
   border-radius: 10px;
+  border: none;
 `
 export const Logo = styled.img`
   width: 140px;
