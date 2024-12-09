@@ -20,6 +20,7 @@ import Configuracao from './pages/configuracao/Config'
 import Contratar from './pages/enviodecontrato/Contratar'
 import Contratos from './pages/contratosP/Contratos'
 import LoginDados from './pages/loginDados/Logindados'
+// import CadastroUnificado from './pages/cadastroP/Prestadora1'
 
 
 
@@ -51,6 +52,7 @@ export default function App() {
         <Route path="/Contratar" element={<Contratar />} />;
         <Route path="/Login" element={<Login />} />;
         <Route path="/ResetPassword" element={<ResetPassword/>} />;
+        <Route path="/cadastro" element={<CadastroUnificado/>} />;
 
       </Routes>
     </BrowserRouter>

@@ -64,8 +64,8 @@ function Pessoais() {
     e.preventDefault();
     if (validateForm()) {
       console.log(formData);
-      // alert("Cadastro enviado com sucesso!");
-      navigate("/CadastroPrestadora2");
+     
+      navigate("/LoginDados");
     }
   };
 

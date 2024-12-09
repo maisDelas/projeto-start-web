@@ -68,11 +68,7 @@ const Footer = () => {
               
             </ul>
           </S.FooterLink>
-          <S.FooterInscreva>
-            <p>Inscreva-se para mais informações</p>
-            <input type="Email" placeholder="Digite seu email" />
-            <button>Se inscreva</button>
-          </S.FooterInscreva>
+          
         </div>
         <div className="goToTopContainer">
           <button onClick={scrollToTop}>

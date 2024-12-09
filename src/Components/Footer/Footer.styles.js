@@ -110,42 +110,6 @@ export const FooterLink = styled.div`
   }
 `
 
-export const FooterInscreva = styled.div`
-  display: flex;
-  flex-direction: column;
-  margin-top: -5%;
-
-  input {
-    padding-left: 10px;
-    width: 200px;
-    height: 40px;
-    border-radius: 10px;
-    border: 1px solid #F2913D;
-    margin-top: 8px;
-    margin-bottom: 8px;
-  }
-
-  button {
-    width: 100px;
-    background-color: #F2913D;
-    color: white;
-    padding: 7px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: 15px;
-  }
-
-  p {
-    color: #F2913D;
-    font-weight:bold;
-  }
-
-  button:hover {
-    background-color: #FFA85C;
-  }
-`
-
 export const FooterMidias = styled.div`
   display: flex;
   flex-direction: row;
@@ -174,7 +138,7 @@ export const FooterCopyright = styled.div`
     margin-left: 40px;
     text-align: right;
     color:  #F2913D;
-    font-size: 20px;
+    font-size: 15px;
     margin-top: 5px;
   }
 `
