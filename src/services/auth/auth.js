@@ -1,4 +1,4 @@
-import httpClient from "../../http/axios"
+import { api } from "../../http/axios"
 
 export const login = async (email, password) => {
   try { 
@@ -7,7 +7,7 @@ export const login = async (email, password) => {
         throw new Error("email and password is required")
     } 
 
-    const response = await httpClient.post("/auth/login", {
+    const response = await api.post("/auth/login", {
         email,
         senha: password
     })
@@ -35,7 +35,8 @@ export const register = async (user) => {
             street,
             neighborhood,
             zipCode, 
-            documentNumber
+            documentNumber,
+            description
         } = user;     
 
         if(!name) {
@@ -66,8 +67,11 @@ export const register = async (user) => {
         if(!documentNumber) {
             throw new Error("documentNumber is required")
         } 
+        if(!description) {
+            throw new Error("documentNumber is required")
+        } 
 
-        await httpClient.post("/auth/register", {
+        await api.post("/auth/register", {
             nome: name,
             email,
             senha: password,
@@ -78,7 +82,6 @@ export const register = async (user) => {
             cep: zipCode,
             cpf: documentNumber
         })
-
     }catch (err){
         console.error(err)  
     }

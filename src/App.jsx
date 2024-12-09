@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Home from './pages/Home/home'
+import Home from './pages/Home/home' 
 import Mapeamento from './pages/mapeamento/MapLayout'
 import Cards from './pages/mapeamento/Cards'
 import Trilha from './pages/trilha/Trilha'
@@ -11,16 +11,14 @@ import Dados from './pages/dados/Dados'
 import CadastroTipo from './pages/escolhercadastro/CadastroTipo'
 import Login from './pages/login/Login'
 import ResetPassword from './pages/resetPassword/ResetPassword'
-import CadastroPrestadora1 from './pages/cadastroP/RegistrationFrm'
-import CadastroPrestadora2 from './pages/cadastroP/Prestadoratre2'
-import CadastroPrestadora3 from './pages/cadastroP/Prestadora3'
-import CadastroPrestadora0 from './pages/cadastroP/Prestadora0'
+import CadastroPrestadora0 from './pages/cadastroP/DadosNecessarios'
 import Pessoais from "./pages/pessoais/Pessoais";
 import Configuracao from './pages/configuracao/Config'
 import Contratar from './pages/enviodecontrato/Contratar'
 import Contratos from './pages/contratosP/Contratos'
 import LoginDados from './pages/loginDados/Logindados'
-// import CadastroUnificado from './pages/cadastroP/Prestadora1'
+import CadastroUnificado from './pages/cadastroP/CadastroPrestadora'
+import Confirmado from './pages/cadastroP/CadConfirmado'
 
 
 
@@ -45,14 +43,13 @@ export default function App() {
         <Route path="/DadosPessoais" element={<Pessoais />} />;
         <Route path="/DadosEndereco" element={<Dados />} />;
         <Route path="/CadastroPrestadora0" element={<CadastroPrestadora0 />} />;
-        <Route path="/CadastroPrestadora1" element={<CadastroPrestadora1 />} />;
-        <Route path="/CadastroPrestadora2" element={<CadastroPrestadora2 />} />;
-        <Route path="/CadastroPrestadora3" element={<CadastroPrestadora3 />} />;
+        <Route path="/CadastroUnificado" element={<CadastroUnificado />} />;
         <Route path="/LoginDados" element={<LoginDados />} />;
         <Route path="/Contratar" element={<Contratar />} />;
         <Route path="/Login" element={<Login />} />;
         <Route path="/ResetPassword" element={<ResetPassword/>} />;
         <Route path="/cadastro" element={<CadastroUnificado/>} />;
+        <Route path="/CadastroFinalizado" element={<Confirmado/>} />;
 
       </Routes>
     </BrowserRouter>
