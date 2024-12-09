@@ -56,7 +56,7 @@ function CadastroPrestadora0() {
         </List>
 
         {/* Link para a próxima página */}
-        <Link to="/CadastroPrestadora1">
+        <Link to="/CadastroUnificado">
           <StyledButton>Iniciar Cadastro</StyledButton>
         </Link>
       </Box>

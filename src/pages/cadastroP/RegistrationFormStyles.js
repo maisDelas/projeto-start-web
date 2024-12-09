@@ -8,11 +8,10 @@ export const FormContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  
 `;
 
-export const LogoContainer = styled.div`  
- 
-`;
+
 export const FormBox = styled.div`
   display: flex;
   flex-direction: column;
@@ -73,11 +72,16 @@ export const InputGroup = styled.div`
     margin-top: 5px;
     display: block;
   }
+
+  textarea{
+    width: 100%;
+    height: 100px;
+  }
 `;
 
 export const ButtonContainer = styled.div`
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   margin-top: 20px;
 
 `;
