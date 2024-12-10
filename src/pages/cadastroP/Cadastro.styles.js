@@ -1,7 +1,5 @@
 import styled from "styled-components";
 
-
-
 export const FormContainer = styled.div`
   padding: 20px;
   margin: 0 auto;
@@ -10,7 +8,6 @@ export const FormContainer = styled.div`
   align-items: center;
   
 `;
-
 
 export const FormBox = styled.div`
   display: flex;
@@ -23,7 +20,6 @@ export const FormBox = styled.div`
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   text-align: center;
   position: relative;
-
 
   h1{
     display: flex;
@@ -60,7 +56,6 @@ export const InputGroup = styled.div`
   }
 
   input {
-     
         margin-right: auto;
         margin-left: auto;
         border: 1px solid #D4CACA;

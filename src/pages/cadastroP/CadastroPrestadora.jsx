@@ -16,6 +16,7 @@ function CadastroUnificado() {
     cpfCnpj: "",
     email: "",
     phone: "",
+    cep: "",
     serviceDescription: "",
     experience: "",
     portfolioFiles: [],
@@ -66,41 +67,39 @@ function CadastroUnificado() {
 
   const validateStep3 = () => {
     if (!formData.email.trim()) newErrors.email = "O email é obrigatório"
-    const isValidPassword = Object.values(validations).every((v) => v)
-    const passwordsMatch = formData.password === formData.confirmPassword
-    if (!isValidPassword || !passwordsMatch) {
-      alert("Verifique os requisitos de senha ou se as senhas coincidem!")
-      return false
-    }
+    // const isValidPassword = Object.values(validations).every((v) => v)
+    // const passwordsMatch = formData.password === formData.confirmPassword
+    // if (!isValidPassword || !passwordsMatch) {
+    //   alert("Verifique os requisitos de senha ou se as senhas coincidem!")
+    //   return false
+    // }
     return true
   }
 
-  const handleNext = () => {
-    if (step === 1 && validateStep1()) setStep(3)
+  const handleNext = async (e) => {
+    if (step === 1 && validateStep1()) { setStep(3) }
    // else if (step === 2 && validateStep2()) setStep(3)
-    else if (step === 3 && validateStep3()) navigate("/CadastroFinalizado")
+    else if (step === 3 && validateStep3()) {
+      try {
+        await register({
+          name: formData.fullName,
+          email: formData.email,
+          password: formData.password,
+          zipCode: formData.cep,
+          documentNumber: formData.cpfCnpj,
+          phone: formData.phone,
+        }, "PRESTADOR")
+        navigate("/CadastroFinalizado")
+      } catch (err) {
+        console.error(err)
+      }
+    }
   }
 
   const handlePrev = () => {
     if (step > 1) setStep(step - 2)
   }
 
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    if (validateStep1) {
-      register({
-        name: formData.fullName,
-        email: formData.email,
-        documentNumer: formData.cpfCnpj,
-        phone: formData.phone,
-      })
-    }
-    if (validateStep3) {
-      register({
-        password: formData.password,
-      })
-    }
-  }
 
   const renderStep = () => {
     if (step === 1) {
@@ -108,7 +107,7 @@ function CadastroUnificado() {
         <S.FormBox>
           <h1>1</h1>
           <h2>Dados pessoais</h2>
-          <form onSubmit={handleSubmit}>
+          <form>
             <S.InputGroup>
               <label>Nome Completo*</label>
               <input
@@ -145,7 +144,14 @@ function CadastroUnificado() {
                 <span className="error">{errors.cpfCnpj}</span>
               )}
 
-             
+              <label>Cep*</label>
+              <input
+                type="number"
+                name="cep"
+                placeholder="Cep"
+                value={formData.cep}
+                onChange={handleChange}
+              />  
 
               <label>Telefone*</label>
               <input
@@ -157,6 +163,7 @@ function CadastroUnificado() {
               />
               {errors.phone && <span className="error">{errors.phone}</span>}
 
+              {/* <S.ButtonContainer type="submit"> */}
               <S.ButtonContainer type="submit" onClick={handleNext}>
                 <S.StyledButton>Avançar</S.StyledButton>
               </S.ButtonContainer>

@@ -25,7 +25,6 @@ const CadastroTipo = () => {
           <CardReset>
               <Button type='button' > <a href="/DadosPessoais">Cadastre-se como Usuário(a)</a></Button>
               <Button type='button'> <a href="/CadastroPrestadora0">Cadastre-se como Prestadora</a></Button>
-
           </CardReset>
         </CardCenter>
     </>

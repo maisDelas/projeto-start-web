@@ -30,8 +30,6 @@ const NavItem = styled.li`
     text-decoration: none;
     color: #D9974D;
     font-weight:bold;
-
-    
   }
 `;
 

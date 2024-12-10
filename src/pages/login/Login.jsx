@@ -100,7 +100,9 @@ const Login = () => {
       const token = await login(email, password)
       console.log(token)
       navigate("/Perfil")
-    } catch (err) {}
+    } catch (err) {
+      console.log(err);
+    }
   }
 
   return (
@@ -114,7 +116,8 @@ const Login = () => {
       <CardCenter>
         <CardReset>
           <HeaderTitle>Entre com a sua conta</HeaderTitle>
-          <form onSubmit={handleSubmit}>
+          {/* <form onSubmit={handleSubmit}> */}
+          <form >
             {/* Campo de e-mail */}
             <InputForm
               htmlFor="email"
@@ -162,7 +165,7 @@ const Login = () => {
             <ForgotPassword href="/ResetPassword">
               Esqueceu sua senha?
             </ForgotPassword>
-            <Button type="submit" onClick={(e) => handleLogin(e)}>
+            <Button type="submit" onClick={(e) => {handleLogin(e)}}>
               Entrar
             </Button>
           </form>

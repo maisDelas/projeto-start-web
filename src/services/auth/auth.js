@@ -1,12 +1,11 @@
 import { api } from "../../http/axios"
 
 export const login = async (email, password) => {
-  try { 
-
+  try {
     if (!email || !password) {
         throw new Error("email and password is required")
     } 
-
+    
     const response = await api.post("/auth/login", {
         email,
         senha: password
@@ -15,28 +14,22 @@ export const login = async (email, password) => {
     if(response.status != 200) {
         throw new Error("login was failed")
     }
-    
-    return { token: response.data.token }
 
+    return { token: response.data.token }
   } catch (err) {
-    console.error(err)
+    throw err;
   }
 }
 
-export const register = async (user) => {
+export const register = async (user, type) => {
     try{
-      
         const {
             name,
             email,
             password,
             phone,
-            type,
-            street,
-            neighborhood,
             zipCode, 
-            documentNumber,
-            description
+            documentNumber
         } = user;     
 
         if(!name) {
@@ -45,44 +38,38 @@ export const register = async (user) => {
 
         if(!email) {
             throw new Error("email is required")
-        } 
+        }
+
         if(!password) {
             throw new Error("password is required")
         } 
+        
         if(!phone) {
             throw new Error("phone is required")
         } 
+        
         if(!type) {
             throw new Error("type is required")
         } 
-        if(!street) {
-            throw new Error("street is required")
-        } 
-        if(!neighborhood) {
-            throw new Error("neighborhood is required")
-        } 
+        
         if(!zipCode) {
             throw new Error("zipCode is required")
         } 
+        
         if(!documentNumber) {
             throw new Error("documentNumber is required")
-        } 
-        if(!description) {
-            throw new Error("documentNumber is required")
-        } 
-
+        }
+        
         await api.post("/auth/register", {
             nome: name,
             email,
             senha: password,
             telefone: phone,
             tipo: type,
-            rua: street,
-            bairro: neighborhood,
             cep: zipCode,
             cpf: documentNumber
         })
-    }catch (err){
-        console.error(err)  
+    } catch (err) {
+        throw err;
     }
 }
